@@ -9,6 +9,7 @@ import { ConfidenceRow } from "@/components/confidence-row";
 import { Button } from "@/components/ui/button";
 import { Toast } from "@/components/toast";
 import { LoadingDots } from "@/components/loading-dots";
+import { Github } from "lucide-react";
 
 export default function Page() {
   const [fileA, setFileA] = useState<File | null>(null);
@@ -94,7 +95,19 @@ export default function Page() {
           <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
           <p className="text-sm text-slate-400">Two photos in. One clean match score out.</p>
         </div>
-        <PrivacyBadge />
+        <div className="flex items-center gap-3">
+          <PrivacyBadge />
+          <a
+            href="https://github.com/neozhu/face-metric"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-md border border-border bg-card/50 px-3 py-2 text-sm text-slate-200 hover:bg-card/70 transition-colors"
+          >
+            <Github className="h-4 w-4 text-slate-200" />
+            GitHub
+          </a>
+         
+        </div>
       </header>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
