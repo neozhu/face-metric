@@ -1,0 +1,30 @@
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Env
+.env
+.env.*
+
+# Datasets / large files
+data/
+datasets/
+*.h5
+*.pth
+
