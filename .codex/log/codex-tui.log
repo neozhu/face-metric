@@ -1,0 +1,1707 @@
+2025-12-12T22:32:21.757963Z  INFO spawning ghost snapshot task
+2025-12-12T22:32:22.227872Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:32:22.227910Z  INFO ghost commit captured: f13f40610069fbd6dbb954a9b64fddebb46f487c
+2025-12-12T22:32:22.227919Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:33:25.777209Z  INFO Selected model: gpt-5.2, Selected effort: medium
+2025-12-12T22:39:41.391711Z  INFO spawning ghost snapshot task
+2025-12-12T22:39:41.816110Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:39:41.816153Z  INFO ghost commit captured: 19b8386e38f59b1650d76308d66abef83ce63190
+2025-12-12T22:39:41.816160Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:39:49.685196Z  INFO ToolCall: update_plan {"plan":[{"step":"扫描仓库后端结构","status":"in_progress"},{"step":"定位上传与识别入口","status":"pending"},{"step":"设计缩放+检测+裁切流程","status":"pending"},{"step":"定义接口与前端返回格式","status":"pending"},{"step":"评估性能与边界情况","status":"pending"}]}
+2025-12-12T22:39:52.303188Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force"}
+2025-12-12T22:39:52.842788Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Recurse -Force -Filter AGENTS.md"}
+2025-12-12T22:39:53.477027Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Recurse -Force -File | Select-Object -First 200"}
+2025-12-12T22:39:54.306023Z  INFO ToolCall: shell_command {"command":"rg -n \"upload|multipart|form-data|deepface|deeface|face\" -S ."}
+2025-12-12T22:39:55.001996Z  INFO ToolCall: shell_command {"command":"rg -n \"fastapi|flask|django|express|koa|nestjs|spring\" -S ."}
+2025-12-12T22:40:10.379817Z  INFO ToolCall: update_plan {"plan":[{"step":"扫描仓库后端结构","status":"completed"},{"step":"定位上传与识别入口","status":"in_progress"},{"step":"设计缩放+检测+裁切流程","status":"pending"},{"step":"定义接口与前端返回格式","status":"pending"},{"step":"评估性能与边界情况","status":"pending"}]}
+2025-12-12T22:40:14.932766Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 200 .\\apps\\api\\main.py"}
+2025-12-12T22:40:15.561504Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 220 .\\apps\\api\\services\\compare.py"}
+2025-12-12T22:40:16.136773Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 200 .\\apps\\api\\config.py"}
+2025-12-12T22:40:16.720985Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 120 .\\apps\\api\\README.md"}
+2025-12-12T22:40:18.430928Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 120 .\\specs\\03-api-contract.md"}
+2025-12-12T22:40:35.288849Z  INFO ToolCall: shell_command {"command":"Get-Content .\\apps\\api\\requirements.txt"}
+2025-12-12T22:41:27.006235Z  INFO ToolCall: update_plan {"plan":[{"step":"扫描仓库后端结构","status":"completed"},{"step":"定位上传与识别入口","status":"completed"},{"step":"设计缩放+检测+裁切流程","status":"completed"},{"step":"定义接口与前端返回格式","status":"completed"},{"step":"评估性能与边界情况","status":"completed"}]}
+2025-12-12T22:46:51.823856Z  INFO spawning ghost snapshot task
+2025-12-12T22:46:52.248147Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:46:52.248180Z  INFO ghost commit captured: b0738fb5919b9c1bb3f13c171ce93076f8838c0b
+2025-12-12T22:46:52.248186Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:49:53.751586Z  INFO spawning ghost snapshot task
+2025-12-12T22:49:54.165797Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:49:54.165836Z  INFO ghost commit captured: b03aa0615342af47ee39c398dd8e5c65e9419690
+2025-12-12T22:49:54.165844Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:52:03.275339Z  INFO spawning ghost snapshot task
+2025-12-12T22:52:03.690065Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:52:03.690098Z  INFO ghost commit captured: 8f25a5334e6fe5d692f081e825a99a0791b21f72
+2025-12-12T22:52:03.690104Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:52:34.576881Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 220 .\\apps\\web\\components\\upload-card.tsx"}
+2025-12-12T22:53:57.023213Z  INFO spawning ghost snapshot task
+2025-12-12T22:53:57.432006Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:53:57.432036Z  INFO ghost commit captured: f79ee3aad02ad8254c417bcad2d241cac0378c1d
+2025-12-12T22:53:57.432041Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:54:18.276548Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 220 .\\apps\\web\\lib\\api.ts"}
+2025-12-12T22:54:18.359305Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 220 .\\apps\\web\\app\\page.tsx"}
+2025-12-12T22:54:18.692071Z  INFO ToolCall: shell_command {"command":"Get-Content -TotalCount 220 .\\apps\\web\\components\\camera-capture.tsx"}
+2025-12-12T22:54:31.250970Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\lib\\api.ts"}
+2025-12-12T22:54:44.183127Z  INFO ToolCall: shell_command {"command":"cmd /c dir /s /b .\\apps\\web\\app\\api"}
+2025-12-12T22:54:49.714825Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\app\\api\\compare\\route.ts"}
+2025-12-12T22:55:14.977359Z  INFO ToolCall: update_plan {"explanation":"按你的要求新增单图预处理接口并在前端上传/拍照时先调用它，compare 接口与返回保持不变。","plan":[{"step":"实现后端 /v1/preprocess","status":"in_progress"},{"step":"添加前端 preprocess 调用","status":"pending"},{"step":"加 Next.js 代理路由","status":"pending"},{"step":"运行最小验证检查","status":"pending"}]}
+2025-12-12T22:56:07.417965Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: apps/api/services/preprocess.py
++from __future__ import annotations
++
++import cv2
++import numpy as np
++
++from .compare import CompareError, DeepFace
++from ..config import settings
++
++
++def _resize_max_side(image: np.ndarray, max_side: int) -> tuple[np.ndarray, float]:
++    h, w = image.shape[:2]
++    longest = max(h, w)
++    if longest <= max_side:
++        return image, 1.0
++    scale = max_side / float(longest)
++    new_w = max(1, int(round(w * scale)))
++    new_h = max(1, int(round(h * scale)))
++    resized = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
++    return resized, scale
++
++
++def _expand_xywh(x: int, y: int, w: int, h: int, expand_ratio: float, img_w: int, img_h: int) -> tuple[int, int, int, int]:
++    cx = x + w / 2.0
++    cy = y + h / 2.0
++    new_w = w * (1.0 + expand_ratio)
++    new_h = h * (1.0 + expand_ratio)
++    x0 = int(np.floor(cx - new_w / 2.0))
++    y0 = int(np.floor(cy - new_h / 2.0))
++    x1 = int(np.ceil(cx + new_w / 2.0))
++    y1 = int(np.ceil(cy + new_h / 2.0))
++    x0 = max(0, min(x0, img_w))
++    y0 = max(0, min(y0, img_h))
++    x1 = max(0, min(x1, img_w))
++    y1 = max(0, min(y1, img_h))
++    if x1 <= x0 or y1 <= y0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++    return x0, y0, x1, y1
++
++
++def preprocess_face_crop_jpeg(
++    image: np.ndarray,
++    *,
++    det_max_side: int = 1280,
++    crop_max_side: int = 1280,
++    expand_ratio: float = 0.20,
++    jpeg_quality: int = 92,
++) -> bytes:
++    img_det, det_scale = _resize_max_side(image, det_max_side)
++
++    faces = DeepFace.extract_faces(
++        img_path=img_det,
++        detector_backend=settings.detector_backend,
++        enforce_detection=True,
++        align=True,
++    )
++    if not faces:
++        raise CompareError("no_face_detected", "No face detected")
++
++    best = None
++    best_area = -1
++    for f in faces:
++        fa = f.get("facial_area") or {}
++        x, y, w, h = int(fa.get("x", 0)), int(fa.get("y", 0)), int(fa.get("w", 0)), int(fa.get("h", 0))
++        area = w * h
++        if area > best_area:
++            best_area = area
++            best = (x, y, w, h)
++
++    if not best or best_area <= 0:
++        raise CompareError("no_face_detected", "No face detected")
++
++    det_h, det_w = img_det.shape[:2]
++    x0, y0, x1, y1 = _expand_xywh(best[0], best[1], best[2], best[3], expand_ratio, det_w, det_h)
++
++    inv = 1.0 / det_scale if det_scale > 0 else 1.0
++    src_h, src_w = image.shape[:2]
++    sx0 = int(np.floor(x0 * inv))
++    sy0 = int(np.floor(y0 * inv))
++    sx1 = int(np.ceil(x1 * inv))
++    sy1 = int(np.ceil(y1 * inv))
++    sx0 = max(0, min(sx0, src_w))
++    sy0 = max(0, min(sy0, src_h))
++    sx1 = max(0, min(sx1, src_w))
++    sy1 = max(0, min(sy1, src_h))
++    if sx1 <= sx0 or sy1 <= sy0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++
++    crop = image[sy0:sy1, sx0:sx1]
++    crop, _ = _resize_max_side(crop, crop_max_side)
++
++    ok, buf = cv2.imencode(".jpg", crop, [int(cv2.IMWRITE_JPEG_QUALITY), int(jpeg_quality)])
++    if not ok:
++        raise CompareError("inference_error", "Failed to encode crop")
++    return buf.tobytes()
++
+*** Update File: apps/api/main.py
+@@
+ from __future__ import annotations
+ 
+-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
++from fastapi import FastAPI, File, Form, HTTPException, Response, UploadFile
+ from fastapi.middleware.cors import CORSMiddleware
+ 
+ from .config import settings
+ from .services.compare import (
+     CompareError,
+@@
+     parse_options,
+     validate_content_type,
+     validate_size,
+ )
++from .services.preprocess import preprocess_face_crop_jpeg
+@@
+ @app.post("/v1/compare")
+ async def compare(
+@@
+         raise HTTPException(status_code=status, detail={"error": e.code, "message": e.message, "faceDetected": e.face_detected})
+ 
++
++@app.post("/v1/preprocess")
++async def preprocess(
++    image: UploadFile = File(...),
++):
++    try:
++        validate_content_type(image.content_type)
++        data = await image.read()
++        validate_size(len(data))
++        img = decode_image(data)
++        jpeg = preprocess_face_crop_jpeg(img, det_max_side=1280, crop_max_side=1280, expand_ratio=0.20)
++        return Response(content=jpeg, media_type="image/jpeg")
++    except CompareError as e:
++        status = {
++            "unsupported_file_type": 400,
++            "file_too_large": 413,
++            "no_face_detected": 422,
++            "inference_error": 500,
++        }.get(e.code, 400)
++        raise HTTPException(status_code=status, detail={"error": e.code, "message": e.message})
++
+*** Add File: apps/web/app/api/preprocess/route.ts
++export const runtime = "nodejs";
++
++export async function POST(req: Request) {
++  const form = await req.formData();
++  const upstream = new FormData();
++
++  for (const [key, value] of form.entries()) {
++    upstream.append(key, value);
++  }
++
++  const res = await fetch("http://127.0.0.1:8000/v1/preprocess", {
++    method: "POST",
++    body: upstream,
++    cache: "no-store"
++  });
++
++  const contentType = res.headers.get("content-type") ?? "application/octet-stream";
++  const body = await res.arrayBuffer();
++
++  return new Response(body, {
++    status: res.status,
++    headers: { "content-type": contentType }
++  });
++}
++
+*** Update File: apps/web/lib/api.ts
+@@
+ export async function compareFaces(imageA: File, imageB: File): Promise<CompareResponse> {
+@@
+   return res.json();
+ }
++
++export async function preprocessFaceImage(image: File): Promise<File> {
++  const form = new FormData();
++  form.append("image", image);
++
++  const url = process.env.NEXT_PUBLIC_API_BASE
++    ? `${process.env.NEXT_PUBLIC_API_BASE}/v1/preprocess`
++    : "/api/preprocess";
++
++  const res = await fetch(url, { method: "POST", body: form });
++
++  if (!res.ok) {
++    const detail = (await res.json()).detail as { error?: string; message?: string } | undefined;
++    throw Object.assign(new Error(detail?.message || "Preprocess failed"), { detail });
++  }
++
++  const blob = await res.blob();
++  const ext = blob.type === "image/png" ? "png" : blob.type === "image/webp" ? "webp" : "jpg";
++  return new File([blob], `face-crop-${Date.now()}.${ext}`, { type: blob.type || "image/jpeg" });
++}
+*** Update File: apps/web/app/page.tsx
+@@
+ import { useEffect, useMemo, useState } from "react";
+-import { compareFaces, type CompareResponse } from "@/lib/api";
++import { compareFaces, preprocessFaceImage, type CompareResponse } from "@/lib/api";
+ import { UploadCard, type FaceStatus } from "@/components/upload-card";
+@@
+   async function onCompare() {
+@@
+   return (
+@@
+         <UploadCard
+           title="Image A"
+           file={fileA}
+           previewUrl={previewA}
+           status={statusA}
+           onPickFile={(f) => {
+-            setFileA(f);
+-            setStatusA("not_checked");
+-            setResult(null);
+-            setError(null);
++            setStatusA("not_checked");
++            setResult(null);
++            setError(null);
++            preprocessFaceImage(f)
++              .then((cropped) => {
++                setFileA(cropped);
++                setStatusA("face_found");
++              })
++              .catch((e: any) => {
++                setFileA(null);
++                const detail = e?.detail;
++                setStatusA(detail?.error === "no_face_detected" ? "no_face" : "error");
++                setError(detail?.message || e.message || "Preprocess failed");
++              });
+           }}
+         />
+         <UploadCard
+           title="Image B"
+           file={fileB}
+           previewUrl={previewB}
+           status={statusB}
+           onPickFile={(f) => {
+-            setFileB(f);
+-            setStatusB("not_checked");
+-            setResult(null);
+-            setError(null);
++            setStatusB("not_checked");
++            setResult(null);
++            setError(null);
++            preprocessFaceImage(f)
++              .then((cropped) => {
++                setFileB(cropped);
++                setStatusB("face_found");
++              })
++              .catch((e: any) => {
++                setFileB(null);
++                const detail = e?.detail;
++                setStatusB(detail?.error === "no_face_detected" ? "no_face" : "error");
++                setError(detail?.message || e.message || "Preprocess failed");
++              });
+           }}
+         />
+       </section>
+*** End Patch
+2025-12-12T22:56:15.307108Z  INFO ToolCall: update_plan {"plan":[{"step":"实现后端 /v1/preprocess","status":"completed"},{"step":"添加前端 preprocess 调用","status":"in_progress"},{"step":"加 Next.js 代理路由","status":"pending"},{"step":"运行最小验证检查","status":"pending"}]}
+2025-12-12T22:56:34.270319Z  INFO ToolCall: update_plan {"plan":[{"step":"实现后端 /v1/preprocess","status":"completed"},{"step":"添加前端 preprocess 调用","status":"completed"},{"step":"加 Next.js 代理路由","status":"completed"},{"step":"运行最小验证检查","status":"in_progress"}]}
+2025-12-12T22:56:39.998973Z  INFO ToolCall: shell_command {"command":"python -c \"import ast, pathlib; ast.parse(pathlib.Path('apps/api/main.py').read_text(encoding='utf-8')); ast.parse(pathlib.Path('apps/api/services/preprocess.py').read_text(encoding='utf-8')); print('python ok')\""}
+2025-12-12T22:56:40.597922Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\api\\services\\preprocess.py | more"}
+2025-12-12T22:56:41.226866Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\app\\api\\preprocess\\route.ts"}
+2025-12-12T22:56:41.812064Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\lib\\api.ts | more"}
+2025-12-12T22:56:42.893796Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\app\\page.tsx | more"}
+2025-12-12T22:56:55.398679Z  INFO ToolCall: shell_command {"command":"cmd /c type .\\apps\\web\\app\\api\\preprocess\\route.ts"}
+2025-12-12T22:57:03.550954Z  INFO ToolCall: update_plan {"plan":[{"step":"实现后端 /v1/preprocess","status":"completed"},{"step":"添加前端 preprocess 调用","status":"completed"},{"step":"加 Next.js 代理路由","status":"completed"},{"step":"运行最小验证检查","status":"completed"}]}
+2025-12-12T22:57:30.892922Z  INFO spawning ghost snapshot task
+2025-12-12T22:57:31.333812Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:57:31.333846Z  INFO ghost commit captured: e166a94cd3d2133ac98847d3404337dbb396be27
+2025-12-12T22:57:31.333851Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:59:12.980680Z  INFO spawning ghost snapshot task
+2025-12-12T22:59:13.396045Z  INFO ghost snapshot blocking task finished
+2025-12-12T22:59:13.396078Z  INFO ghost commit captured: a877ac43d50e94728353c3e565c7d1afeec8993b
+2025-12-12T22:59:13.396088Z  INFO ghost snapshot gate marked ready
+2025-12-12T22:59:59.642032Z  INFO spawning ghost snapshot task
+2025-12-12T23:00:00.069248Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:00:00.069279Z  INFO ghost commit captured: 41a1e30ef4dc5f933dfde513b175c1cf731a5a11
+2025-12-12T23:00:00.069284Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:01:01.469487Z  INFO spawning ghost snapshot task
+2025-12-12T23:01:01.888233Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:01:01.888265Z  INFO ghost commit captured: 8e4a8ffb756b8c87c696b2af3a0494c5e7d743a0
+2025-12-12T23:01:01.888270Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:01:10.880694Z  WARN stream disconnected - retrying turn (1/5 in 211ms)...
+2025-12-12T23:06:42.345484Z  INFO spawning ghost snapshot task
+2025-12-12T23:06:42.764610Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:06:42.764643Z  INFO ghost commit captured: 086f931bd4659cbcf3cdeea89c59d2a0fed2745e
+2025-12-12T23:06:42.764648Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:07:23.381586Z  INFO ToolCall: update_plan {"explanation":"按你的新反馈：裁切结果调整为更统一的比例（优先正方形），前端预览改成圆形展示以更协调。","plan":[{"step":"后端裁切改为正方形","status":"in_progress"},{"step":"前端预览改为圆形","status":"pending"},{"step":"快速静态校验","status":"pending"}]}
+2025-12-12T23:07:45.749434Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/api/services/preprocess.py
+@@
+ def _expand_xywh(x: int, y: int, w: int, h: int, expand_ratio: float, img_w: int, img_h: int) -> tuple[int, int, int, int]:
+@@
+     return x0, y0, x1, y1
+ 
+ 
++def _adjust_box_to_aspect(
++    x0: int,
++    y0: int,
++    x1: int,
++    y1: int,
++    *,
++    aspect_w: int,
++    aspect_h: int,
++    img_w: int,
++    img_h: int,
++) -> tuple[int, int, int, int]:
++    w = x1 - x0
++    h = y1 - y0
++    if w <= 0 or h <= 0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++
++    target_aspect = float(aspect_w) / float(aspect_h)
++    cur_aspect = float(w) / float(h)
++
++    if cur_aspect >= target_aspect:
++        desired_w = w
++        desired_h = int(np.ceil(desired_w / target_aspect))
++    else:
++        desired_h = h
++        desired_w = int(np.ceil(desired_h * target_aspect))
++
++    desired_w = min(desired_w, img_w)
++    desired_h = min(desired_h, img_h)
++
++    cx = (x0 + x1) / 2.0
++    cy = (y0 + y1) / 2.0
++    nx0 = int(np.floor(cx - desired_w / 2.0))
++    ny0 = int(np.floor(cy - desired_h / 2.0))
++    nx1 = nx0 + desired_w
++    ny1 = ny0 + desired_h
++
++    if nx0 < 0:
++        nx1 -= nx0
++        nx0 = 0
++    if ny0 < 0:
++        ny1 -= ny0
++        ny0 = 0
++    if nx1 > img_w:
++        dx = nx1 - img_w
++        nx0 -= dx
++        nx1 = img_w
++    if ny1 > img_h:
++        dy = ny1 - img_h
++        ny0 -= dy
++        ny1 = img_h
++
++    nx0 = max(0, min(nx0, img_w))
++    ny0 = max(0, min(ny0, img_h))
++    nx1 = max(0, min(nx1, img_w))
++    ny1 = max(0, min(ny1, img_h))
++    if nx1 <= nx0 or ny1 <= ny0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++    return nx0, ny0, nx1, ny1
++
++
+ def preprocess_face_crop_jpeg(
+     image: np.ndarray,
+@@ def preprocess_face_crop_jpeg(
+     sx0 = max(0, min(sx0, src_w))
+     sy0 = max(0, min(sy0, src_h))
+     sx1 = max(0, min(sx1, src_w))
+     sy1 = max(0, min(sy1, src_h))
+     if sx1 <= sx0 or sy1 <= sy0:
+         raise CompareError("no_face_detected", "Invalid face crop region")
+ 
++    # Make the crop more UI-friendly (consistent aspect ratio) while keeping face centered.
++    sx0, sy0, sx1, sy1 = _adjust_box_to_aspect(
++        sx0,
++        sy0,
++        sx1,
++        sy1,
++        aspect_w=1,
++        aspect_h=1,
++        img_w=src_w,
++        img_h=src_h,
++    )
++
+     crop = image[sy0:sy1, sx0:sx1]
+     crop, _ = _resize_max_side(crop, crop_max_side)
+*** End Patch
+2025-12-12T23:07:54.556618Z  INFO ToolCall: shell_command {"command":"cmd /c findstr /n \"def preprocess_face_crop_jpeg\" apps\\api\\services\\preprocess.py"}
+2025-12-12T23:08:06.555925Z  INFO ToolCall: shell_command {"command":"cmd /c findstr /n \"^\" apps\\api\\services\\preprocess.py"}
+2025-12-12T23:08:32.841262Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/api/services/preprocess.py
+@@
+ def _expand_xywh(x: int, y: int, w: int, h: int, expand_ratio: float, img_w: int, img_h: int) -> tuple[int, int, int, int]:
+@@
+     if x1 <= x0 or y1 <= y0:
+         raise CompareError("no_face_detected", "Invalid face crop region")
+     return x0, y0, x1, y1
+ 
+ 
++def _adjust_box_to_aspect(
++    x0: int,
++    y0: int,
++    x1: int,
++    y1: int,
++    *,
++    aspect_w: int,
++    aspect_h: int,
++    img_w: int,
++    img_h: int,
++) -> tuple[int, int, int, int]:
++    w = x1 - x0
++    h = y1 - y0
++    if w <= 0 or h <= 0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++
++    target_aspect = float(aspect_w) / float(aspect_h)
++    cur_aspect = float(w) / float(h)
++
++    if cur_aspect >= target_aspect:
++        desired_w = w
++        desired_h = int(np.ceil(desired_w / target_aspect))
++    else:
++        desired_h = h
++        desired_w = int(np.ceil(desired_h * target_aspect))
++
++    desired_w = min(desired_w, img_w)
++    desired_h = min(desired_h, img_h)
++
++    cx = (x0 + x1) / 2.0
++    cy = (y0 + y1) / 2.0
++    nx0 = int(np.floor(cx - desired_w / 2.0))
++    ny0 = int(np.floor(cy - desired_h / 2.0))
++    nx1 = nx0 + desired_w
++    ny1 = ny0 + desired_h
++
++    if nx0 < 0:
++        nx1 -= nx0
++        nx0 = 0
++    if ny0 < 0:
++        ny1 -= ny0
++        ny0 = 0
++    if nx1 > img_w:
++        dx = nx1 - img_w
++        nx0 -= dx
++        nx1 = img_w
++    if ny1 > img_h:
++        dy = ny1 - img_h
++        ny0 -= dy
++        ny1 = img_h
++
++    nx0 = max(0, min(nx0, img_w))
++    ny0 = max(0, min(ny0, img_h))
++    nx1 = max(0, min(nx1, img_w))
++    ny1 = max(0, min(ny1, img_h))
++    if nx1 <= nx0 or ny1 <= ny0:
++        raise CompareError("no_face_detected", "Invalid face crop region")
++    return nx0, ny0, nx1, ny1
++
++
+ def preprocess_face_crop_jpeg(
+     image: np.ndarray,
+     *,
+     det_max_side: int = 1280,
+@@
+     sx1 = max(0, min(sx1, src_w))
+     sy1 = max(0, min(sy1, src_h))
+     if sx1 <= sx0 or sy1 <= sy0:
+         raise CompareError("no_face_detected", "Invalid face crop region")
+ 
++    sx0, sy0, sx1, sy1 = _adjust_box_to_aspect(
++        sx0,
++        sy0,
++        sx1,
++        sy1,
++        aspect_w=1,
++        aspect_h=1,
++        img_w=src_w,
++        img_h=src_h,
++    )
++
+     crop = image[sy0:sy1, sx0:sx1]
+     crop, _ = _resize_max_side(crop, crop_max_side)
+*** End Patch
+2025-12-12T23:08:42.173124Z  INFO ToolCall: update_plan {"plan":[{"step":"后端裁切改为正方形","status":"completed"},{"step":"前端预览改为圆形","status":"in_progress"},{"step":"快速静态校验","status":"pending"}]}
+2025-12-12T23:08:50.733262Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+         {tab === "upload" ? (
+           <>
+-            <div className="aspect-video w-full rounded-lg border border-dashed border-border bg-black/20 flex items-center justify-center overflow-hidden">
++            <div className="aspect-square w-full rounded-full border border-dashed border-border bg-black/20 flex items-center justify-center overflow-hidden">
+               {previewUrl ? (
+                 // eslint-disable-next-line @next/next/no-img-element
+-                <img src={previewUrl} alt={`${title} preview`} className="h-full w-full object-contain" />
++                <img src={previewUrl} alt={`${title} preview`} className="h-full w-full object-cover" />
+               ) : (
+                 <div className="text-sm text-slate-400">Drop or upload an image</div>
+               )}
+             </div>
+*** End Patch
+2025-12-12T23:08:57.181753Z  INFO ToolCall: update_plan {"plan":[{"step":"后端裁切改为正方形","status":"completed"},{"step":"前端预览改为圆形","status":"completed"},{"step":"快速静态校验","status":"in_progress"}]}
+2025-12-12T23:09:02.161350Z  INFO ToolCall: shell_command {"command":"python -c \"import ast, pathlib; ast.parse(pathlib.Path('apps/api/services/preprocess.py').read_text(encoding='utf-8')); print('preprocess.py ok')\""}
+2025-12-12T23:09:02.747656Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\upload-card.tsx | more"}
+2025-12-12T23:09:03.580011Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\api\\services\\preprocess.py | more"}
+2025-12-12T23:09:12.508050Z  INFO ToolCall: update_plan {"plan":[{"step":"后端裁切改为正方形","status":"completed"},{"step":"前端预览改为圆形","status":"completed"},{"step":"快速静态校验","status":"completed"}]}
+2025-12-12T23:10:17.231943Z  INFO spawning ghost snapshot task
+2025-12-12T23:10:17.704006Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:10:17.704039Z  INFO ghost commit captured: 7ab0e6084688388628e4332d0b8cfb549e79618c
+2025-12-12T23:10:17.704044Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:10:37.380325Z  INFO ToolCall: update_plan {"explanation":"继续优化前端圆形预览：缩小尺寸、居中、增加更精致的边框/阴影与占位样式。","plan":[{"step":"调整圆形预览布局样式","status":"in_progress"},{"step":"优化占位与图片适配","status":"pending"},{"step":"做一次快速页面检查","status":"pending"}]}
+2025-12-12T23:10:51.350782Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+         {tab === "upload" ? (
+           <>
+-            <div className="aspect-square w-full rounded-full border border-dashed border-border bg-black/20 flex items-center justify-center overflow-hidden">
++            <div
++              className={[
++                "mx-auto h-56 w-56 sm:h-64 sm:w-64",
++                "rounded-full overflow-hidden",
++                "bg-gradient-to-b from-slate-950/60 to-black/30",
++                "shadow-[0_0_0_1px_rgba(30,41,59,0.55),0_16px_50px_rgba(0,0,0,0.35)]",
++                previewUrl ? "ring-1 ring-slate-700/50" : "border border-dashed border-border",
++                "flex items-center justify-center"
++              ].join(" ")}
++            >
+               {previewUrl ? (
+                 // eslint-disable-next-line @next/next/no-img-element
+-                <img src={previewUrl} alt={`${title} preview`} className="h-full w-full object-cover" />
++                <img
++                  src={previewUrl}
++                  alt={`${title} preview`}
++                  className="h-full w-full object-cover"
++                />
+               ) : (
+-                <div className="text-sm text-slate-400">Drop or upload an image</div>
++                <div className="text-center text-sm text-slate-400 px-6">
++                  Drop, upload, or capture a photo
++                </div>
+               )}
+             </div>
+             <div className="flex gap-2">
+               <Button
+*** End Patch
+2025-12-12T23:11:01.255492Z  INFO ToolCall: update_plan {"plan":[{"step":"调整圆形预览布局样式","status":"completed"},{"step":"优化占位与图片适配","status":"in_progress"},{"step":"做一次快速页面检查","status":"pending"}]}
+2025-12-12T23:11:06.506900Z  INFO ToolCall: shell_command {"command":"python -c \"import pathlib; p=pathlib.Path('apps/web/components/upload-card.tsx'); print('ok', p.exists(), p.stat().st_size)\""}
+2025-12-12T23:11:16.523892Z  INFO ToolCall: update_plan {"plan":[{"step":"调整圆形预览布局样式","status":"completed"},{"step":"优化占位与图片适配","status":"completed"},{"step":"做一次快速页面检查","status":"in_progress"}]}
+2025-12-12T23:11:21.570217Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\upload-card.tsx | more"}
+2025-12-12T23:11:28.362266Z  INFO ToolCall: update_plan {"plan":[{"step":"调整圆形预览布局样式","status":"completed"},{"step":"优化占位与图片适配","status":"completed"},{"step":"做一次快速页面检查","status":"completed"}]}
+2025-12-12T23:14:06.863145Z  INFO spawning ghost snapshot task
+2025-12-12T23:14:07.289513Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:14:07.289549Z  INFO ghost commit captured: d80b52e4542eef3293afd636b3204eb86602732a
+2025-12-12T23:14:07.289555Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:14:23.292671Z  INFO ToolCall: update_plan {"explanation":"调整移动端布局：两张卡片在竖屏也保持并排，同时把圆形预览在小屏进一步缩小并压缩间距。","plan":[{"step":"修改页面网格为移动端两列","status":"in_progress"},{"step":"缩小小屏圆形预览与间距","status":"pending"},{"step":"快速校验布局类名","status":"pending"}]}
+2025-12-12T23:14:30.131169Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
++      <section className="grid grid-cols-2 gap-3 sm:gap-6">
+         <UploadCard
+           title="Image A"
+           file={fileA}
+           previewUrl={previewA}
+           status={statusA}
+@@
+         <UploadCard
+           title="Image B"
+           file={fileB}
+           previewUrl={previewB}
+           status={statusB}
+*** End Patch
+2025-12-12T23:14:36.797276Z  INFO ToolCall: update_plan {"plan":[{"step":"修改页面网格为移动端两列","status":"completed"},{"step":"缩小小屏圆形预览与间距","status":"in_progress"},{"step":"快速校验布局类名","status":"pending"}]}
+2025-12-12T23:14:48.665055Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+       </CardHeader>
+-      <CardContent className="space-y-3">
++      <CardContent className="space-y-2 sm:space-y-3">
+         <Tabs
+           value={tab}
+           onValueChange={(v) => setTab(v as any)}
+           options={[
+             { value: "upload", label: "Upload" },
+             { value: "camera", label: "Camera" }
+           ]}
+         />
+ 
+         {tab === "upload" ? (
+           <>
+             <div
+               className={[
+-                "mx-auto h-56 w-56 sm:h-64 sm:w-64",
++                "mx-auto h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56",
+                 "rounded-full overflow-hidden",
+                 "bg-gradient-to-b from-slate-950/60 to-black/30",
+                 "shadow-[0_0_0_1px_rgba(30,41,59,0.55),0_16px_50px_rgba(0,0,0,0.35)]",
+                 previewUrl ? "ring-1 ring-slate-700/50" : "border border-dashed border-border",
+                 "flex items-center justify-center"
+               ].join(" ")}
+             >
+@@
+               ) : (
+-                <div className="text-center text-sm text-slate-400 px-6">
+-                  Drop, upload, or capture a photo
++                <div className="text-center text-xs sm:text-sm text-slate-400 px-4 sm:px-6">
++                  Drop, upload, or capture
+                 </div>
+               )}
+             </div>
+*** End Patch
+2025-12-12T23:14:59.325948Z  INFO ToolCall: update_plan {"plan":[{"step":"修改页面网格为移动端两列","status":"completed"},{"step":"缩小小屏圆形预览与间距","status":"completed"},{"step":"快速校验布局类名","status":"in_progress"}]}
+2025-12-12T23:15:05.446543Z  INFO ToolCall: shell_command {"command":"cmd /c findstr /n \"grid grid-cols\" apps\\web\\app\\page.tsx"}
+2025-12-12T23:15:06.203460Z  INFO ToolCall: shell_command {"command":"cmd /c findstr /n \"h-32 w-32\" apps\\web\\components\\upload-card.tsx"}
+2025-12-12T23:15:07.688562Z  INFO ToolCall: shell_command {"command":"python -c \"import pathlib; pathlib.Path('apps/web/app/page.tsx').read_text(encoding='utf-8'); pathlib.Path('apps/web/components/upload-card.tsx').read_text(encoding='utf-8'); print('ts/tsx read ok')\""}
+2025-12-12T23:15:15.932347Z  INFO ToolCall: update_plan {"plan":[{"step":"修改页面网格为移动端两列","status":"completed"},{"step":"缩小小屏圆形预览与间距","status":"completed"},{"step":"快速校验布局类名","status":"completed"}]}
+2025-12-12T23:18:20.482626Z  INFO spawning ghost snapshot task
+2025-12-12T23:18:20.918061Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:18:20.918093Z  INFO ghost commit captured: e28355a984697a360ee49adbaa91c5a3f6c514a6
+2025-12-12T23:18:20.918098Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:18:38.406267Z  INFO ToolCall: shell_command {"command":"rg -n \"FaceStatus\" apps\\\\web -S"}
+2025-12-12T23:18:38.659571Z  INFO ToolCall: shell_command {"command":"rg -n \"statusA|statusB\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:18:53.847988Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+ import { useRef, useState } from "react";
+ import { Card, CardContent, CardHeader } from "@/components/ui/card";
+ import { Button } from "@/components/ui/button";
+-import { Badge } from "@/components/ui/badge";
+ import { Tabs } from "@/components/ui/tabs";
+ import { CameraCapture } from "@/components/camera-capture";
+ 
+-export type FaceStatus = "not_checked" | "face_found" | "no_face" | "error";
+-
+ export function UploadCard({
+   title,
+   file,
+   previewUrl,
+-  status,
+   onPickFile
+ }: {
+   title: string;
+   file: File | null;
+   previewUrl: string | null;
+-  status: FaceStatus;
+   onPickFile: (f: File) => void;
+ }) {
+   const inputRef = useRef<HTMLInputElement | null>(null);
+   const [tab, setTab] = useState<"upload" | "camera">("upload");
+-
+-  const badgeText =
+-    status === "not_checked"
+-      ? "Not checked"
+-      : status === "face_found"
+-      ? "Face found"
+-      : status === "no_face"
+-      ? "No face"
+-      : "Error";
+-
+-  const badgeClass =
+-    status === "face_found"
+-      ? "border-accent/40 text-accent"
+-      : status === "no_face"
+-      ? "border-red-500/40 text-red-400"
+-      : status === "error"
+-      ? "border-yellow-500/40 text-yellow-400"
+-      : "text-slate-400";
+ 
+   return (
+     <Card className="relative overflow-hidden">
+       <CardHeader className="flex items-center justify-between">
+         <div className="text-sm font-medium text-slate-100">{title}</div>
+-        <Badge className={badgeClass}>{badgeText}</Badge>
+       </CardHeader>
+       <CardContent className="space-y-2 sm:space-y-3">
+         <Tabs
+           value={tab}
+*** End Patch
+2025-12-12T23:19:21.290090Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+ "use client";
+ 
+ import { useEffect, useMemo, useState } from "react";
+ import { compareFaces, preprocessFaceImage, type CompareResponse } from "@/lib/api";
+-import { UploadCard, type FaceStatus } from "@/components/upload-card";
++import { UploadCard } from "@/components/upload-card";
+ import { ResultRing } from "@/components/result-ring";
+ import { PrivacyBadge } from "@/components/privacy-badge";
+ import { ConfidenceRow } from "@/components/confidence-row";
+ import { Button } from "@/components/ui/button";
+ import { Toast } from "@/components/toast";
+@@
+ export default function Page() {
+   const [fileA, setFileA] = useState<File | null>(null);
+   const [fileB, setFileB] = useState<File | null>(null);
+-  const [statusA, setStatusA] = useState<FaceStatus>("not_checked");
+-  const [statusB, setStatusB] = useState<FaceStatus>("not_checked");
+   const [loading, setLoading] = useState(false);
+   const [result, setResult] = useState<CompareResponse | null>(null);
+   const [error, setError] = useState<string | null>(null);
+   const [displayScore, setDisplayScore] = useState(0);
+   const [loadingStage, setLoadingStage] = useState<"uploading" | "embedding" | "scoring">("uploading");
+@@
+     setLoading(true);
+     setError(null);
+     setResult(null);
+-    setStatusA("not_checked");
+-    setStatusB("not_checked");
+     setLoadingStage("uploading");
+     try {
+       const res = await compareFaces(fileA, fileB);
+       setResult(res);
+-      setStatusA(res.faceDetected.a ? "face_found" : "no_face");
+-      setStatusB(res.faceDetected.b ? "face_found" : "no_face");
+     } catch (e: any) {
+       const detail = e?.detail;
+-      if (detail?.faceDetected) {
+-        setStatusA(detail.faceDetected.a ? "face_found" : "no_face");
+-        setStatusB(detail.faceDetected.b ? "face_found" : "no_face");
+-      } else {
+-        setStatusA("error");
+-        setStatusB("error");
+-      }
+       setError(detail?.message || e.message || "Compare failed");
+     } finally {
+       setLoading(false);
+     }
+   }
+@@
+         <UploadCard
+           title="Image A"
+           file={fileA}
+           previewUrl={previewA}
+-          status={statusA}
+           onPickFile={(f) => {
+-            setStatusA("not_checked");
+             setResult(null);
+             setError(null);
+             preprocessFaceImage(f)
+               .then((cropped) => {
+                 setFileA(cropped);
+-                setStatusA("face_found");
+               })
+               .catch((e: any) => {
+                 setFileA(null);
+                 const detail = e?.detail;
+-                setStatusA(detail?.error === "no_face_detected" ? "no_face" : "error");
+                 setError(detail?.message || e.message || "Preprocess failed");
+               });
+           }}
+         />
+         <UploadCard
+           title="Image B"
+           file={fileB}
+           previewUrl={previewB}
+-          status={statusB}
+           onPickFile={(f) => {
+-            setStatusB("not_checked");
+             setResult(null);
+             setError(null);
+             preprocessFaceImage(f)
+               .then((cropped) => {
+                 setFileB(cropped);
+-                setStatusB("face_found");
+               })
+               .catch((e: any) => {
+                 setFileB(null);
+                 const detail = e?.detail;
+-                setStatusB(detail?.error === "no_face_detected" ? "no_face" : "error");
+                 setError(detail?.message || e.message || "Preprocess failed");
+               });
+           }}
+         />
+       </section>
+*** End Patch
+2025-12-12T23:19:27.904815Z  INFO ToolCall: shell_command {"command":"rg -n \"statusA|statusB|FaceStatus\" apps\\\\web -S"}
+2025-12-12T23:19:29.332726Z  INFO ToolCall: shell_command {"command":"python -c \"import pathlib; pathlib.Path('apps/web/app/page.tsx').read_text(encoding='utf-8'); pathlib.Path('apps/web/components/upload-card.tsx').read_text(encoding='utf-8'); print('read ok')\""}
+2025-12-12T23:20:10.836348Z  INFO spawning ghost snapshot task
+2025-12-12T23:20:11.269137Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:20:11.269170Z  INFO ghost commit captured: d02c7176c9cbbb0c0fb0c82921199d20617c5b26
+2025-12-12T23:20:11.269176Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:20:24.161436Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+ import { useRef, useState } from "react";
+-import { Card, CardContent, CardHeader } from "@/components/ui/card";
++import { Card, CardContent } from "@/components/ui/card";
+ import { Button } from "@/components/ui/button";
+ import { Tabs } from "@/components/ui/tabs";
+ import { CameraCapture } from "@/components/camera-capture";
+ 
+ export function UploadCard({
+-  title,
+   file,
+   previewUrl,
+   onPickFile
+ }: {
+-  title: string;
+   file: File | null;
+   previewUrl: string | null;
+   onPickFile: (f: File) => void;
+ }) {
+@@
+ 
+   return (
+     <Card className="relative overflow-hidden">
+-      <CardHeader className="flex items-center justify-between">
+-        <div className="text-sm font-medium text-slate-100">{title}</div>
+-      </CardHeader>
+       <CardContent className="space-y-2 sm:space-y-3">
+         <Tabs
+           value={tab}
+           onValueChange={(v) => setTab(v as any)}
+@@
+             >
+               {previewUrl ? (
+                 // eslint-disable-next-line @next/next/no-img-element
+                 <img
+                   src={previewUrl}
+-                  alt={`${title} preview`}
++                  alt="preview"
+                   className="h-full w-full object-cover"
+                 />
+               ) : (
+                 <div className="text-center text-xs sm:text-sm text-slate-400 px-4 sm:px-6">
+                   Drop, upload, or capture
+*** End Patch
+2025-12-12T23:20:33.434509Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+         <UploadCard
+-          title="Image A"
+           file={fileA}
+           previewUrl={previewA}
+           onPickFile={(f) => {
+             setResult(null);
+             setError(null);
+@@
+         <UploadCard
+-          title="Image B"
+           file={fileB}
+           previewUrl={previewB}
+           onPickFile={(f) => {
+             setResult(null);
+             setError(null);
+*** End Patch
+2025-12-12T23:20:45.046999Z  INFO ToolCall: shell_command {"command":"rg -n \"title=\\\"Image|Image A|Image B\" apps\\\\web -S"}
+2025-12-12T23:21:22.572705Z  INFO spawning ghost snapshot task
+2025-12-12T23:21:23.014896Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:21:23.014928Z  INFO ghost commit captured: 0c58f52a9365a3820e4d57dcab4f182e670059ec
+2025-12-12T23:21:23.014933Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:21:36.031211Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/camera-capture.tsx
+@@
+   return (
+     <div className="space-y-3">
+-      <div className="aspect-video w-full rounded-lg border border-border bg-black/30 overflow-hidden">
++      <div className="mx-auto h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56 rounded-xl border border-border bg-black/30 overflow-hidden">
+         {error ? (
+           <div className="h-full w-full flex items-center justify-center text-sm text-slate-400">
+             {error}
+           </div>
+         ) : (
+           <video ref={videoRef} className="h-full w-full object-cover" playsInline muted />
+         )}
+       </div>
+       <Button
+*** End Patch
+2025-12-12T23:21:46.373411Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\camera-capture.tsx | more"}
+2025-12-12T23:26:12.512077Z  INFO spawning ghost snapshot task
+2025-12-12T23:26:12.943715Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:26:12.943746Z  INFO ghost commit captured: 6da9e7f663615f53770a8d2dbc1df02f8c82bd23
+2025-12-12T23:26:12.943754Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:26:22.494053Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\privacy-badge.tsx"}
+2025-12-12T23:26:22.603905Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\privacy-badge.tsx 2>nul || echo missing"}
+2025-12-12T23:26:23.895000Z  INFO ToolCall: shell_command {"command":"rg -n \"PrivacyBadge|Privacy-first\" apps\\\\web -S"}
+2025-12-12T23:26:46.381935Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/privacy-badge.tsx
+@@
+ import { ShieldCheck } from "lucide-react";
+ import { Badge } from "@/components/ui/badge";
+ 
+ export function PrivacyBadge() {
+   return (
+-    <Badge className="gap-1 border-accent/40 text-slate-100">
++    <Badge className="gap-1 border-border/70 bg-card/60 text-slate-100 shadow-[0_0_0_1px_rgba(30,41,59,0.35)] backdrop-blur">
+       <ShieldCheck className="h-3.5 w-3.5 text-accent" />
+-      No storage • In‑memory compare
++      Privacy-first • In-memory only • Nothing saved
+     </Badge>
+   );
+ }
+*** Update File: apps/web/app/page.tsx
+@@
+ import { UploadCard } from "@/components/upload-card";
+ import { ResultRing } from "@/components/result-ring";
+ import { PrivacyBadge } from "@/components/privacy-badge";
+ import { ConfidenceRow } from "@/components/confidence-row";
+ import { Button } from "@/components/ui/button";
+@@
+       <header className="flex items-center justify-between">
+         <div className="space-y-1">
+           <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
+           <p className="text-sm text-slate-400">Two photos in. One clean match score out.</p>
+         </div>
+         <div className="flex items-center gap-3">
+-          <PrivacyBadge />
+           <a
+             href="https://github.com/neozhu/face-metric"
+             target="_blank"
+             rel="noreferrer"
+             className="inline-flex items-center gap-2 rounded-md border border-border bg-card/50 px-3 py-2 text-sm text-slate-200 hover:bg-card/70 transition-colors"
+@@
+       </section>
+ 
+-      <footer className="text-xs text-slate-500">
+-        Privacy-first: images are used only for this run and never saved.
++      <footer className="pt-2 text-center space-y-2">
++        <div className="flex justify-center">
++          <PrivacyBadge />
++        </div>
++        <div className="text-xs text-slate-500 leading-relaxed">
++          Try it for fun: compare a younger photo vs. today, see which parent your child resembles more, or test how
++          similar siblings look across different ages and lighting.
++        </div>
+       </footer>
+     </main>
+   );
+ }
+*** End Patch
+2025-12-12T23:26:54.719796Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\app\\page.tsx | more"}
+2025-12-12T23:26:55.048105Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\privacy-badge.tsx"}
+2025-12-12T23:27:08.816535Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/privacy-badge.tsx
+@@
+ export function PrivacyBadge() {
+   return (
+-    <Badge className="gap-1 border-accent/40 text-slate-100">
++    <Badge className="gap-1 border-border/70 bg-card/60 text-slate-100 shadow-[0_0_0_1px_rgba(30,41,59,0.35)] backdrop-blur">
+       <ShieldCheck className="h-3.5 w-3.5 text-accent" />
+-      No storage • In‑memory compare
++      Privacy-first • In-memory only • Nothing saved
+     </Badge>
+   );
+ }
+*** Update File: apps/web/app/page.tsx
+@@
+       <footer className="text-xs text-slate-500">
+-        Privacy-first: images are used only for this run and never saved.
++        <div className="flex flex-col items-center justify-center gap-2 pt-2 text-center">
++          <PrivacyBadge />
++          <div className="max-w-2xl text-xs text-slate-500 leading-relaxed">
++            Try it for fun: compare a younger photo vs. today, see which parent your child resembles more, or explore
++            how similar siblings look across different ages and lighting.
++          </div>
++        </div>
+       </footer>
+*** End Patch
+2025-12-12T23:27:16.666250Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\privacy-badge.tsx"}
+2025-12-12T23:27:17.232970Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\app\\page.tsx | more"}
+2025-12-12T23:28:38.593120Z  INFO spawning ghost snapshot task
+2025-12-12T23:28:39.026474Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:28:39.026505Z  INFO ghost commit captured: 7804f4add4b4eddd54a068ab9d2fb847d86fac50
+2025-12-12T23:28:39.026511Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:28:56.396470Z  INFO ToolCall: shell_command {"command":"cmd /c dir apps\\web\\components & cmd /c type apps\\web\\components\\loading-dots.tsx 2>nul || echo missing"}
+2025-12-12T23:29:06.230930Z  INFO ToolCall: shell_command {"command":"cmd /c type apps\\web\\components\\ui\\tabs.tsx"}
+2025-12-12T23:29:19.855369Z  INFO ToolCall: update_plan {"explanation":"为预处理裁切等待增加每张卡片的加载动画，并在裁切中禁用交互避免误操作。","plan":[{"step":"为 UploadCard 增加 busy 状态","status":"in_progress"},{"step":"页面接入 preprocess loading","status":"pending"},{"step":"快速静态校验","status":"pending"}]}
+2025-12-12T23:29:41.636703Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/components/upload-card.tsx
+@@
+ import { useRef, useState } from "react";
+ import { Card, CardContent } from "@/components/ui/card";
+ import { Button } from "@/components/ui/button";
+ import { Tabs } from "@/components/ui/tabs";
+ import { CameraCapture } from "@/components/camera-capture";
++import { LoadingDots } from "@/components/loading-dots";
+ 
+ export function UploadCard({
+   file,
+   previewUrl,
++  busy = false,
+   onPickFile
+ }: {
+   file: File | null;
+   previewUrl: string | null;
++  busy?: boolean;
+   onPickFile: (f: File) => void;
+ }) {
+   const inputRef = useRef<HTMLInputElement | null>(null);
+   const [tab, setTab] = useState<"upload" | "camera">("upload");
+@@
+       <CardContent className="space-y-2 sm:space-y-3">
+         <Tabs
+           value={tab}
+           onValueChange={(v) => setTab(v as any)}
+           options={[
+-            { value: "upload", label: "Upload" },
+-            { value: "camera", label: "Camera" }
++            { value: "upload", label: "Upload", disabled: busy },
++            { value: "camera", label: "Camera", disabled: busy }
+           ]}
+         />
+ 
+         {tab === "upload" ? (
+           <>
+             <div
+               className={[
+                 "mx-auto h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56",
+                 "rounded-full overflow-hidden",
+                 "bg-gradient-to-b from-slate-950/60 to-black/30",
+                 "shadow-[0_0_0_1px_rgba(30,41,59,0.55),0_16px_50px_rgba(0,0,0,0.35)]",
+                 previewUrl ? "ring-1 ring-slate-700/50" : "border border-dashed border-border",
+-                "flex items-center justify-center"
++                "relative flex items-center justify-center"
+               ].join(" ")}
+             >
+               {previewUrl ? (
+                 // eslint-disable-next-line @next/next/no-img-element
+                 <img
+                   src={previewUrl}
+                   alt="preview"
+                   className="h-full w-full object-cover"
+                 />
+               ) : (
+                 <div className="text-center text-xs sm:text-sm text-slate-400 px-4 sm:px-6">
+                   Drop, upload, or capture
+                 </div>
+               )}
++
++              {busy ? (
++                <div className="absolute inset-0 bg-black/45 backdrop-blur-[2px] flex items-center justify-center">
++                  <div className="text-xs sm:text-sm text-slate-200">
++                    Cropping <LoadingDots />
++                  </div>
++                </div>
++              ) : null}
+             </div>
+             <div className="flex gap-2">
+               <Button
+                 variant="secondary"
+                 type="button"
+                 onClick={() => inputRef.current?.click()}
+                 className="flex-1"
++                disabled={busy}
+               >
+                 {file ? "Replace" : "Upload"}
+               </Button>
+             </div>
+             <input
+               ref={inputRef}
+               type="file"
+               accept="image/*"
+               hidden
++              disabled={busy}
+               onChange={(e) => {
+                 const f = e.target.files?.[0];
+                 if (f) onPickFile(f);
+               }}
+             />
+           </>
+         ) : (
+           <CameraCapture
+             onCapture={(f) => {
+               onPickFile(f);
+               setTab("upload");
+             }}
++            disabled={busy}
+           />
+         )}
+       </CardContent>
+     </Card>
+   );
+ }
+*** End Patch
+2025-12-12T23:29:59.757579Z  INFO ToolCall: update_plan {"plan":[{"step":"为 UploadCard 增加 busy 状态","status":"completed"},{"step":"页面接入 preprocess loading","status":"in_progress"},{"step":"快速静态校验","status":"pending"}]}
+2025-12-12T23:30:17.597362Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+ export default function Page() {
+   const [fileA, setFileA] = useState<File | null>(null);
+   const [fileB, setFileB] = useState<File | null>(null);
++  const [preppingA, setPreppingA] = useState(false);
++  const [preppingB, setPreppingB] = useState(false);
+   const [loading, setLoading] = useState(false);
+   const [result, setResult] = useState<CompareResponse | null>(null);
+   const [error, setError] = useState<string | null>(null);
+   const [displayScore, setDisplayScore] = useState(0);
+   const [loadingStage, setLoadingStage] = useState<"uploading" | "embedding" | "scoring">("uploading");
+@@
+   async function onCompare() {
+     if (!fileA || !fileB) return;
+     setLoading(true);
+     setError(null);
+     setResult(null);
+@@
+       <section className="grid grid-cols-2 gap-3 sm:gap-6">
+         <UploadCard
+           file={fileA}
+           previewUrl={previewA}
++          busy={preppingA}
+           onPickFile={(f) => {
+             setResult(null);
+             setError(null);
++            setPreppingA(true);
++            setFileA(null);
+             preprocessFaceImage(f)
+               .then((cropped) => {
+                 setFileA(cropped);
+               })
+               .catch((e: any) => {
+                 setFileA(null);
+                 const detail = e?.detail;
+                 setError(detail?.message || e.message || "Preprocess failed");
++              })
++              .finally(() => {
++                setPreppingA(false);
+               });
+           }}
+         />
+         <UploadCard
+           file={fileB}
+           previewUrl={previewB}
++          busy={preppingB}
+           onPickFile={(f) => {
+             setResult(null);
+             setError(null);
++            setPreppingB(true);
++            setFileB(null);
+             preprocessFaceImage(f)
+               .then((cropped) => {
+                 setFileB(cropped);
+               })
+               .catch((e: any) => {
+                 setFileB(null);
+                 const detail = e?.detail;
+                 setError(detail?.message || e.message || "Preprocess failed");
++              })
++              .finally(() => {
++                setPreppingB(false);
+               });
+           }}
+         />
+       </section>
+@@
+         <Button
+           size="lg"
+-          disabled={!fileA || !fileB || loading}
++          disabled={!fileA || !fileB || preppingA || preppingB || loading}
+           onClick={onCompare}
+           className="min-w-40"
+         >
+*** End Patch
+2025-12-12T23:30:58.066371Z  INFO ToolCall: update_plan {"plan":[{"step":"为 UploadCard 增加 busy 状态","status":"completed"},{"step":"页面接入 preprocess loading","status":"completed"},{"step":"快速静态校验","status":"in_progress"}]}
+2025-12-12T23:31:03.937597Z  INFO ToolCall: shell_command {"command":"rg -n \"preppingA|preppingB|busy=\\{\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:31:04.577979Z  INFO ToolCall: shell_command {"command":"rg -n \"Cropping\" apps\\\\web\\\\components\\\\upload-card.tsx -n"}
+2025-12-12T23:31:06.377367Z  INFO ToolCall: shell_command {"command":"python -c \"import pathlib; pathlib.Path('apps/web/app/page.tsx').read_text(encoding='utf-8'); pathlib.Path('apps/web/components/upload-card.tsx').read_text(encoding='utf-8'); print('ok')\""}
+2025-12-12T23:31:16.266352Z  INFO ToolCall: update_plan {"plan":[{"step":"为 UploadCard 增加 busy 状态","status":"completed"},{"step":"页面接入 preprocess loading","status":"completed"},{"step":"快速静态校验","status":"completed"}]}
+2025-12-12T23:34:07.260449Z  INFO spawning ghost snapshot task
+2025-12-12T23:34:07.708269Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:34:07.708302Z  INFO ghost commit captured: 91846c8c2dbad5cd4b46d68fd72009eb8973a594
+2025-12-12T23:34:07.708307Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:34:13.522814Z  INFO ToolCall: shell_command {"command":"rg -n \"\\<Button\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:34:23.684030Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+ import { Button } from "@/components/ui/button";
+ import { Toast } from "@/components/toast";
+ import { LoadingDots } from "@/components/loading-dots";
+-import { Github } from "lucide-react";
++import { ArrowLeftRight, Github } from "lucide-react";
+@@
+         <Button
+           size="lg"
+           disabled={!fileA || !fileB || preppingA || preppingB || loading}
+           onClick={onCompare}
+           className="min-w-40"
+         >
+           {loading ? (
+             <span className="inline-flex items-center gap-2">
+               Comparing <LoadingDots />
+             </span>
+           ) : (
+-            "Compare"
++            <span className="inline-flex items-center gap-2">
++              <ArrowLeftRight className="h-4 w-4" />
++              Compare
++            </span>
+           )}
+         </Button>
+       </section>
+*** End Patch
+2025-12-12T23:34:32.990244Z  INFO ToolCall: shell_command {"command":"rg -n \"ArrowLeftRight\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:35:42.846906Z  INFO spawning ghost snapshot task
+2025-12-12T23:35:43.297391Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:35:43.297429Z  INFO ghost commit captured: df1281ad162bb682be0103a880928e448f7a624d
+2025-12-12T23:35:43.297436Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:35:47.864578Z  INFO ToolCall: shell_command {"command":"rg -n \"Face Metric|Two photos in\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:36:00.681208Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+-import { ArrowLeftRight, Github } from "lucide-react";
++import { ScanFace, ArrowLeftRight, Github } from "lucide-react";
+@@
+       <header className="flex items-center justify-between">
+-        <div className="space-y-1">
+-          <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
+-          <p className="text-sm text-slate-400">Two photos in. One clean match score out.</p>
++        <div className="flex items-center gap-3">
++          <div className="h-10 w-10 rounded-xl bg-card/60 border border-border/70 shadow-[0_0_0_1px_rgba(30,41,59,0.35)] flex items-center justify-center">
++            <ScanFace className="h-5 w-5 text-accent" />
++          </div>
++          <div className="space-y-1">
++            <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
++            <p className="text-sm text-slate-400">Two photos in. One clean match score out.</p>
++          </div>
+         </div>
+         <div className="flex items-center gap-3">
+           
+           <a
+*** End Patch
+2025-12-12T23:36:09.239124Z  INFO ToolCall: shell_command {"command":"rg -n \"ScanFace\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:36:48.802034Z  INFO spawning ghost snapshot task
+2025-12-12T23:36:49.230066Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:36:49.230098Z  INFO ghost commit captured: 41ae1ce9b0ea98268bc3279778bbaaaddb2f9584
+2025-12-12T23:36:49.230103Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:36:56.431610Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+-            <p className="text-sm text-slate-400">Two photos in. One clean match score out.</p>
++            <p className="text-sm text-slate-400">Compare two faces in seconds.</p>
+           </div>
+         </div>
+*** End Patch
+2025-12-12T23:37:38.171600Z  INFO spawning ghost snapshot task
+2025-12-12T23:37:38.601628Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:37:38.601659Z  INFO ghost commit captured: e932695ed6ef4a194451ef2f27154ed6c8468138
+2025-12-12T23:37:38.601664Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:38:29.489886Z  INFO spawning ghost snapshot task
+2025-12-12T23:38:29.907420Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:38:29.907453Z  INFO ghost commit captured: 270dd3e49645756ebcc6dbb64887d38fb20d7084
+2025-12-12T23:38:29.907458Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:38:35.739630Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+-            <p className="text-sm text-slate-400">Compare two faces in seconds.</p>
++            <p className="text-sm text-slate-400">See the resemblance.</p>
+           </div>
+         </div>
+*** End Patch
+2025-12-12T23:39:30.124955Z  INFO spawning ghost snapshot task
+2025-12-12T23:39:30.555484Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:39:30.555519Z  INFO ghost commit captured: b5eafbf0064c736b3012ed20fb9609a4a89d78e2
+2025-12-12T23:39:30.555524Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:40:31.380888Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: apps/web/app/page.tsx
+@@
+   }, [loading]);
+ 
+   return (
+-    <main className="mx-auto max-w-5xl px-4 py-10 space-y-6">
+-      <Toast message={error} onDone={() => setError(null)} />
+-      <header className="flex items-center justify-between">
+-        <div className="flex items-center gap-3">
+-          <div className="h-10 w-10 rounded-xl bg-card/60 border border-border/70 shadow-[0_0_0_1px_rgba(30,41,59,0.35)] flex items-center justify-center">
+-            <ScanFace className="h-5 w-5 text-accent" />
+-          </div>
+-          <div className="space-y-1">
+-            <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
+-            <p className="text-sm text-slate-400">See the resemblance.</p>
+-          </div>
+-        </div>
+-        <div className="flex items-center gap-3">
+-          
+-          <a
+-            href="https://github.com/neozhu/face-metric"
+-            target="_blank"
+-            rel="noreferrer"
+-            className="inline-flex items-center gap-2 rounded-md border border-border bg-card/50 px-3 py-2 text-sm text-slate-200 hover:bg-card/70 transition-colors"
+-          >
+-            <Github className="h-4 w-4 text-slate-200" />
+-            GitHub
+-          </a>
+-         
+-        </div>
+-      </header>
+-
+-      <section className="grid grid-cols-2 gap-3 sm:gap-6">
+-        <UploadCard
+-          file={fileA}
+-          previewUrl={previewA}
+-          busy={preppingA}
+-          onPickFile={(f) => {
+-            setResult(null);
+-            setError(null);
+-            setPreppingA(true);
+-            setFileA(null);
+-            preprocessFaceImage(f)
+-              .then((cropped) => {
+-                setFileA(cropped);
+-              })
+-              .catch((e: any) => {
+-                setFileA(null);
+-                const detail = e?.detail;
+-                setError(detail?.message || e.message || "Preprocess failed");
+-              })
+-              .finally(() => {
+-                setPreppingA(false);
+-              });
+-          }}
+-        />
+-        <UploadCard
+-          file={fileB}
+-          previewUrl={previewB}
+-          busy={preppingB}
+-          onPickFile={(f) => {
+-            setResult(null);
+-            setError(null);
+-            setPreppingB(true);
+-            setFileB(null);
+-            preprocessFaceImage(f)
+-              .then((cropped) => {
+-                setFileB(cropped);
+-              })
+-              .catch((e: any) => {
+-                setFileB(null);
+-                const detail = e?.detail;
+-                setError(detail?.message || e.message || "Preprocess failed");
+-              })
+-              .finally(() => {
+-                setPreppingB(false);
+-              });
+-          }}
+-        />
+-      </section>
+-
+-      <section className="flex items-center justify-center">
+-        <Button
+-          size="lg"
+-          disabled={!fileA || !fileB || preppingA || preppingB || loading}
+-          onClick={onCompare}
+-          className="min-w-40"
+-        >
+-          {loading ? (
+-            <span className="inline-flex items-center gap-2">
+-              Comparing <LoadingDots />
+-            </span>
+-          ) : (
+-            <span className="inline-flex items-center gap-2">
+-              <ArrowLeftRight className="h-4 w-4" />
+-              Compare
+-            </span>
+-          )}
+-        </Button>
+-      </section>
+-
+-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+-        <div className="lg:col-span-1 flex justify-center">
+-          <ResultRing value={displayScore} loading={loading} />
+-        </div>
+-        <div className="lg:col-span-2 space-y-3">
+-          <div className="text-4xl font-bold tracking-tight">
+-            {loading ? (
+-              <span className="text-slate-400">
+-                Processing <LoadingDots />
+-              </span>
+-            ) : result ? (
+-              `${scorePct}%`
+-            ) : (
+-              "—"
+-            )}
+-          </div>
+-          {loading ? (
+-            <div className="grid grid-cols-4 gap-3 text-sm">
+-              <div className="h-4 rounded shimmer" />
+-              <div className="h-4 rounded shimmer" />
+-              <div className="h-4 rounded shimmer" />
+-              <div className="h-4 rounded shimmer" />
+-            </div>
+-          ) : (
+-            <ConfidenceRow confidence={result?.confidence ?? 0} model={result?.model ?? "—"} />
+-          )}
+-          {loading || error ? (
+-            <div className="text-sm text-slate-300">
+-              {loading
+-                ? loadingStage === "uploading"
+-                  ? "Uploading images…"
+-                  : loadingStage === "embedding"
+-                  ? "Extracting embeddings…"
+-                  : "Computing similarity…"
+-                : error}
+-            </div>
+-          ) : null}
+-        </div>
+-      </section>
+-
+-      <footer className="text-xs text-slate-500">
+-        <div className="flex flex-col items-center justify-center gap-2 pt-2 text-center">
+-          <PrivacyBadge />
+-          <div className="max-w-2xl text-xs text-slate-500 leading-relaxed">
+-            Try it for fun: compare a younger photo vs. today, see which parent your child resembles more, or explore
+-            how similar siblings look across different ages and lighting.
+-          </div>
+-        </div>
+-      </footer>
++    <main className="mx-auto max-w-5xl px-4 py-10 min-h-screen flex flex-col">
++      <Toast message={error} onDone={() => setError(null)} />
++
++      <div className="space-y-6">
++        <header className="flex items-center justify-between">
++          <div className="flex items-center gap-3">
++            <div className="h-10 w-10 rounded-xl bg-card/60 border border-border/70 shadow-[0_0_0_1px_rgba(30,41,59,0.35)] flex items-center justify-center">
++              <ScanFace className="h-5 w-5 text-accent" />
++            </div>
++            <div className="space-y-1">
++              <h1 className="text-xl font-semibold tracking-tight">Face Metric</h1>
++              <p className="text-sm text-slate-400">See the resemblance.</p>
++            </div>
++          </div>
++          <div className="flex items-center gap-3">
++            <a
++              href="https://github.com/neozhu/face-metric"
++              target="_blank"
++              rel="noreferrer"
++              className="inline-flex items-center gap-2 rounded-md border border-border bg-card/50 px-3 py-2 text-sm text-slate-200 hover:bg-card/70 transition-colors"
++            >
++              <Github className="h-4 w-4 text-slate-200" />
++              GitHub
++            </a>
++          </div>
++        </header>
++
++        <section className="grid grid-cols-2 gap-3 sm:gap-6">
++          <UploadCard
++            file={fileA}
++            previewUrl={previewA}
++            busy={preppingA}
++            onPickFile={(f) => {
++              setResult(null);
++              setError(null);
++              setPreppingA(true);
++              setFileA(null);
++              preprocessFaceImage(f)
++                .then((cropped) => {
++                  setFileA(cropped);
++                })
++                .catch((e: any) => {
++                  setFileA(null);
++                  const detail = e?.detail;
++                  setError(detail?.message || e.message || "Preprocess failed");
++                })
++                .finally(() => {
++                  setPreppingA(false);
++                });
++            }}
++          />
++          <UploadCard
++            file={fileB}
++            previewUrl={previewB}
++            busy={preppingB}
++            onPickFile={(f) => {
++              setResult(null);
++              setError(null);
++              setPreppingB(true);
++              setFileB(null);
++              preprocessFaceImage(f)
++                .then((cropped) => {
++                  setFileB(cropped);
++                })
++                .catch((e: any) => {
++                  setFileB(null);
++                  const detail = e?.detail;
++                  setError(detail?.message || e.message || "Preprocess failed");
++                })
++                .finally(() => {
++                  setPreppingB(false);
++                });
++            }}
++          />
++        </section>
++
++        <section className="flex items-center justify-center">
++          <Button
++            size="lg"
++            disabled={!fileA || !fileB || preppingA || preppingB || loading}
++            onClick={onCompare}
++            className="min-w-40"
++          >
++            {loading ? (
++              <span className="inline-flex items-center gap-2">
++                Comparing <LoadingDots />
++              </span>
++            ) : (
++              <span className="inline-flex items-center gap-2">
++                <ArrowLeftRight className="h-4 w-4" />
++                Compare
++              </span>
++            )}
++          </Button>
++        </section>
++
++        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
++          <div className="lg:col-span-1 flex justify-center">
++            <ResultRing value={displayScore} loading={loading} />
++          </div>
++          <div className="lg:col-span-2 space-y-3">
++            <div className="text-4xl font-bold tracking-tight">
++              {loading ? (
++                <span className="text-slate-400">
++                  Processing <LoadingDots />
++                </span>
++              ) : result ? (
++                `${scorePct}%`
++              ) : (
++                "—"
++              )}
++            </div>
++            {loading ? (
++              <div className="grid grid-cols-4 gap-3 text-sm">
++                <div className="h-4 rounded shimmer" />
++                <div className="h-4 rounded shimmer" />
++                <div className="h-4 rounded shimmer" />
++                <div className="h-4 rounded shimmer" />
++              </div>
++            ) : (
++              <ConfidenceRow confidence={result?.confidence ?? 0} model={result?.model ?? "—"} />
++            )}
++            {loading || error ? (
++              <div className="text-sm text-slate-300">
++                {loading
++                  ? loadingStage === "uploading"
++                    ? "Uploading images…"
++                    : loadingStage === "embedding"
++                    ? "Extracting embeddings…"
++                    : "Computing similarity…"
++                  : error}
++              </div>
++            ) : null}
++          </div>
++        </section>
++      </div>
++
++      <footer className="mt-auto text-xs text-slate-500 pt-8">
++        <div className="flex flex-col items-center justify-center gap-2 text-center">
++          <PrivacyBadge />
++          <div className="max-w-2xl text-xs text-slate-500 leading-relaxed">
++            Try it for fun: compare a younger photo vs. today, see which parent your child resembles more, or explore
++            how similar siblings look across different ages and lighting.
++          </div>
++        </div>
++      </footer>
+     </main>
+   );
+ }
+*** End Patch
+2025-12-12T23:40:46.873355Z  INFO ToolCall: shell_command {"command":"rg -n \"min-h-screen|mt-auto\" apps\\\\web\\\\app\\\\page.tsx -n"}
+2025-12-12T23:43:39.956049Z  INFO spawning ghost snapshot task
+2025-12-12T23:43:40.382264Z  INFO ghost snapshot blocking task finished
+2025-12-12T23:43:40.382297Z  INFO ghost commit captured: f184a294a92b96bca85bf41533488007977e06e0
+2025-12-12T23:43:40.382302Z  INFO ghost snapshot gate marked ready
+2025-12-12T23:43:49.628541Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force .specify"}
+2025-12-12T23:43:49.670649Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Recurse -Force .specify | Select-Object FullName,Length | Format-Table -AutoSize"}
+2025-12-12T23:43:50.076622Z  INFO ToolCall: shell_command {"command":"cmd /c if exist .specify\\memory\\constitution.md (type .specify\\memory\\constitution.md) else (echo MISSING)"}
+2025-12-12T23:44:05.825590Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw .\\.specify\\memory\\constitution.md | Select-Object -First 1"}
+2025-12-12T23:44:43.254486Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: .specify/memory/constitution.md
+@@
+-# [PROJECT_NAME] Constitution
+-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+-
+-## Core Principles
+-
+-### [PRINCIPLE_1_NAME]
+-<!-- Example: I. Library-First -->
+-[PRINCIPLE_1_DESCRIPTION]
+-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+-
+-### [PRINCIPLE_2_NAME]
+-<!-- Example: II. CLI Interface -->
+-[PRINCIPLE_2_DESCRIPTION]
+-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+-
+-### [PRINCIPLE_3_NAME]
+-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
+-[PRINCIPLE_3_DESCRIPTION]
+-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+-
+-### [PRINCIPLE_4_NAME]
+-<!-- Example: IV. Integration Testing -->
+-[PRINCIPLE_4_DESCRIPTION]
+-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+-
+-### [PRINCIPLE_5_NAME]
+-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
+-[PRINCIPLE_5_DESCRIPTION]
+-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+-
+-## [SECTION_2_NAME]
+-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+-
+-[SECTION_2_CONTENT]
+-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+-
+-## [SECTION_3_NAME]
+-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+-
+-[SECTION_3_CONTENT]
+-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+-
+-## Governance
+-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+-
+-[GOVERNANCE_RULES]
+-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+-
+-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
++# Face Metric Constitution
++
++## Core Principles
++
++### 1) Privacy-First, In-Memory Only
++- The API must not persist user images to disk, database, or object storage.
++- Avoid request/response body logging in production.
++- Prefer ephemeral outputs (e.g., cropped preview returned as bytes) and let the client decide whether to store.
++
++### 2) Stable Contract Over Cleverness
++- `POST /v1/compare` response shape is treated as a contract with the UI.
++- Backwards-incompatible changes require either a new versioned route or an explicit migration plan.
++- Error contracts are explicit and user-facing (`unsupported_file_type`, `file_too_large`, `no_face_detected`, `inference_error`).
++
++### 3) Fast on Mobile, Especially on Large Photos
++- Mobile camera uploads can be huge; do preprocessing early and keep models off the hot path when possible.
++- Use `POST /v1/preprocess` to detect + crop faces (expand detection region by 20%), then cap output `maxSide` at `1280`.
++- Prefer “crop first for fidelity, then downscale if needed”; detection may run on a scaled copy for speed.
++
++### 4) Clean, Minimal UI That Feels Premium
++- Dark-first, high-contrast, and motion used only to explain waiting states (e.g., cropping, comparing).
++- Keep the main flow obvious: pick → preview → compare → score.
++- Mobile layout is first-class (two previews can sit side-by-side on small screens).
++
++### 5) Reproducible ML Runtime
++- On Windows, target Python `3.11` for DeepFace/TensorFlow stability.
++- Keep dependency constraints explicit (e.g., `numpy<2.0`, pinned TF ranges).
++- Changes to detector/model defaults must be justified with measurable impact (speed/quality).
++
++## Constraints & Non-Goals
++- Not a biometric identity system; no user accounts, no enrollment, no persistence.
++- No multi-face/group comparisons by default; when multiple faces exist, choose a deterministic primary face (e.g., largest).
++- No EXIF rotation correction unless explicitly requested (client supplies the intended orientation).
++- Do not “silently succeed” when detection fails; return actionable errors.
++
++## Development Workflow & Quality Gates
++- Small, focused PRs; UI/contract changes must update `specs/` when relevant.
++- Before shipping:
++  - API smoke: `GET /health`, `POST /v1/preprocess`, `POST /v1/compare`
++  - UI smoke on mobile viewport (two previews aligned; cropping animation shown)
++- Prefer deterministic, unit-testable helpers for geometry/cropping logic; avoid unreviewed “magic constants”.
++
++## Governance
++- This constitution supersedes local conventions when they conflict.
++- Any change that weakens privacy (persistence/logging) requires explicit review and a documented rationale.
++- Any change to `/v1/compare` response must include (1) contract note, (2) UI verification, (3) migration plan if needed.
++
++**Version**: 1.0.0 | **Ratified**: 2025-12-12 | **Last Amended**: 2025-12-12
+*** End Patch

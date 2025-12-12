@@ -1,50 +1,48 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Face Metric Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### 1) Privacy-First, In-Memory Only
+- The API must not persist user images to disk, database, or object storage.
+- Avoid request/response body logging in production.
+- Prefer ephemeral outputs (e.g., cropped preview returned as bytes) and let the client decide whether to store.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### 2) Stable Contract Over Cleverness
+- `POST /v1/compare` response shape is treated as a contract with the UI.
+- Backwards-incompatible changes require either a new versioned route or an explicit migration plan.
+- Error contracts are explicit and user-facing (`unsupported_file_type`, `file_too_large`, `no_face_detected`, `inference_error`).
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### 3) Fast on Mobile, Especially on Large Photos
+- Mobile camera uploads can be huge; do preprocessing early and keep models off the hot path when possible.
+- Use `POST /v1/preprocess` to detect + crop faces (expand detection region by 20%), then cap output `maxSide` at `1280`.
+- Prefer “crop first for fidelity, then downscale if needed”; detection may run on a scaled copy for speed.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### 4) Clean, Minimal UI That Feels Premium
+- Dark-first, high-contrast, and motion used only to explain waiting states (e.g., cropping, comparing).
+- Keep the main flow obvious: pick → preview → compare → score.
+- Mobile layout is first-class (two previews can sit side-by-side on small screens).
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### 5) Reproducible ML Runtime
+- On Windows, target Python `3.11` for DeepFace/TensorFlow stability.
+- Keep dependency constraints explicit (e.g., `numpy<2.0`, pinned TF ranges).
+- Changes to detector/model defaults must be justified with measurable impact (speed/quality).
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Constraints & Non-Goals
+- Not a biometric identity system; no user accounts, no enrollment, no persistence.
+- No multi-face/group comparisons by default; when multiple faces exist, choose a deterministic primary face (e.g., largest).
+- No EXIF rotation correction unless explicitly requested (client supplies the intended orientation).
+- Do not “silently succeed” when detection fails; return actionable errors.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow & Quality Gates
+- Small, focused PRs; UI/contract changes must update `specs/` when relevant.
+- Before shipping:
+  - API smoke: `GET /health`, `POST /v1/preprocess`, `POST /v1/compare`
+  - UI smoke on mobile viewport (two previews aligned; cropping animation shown)
+- Prefer deterministic, unit-testable helpers for geometry/cropping logic; avoid unreviewed “magic constants”.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+- This constitution supersedes local conventions when they conflict.
+- Any change that weakens privacy (persistence/logging) requires explicit review and a documented rationale.
+- Any change to `/v1/compare` response must include (1) contract note, (2) UI verification, (3) migration plan if needed.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-12 | **Last Amended**: 2025-12-12

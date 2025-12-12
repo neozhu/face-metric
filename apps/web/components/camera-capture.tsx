@@ -60,7 +60,7 @@ export function CameraCapture({
 
   return (
     <div className="space-y-3">
-      <div className="aspect-video w-full rounded-lg border border-border bg-black/30 overflow-hidden">
+      <div className="mx-auto h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56 rounded-xl border border-border bg-black/30 overflow-hidden">
         {error ? (
           <div className="h-full w-full flex items-center justify-center text-sm text-slate-400">
             {error}

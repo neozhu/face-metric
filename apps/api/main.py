@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, Response, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import settings
@@ -12,6 +12,7 @@ from .services.compare import (
     validate_content_type,
     validate_size,
 )
+from .services.preprocess import preprocess_face_crop_jpeg
 
 
 app = FastAPI(title="Face Compare API", version="1.0.0")
@@ -62,6 +63,27 @@ async def compare(
             "inference_error": 500,
         }.get(e.code, 400)
         raise HTTPException(status_code=status, detail={"error": e.code, "message": e.message, "faceDetected": e.face_detected})
+
+
+@app.post("/v1/preprocess")
+async def preprocess(
+    image: UploadFile = File(...),
+):
+    try:
+        validate_content_type(image.content_type)
+        data = await image.read()
+        validate_size(len(data))
+        img = decode_image(data)
+        jpeg = preprocess_face_crop_jpeg(img, det_max_side=1280, crop_max_side=1280, expand_ratio=0.20)
+        return Response(content=jpeg, media_type="image/jpeg")
+    except CompareError as e:
+        status = {
+            "unsupported_file_type": 400,
+            "file_too_large": 413,
+            "no_face_detected": 422,
+            "inference_error": 500,
+        }.get(e.code, 400)
+        raise HTTPException(status_code=status, detail={"error": e.code, "message": e.message})
 
 
 @app.get("/health")

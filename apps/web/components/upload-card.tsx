@@ -1,71 +1,68 @@
 import { useRef, useState } from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Tabs } from "@/components/ui/tabs";
 import { CameraCapture } from "@/components/camera-capture";
-
-export type FaceStatus = "not_checked" | "face_found" | "no_face" | "error";
+import { LoadingDots } from "@/components/loading-dots";
 
 export function UploadCard({
-  title,
   file,
   previewUrl,
-  status,
+  busy = false,
   onPickFile
 }: {
-  title: string;
   file: File | null;
   previewUrl: string | null;
-  status: FaceStatus;
+  busy?: boolean;
   onPickFile: (f: File) => void;
 }) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [tab, setTab] = useState<"upload" | "camera">("upload");
 
-  const badgeText =
-    status === "not_checked"
-      ? "Not checked"
-      : status === "face_found"
-      ? "Face found"
-      : status === "no_face"
-      ? "No face"
-      : "Error";
-
-  const badgeClass =
-    status === "face_found"
-      ? "border-accent/40 text-accent"
-      : status === "no_face"
-      ? "border-red-500/40 text-red-400"
-      : status === "error"
-      ? "border-yellow-500/40 text-yellow-400"
-      : "text-slate-400";
-
   return (
     <Card className="relative overflow-hidden">
-      <CardHeader className="flex items-center justify-between">
-        <div className="text-sm font-medium text-slate-100">{title}</div>
-        <Badge className={badgeClass}>{badgeText}</Badge>
-      </CardHeader>
-      <CardContent className="space-y-3">
+      <CardContent className="space-y-2 sm:space-y-3">
         <Tabs
           value={tab}
           onValueChange={(v) => setTab(v as any)}
           options={[
-            { value: "upload", label: "Upload" },
-            { value: "camera", label: "Camera" }
+            { value: "upload", label: "Upload", disabled: busy },
+            { value: "camera", label: "Camera", disabled: busy }
           ]}
         />
 
         {tab === "upload" ? (
           <>
-            <div className="aspect-video w-full rounded-lg border border-dashed border-border bg-black/20 flex items-center justify-center overflow-hidden">
+            <div
+              className={[
+                "mx-auto h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56",
+                "rounded-full overflow-hidden",
+                "bg-gradient-to-b from-slate-950/60 to-black/30",
+                "shadow-[0_0_0_1px_rgba(30,41,59,0.55),0_16px_50px_rgba(0,0,0,0.35)]",
+                previewUrl ? "ring-1 ring-slate-700/50" : "border border-dashed border-border",
+                "relative flex items-center justify-center"
+              ].join(" ")}
+            >
               {previewUrl ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={previewUrl} alt={`${title} preview`} className="h-full w-full object-contain" />
+                <img
+                  src={previewUrl}
+                  alt="preview"
+                  className="h-full w-full object-cover"
+                />
               ) : (
-                <div className="text-sm text-slate-400">Drop or upload an image</div>
+                <div className="text-center text-xs sm:text-sm text-slate-400 px-4 sm:px-6">
+                  Drop, upload, or capture
+                </div>
               )}
+
+              {busy ? (
+                <div className="absolute inset-0 bg-black/45 backdrop-blur-[2px] flex items-center justify-center">
+                  <div className="text-xs sm:text-sm text-slate-200">
+                    Cropping <LoadingDots />
+                  </div>
+                </div>
+              ) : null}
             </div>
             <div className="flex gap-2">
               <Button
@@ -73,6 +70,7 @@ export function UploadCard({
                 type="button"
                 onClick={() => inputRef.current?.click()}
                 className="flex-1"
+                disabled={busy}
               >
                 {file ? "Replace" : "Upload"}
               </Button>
@@ -82,6 +80,7 @@ export function UploadCard({
               type="file"
               accept="image/*"
               hidden
+              disabled={busy}
               onChange={(e) => {
                 const f = e.target.files?.[0];
                 if (f) onPickFile(f);
@@ -94,6 +93,7 @@ export function UploadCard({
               onPickFile(f);
               setTab("upload");
             }}
+            disabled={busy}
           />
         )}
       </CardContent>
