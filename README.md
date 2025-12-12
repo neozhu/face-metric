@@ -2,6 +2,9 @@
 
 Face Metric is a dark‑first web app that compares two face images and returns a single similarity score.
 
+
+![](/test/result.png)
+
 ## Structure
 ```
 apps/
