@@ -1,3 +1,5 @@
+[![CI](https://github.com/neozhu/face-metric/actions/workflows/ci.yml/badge.svg)](https://github.com/neozhu/face-metric/actions/workflows/ci.yml)
+
 # Face Metric
 
 Face Metric is a dark‑first web app that compares two face images and returns a single similarity score.
