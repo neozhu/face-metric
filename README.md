@@ -2,6 +2,8 @@
 
 Face Metric is a dark‑first web app that compares two face images and returns a single similarity score.
 
+## Built with Codex (GPT-5.2)
+This project was developed with the help of Codex CLI using the GPT‑5.2 model: scaffolding, implementation, and iteration were done through agent-assisted coding. Please review the code and run the app in your own environment before relying on it in production.
 
 ![](/test/result.png)
 
@@ -17,6 +19,20 @@ specs/   Product + engineering specs
 - Upload (or capture) two face photos
 - Click **Compare**
 - See an animated score ring + similarity % (no “same/different” thresholding)
+
+## How the comparison score works (backend algorithm)
+The API returns a continuous similarity score computed from face embeddings (not a hard identity decision):
+
+1. **Decode & validate**: images are validated for type/size and decoded in memory.
+2. **Detect & align faces**: DeepFace runs face detection (default backend: RetinaFace) and alignment (`enforce_detection=True`, `align=True`).
+3. **Embed**: each face is converted into a fixed-length embedding vector using one or more DeepFace models (default: `ArcFace`, fallback: `Facenet512`).
+4. **Distance**: the service computes **cosine distance** between the two embeddings for each successful model.
+5. **Fusion (multi-model)**: if multiple models succeed, it averages their cosine distances for a more stable score.
+6. **Similarity mapping**: `similarity = clamp(1 - fused_distance, 0..1)` and the UI renders it as a percentage.
+
+Notes:
+- No verification threshold is applied by default; the output is meant to stay continuous.
+- If a face is not detected in either image, the API returns an error instead of guessing.
 
 ## Privacy
 - Images are processed in memory for the current request only.

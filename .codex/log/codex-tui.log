@@ -1705,3 +1705,68 @@
 +
 +**Version**: 1.0.0 | **Ratified**: 2025-12-12 | **Last Amended**: 2025-12-12
 *** End Patch
+2025-12-13T03:55:45.769034Z  INFO spawning ghost snapshot task
+2025-12-13T03:55:46.272523Z  INFO ghost snapshot blocking task finished
+2025-12-13T03:55:46.272567Z  INFO ghost commit captured: dd9302f576de8ec8fddd092e64c661568f8a5d38
+2025-12-13T03:55:46.272578Z  INFO ghost snapshot gate marked ready
+2025-12-13T03:55:56.904030Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force | Select-Object -First 50"}
+2025-12-13T03:56:01.565184Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Recurse -Force -Filter AGENTS.md | Select-Object FullName"}
+2025-12-13T03:56:07.629948Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw README.md"}
+2025-12-13T03:57:40.492105Z  INFO spawning ghost snapshot task
+2025-12-13T03:57:40.943219Z  INFO ghost snapshot blocking task finished
+2025-12-13T03:57:40.943248Z  INFO ghost commit captured: ed2642714e6f6632ec0f4275b38aa00d216282bc
+2025-12-13T03:57:40.943253Z  INFO ghost snapshot gate marked ready
+2025-12-13T03:57:49.478636Z  INFO ToolCall: shell_command {"command":"rg -n \"DeepFace|deepface|similarity|compare|cosine|euclidean|facenet|arcface|embedding\" -S apps/api | Select-Object -First 50"}
+2025-12-13T03:57:54.410051Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw apps/api/services/compare.py"}
+2025-12-13T03:57:54.832046Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw apps/api/services/preprocess.py"}
+2025-12-13T03:57:55.239747Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw apps/api/config.py"}
+2025-12-13T03:57:55.817968Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw apps/api/README.md"}
+2025-12-13T03:58:07.040827Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw apps/api/main.py"}
+2025-12-13T03:58:26.867194Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: README.md
+@@
+ # Face Metric
+ 
+ Face Metric is a dark‑first web app that compares two face images and returns a single similarity score.
+ 
++## Built with Codex (GPT-5.2)
++This project was developed with the help of Codex CLI using the GPT‑5.2 model: scaffolding, implementation, and iteration were done through agent-assisted coding. Please review the code and run the app in your own environment before relying on it in production.
++
+ 
+ ![](/test/result.png)
+ 
+ ## Structure
+ ```
+ apps/
+@@
+ - Click **Compare**
+ - See an animated score ring + similarity % (no “same/different” thresholding)
+ 
++## How the comparison score works (backend algorithm)
++The API returns a continuous similarity score computed from face embeddings (not a hard identity decision):
++
++1. **Decode & validate**: images are validated for type/size and decoded in memory.
++2. **Detect & align faces**: DeepFace runs face detection (default backend: RetinaFace) and alignment (`enforce_detection=True`, `align=True`).
++3. **Embed**: each face is converted into a fixed-length embedding vector using one or more DeepFace models (default: `ArcFace`, fallback: `Facenet512`).
++4. **Distance**: the service computes **cosine distance** between the two embeddings for each successful model.
++5. **Fusion (multi-model)**: if multiple models succeed, it averages their cosine distances for a more stable score.
++6. **Similarity mapping**: `similarity = clamp(1 - fused_distance, 0..1)` and the UI renders it as a percentage.
++
++Notes:
++- No verification threshold is applied by default; the output is meant to stay continuous.
++- If a face is not detected in either image, the API returns an error instead of guessing.
++
+ ## Privacy
+ - Images are processed in memory for the current request only.
+ - The API does not persist uploads to disk.
+*** End Patch
+2025-12-13T03:58:36.818193Z  INFO ToolCall: shell_command {"command":"Get-Content -Raw README.md"}
+2025-12-13T03:58:44.405865Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: README.md
+@@
+ ## Built with Codex (GPT-5.2)
+ This project was developed with the help of Codex CLI using the GPT‑5.2 model: scaffolding, implementation, and iteration were done through agent-assisted coding. Please review the code and run the app in your own environment before relying on it in production.
+-
+ 
+ ![](/test/result.png)
+*** End Patch
