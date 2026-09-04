@@ -1770,3 +1770,2134 @@
  
  ![](/test/result.png)
 *** End Patch
+2025-12-22T11:29:45.494532Z  INFO spawning ghost snapshot task
+2025-12-22T11:29:45.523798Z  INFO skipping ghost snapshot because current directory is not a Git repository sub_id="2"
+2025-12-22T11:29:45.523825Z  INFO ghost snapshot gate marked ready
+2025-12-22T11:29:59.683261Z  INFO Shutting down Codex instance
+2025-12-22T11:41:38.799943Z  INFO spawning ghost snapshot task
+2025-12-22T11:41:38.829237Z  INFO skipping ghost snapshot because current directory is not a Git repository sub_id="2"
+2025-12-22T11:41:38.829258Z  INFO ghost snapshot gate marked ready
+2025-12-22T11:42:31.646812Z  INFO spawning ghost snapshot task
+2025-12-22T11:42:31.675705Z  INFO skipping ghost snapshot because current directory is not a Git repository sub_id="4"
+2025-12-22T11:42:31.675719Z  INFO ghost snapshot gate marked ready
+2025-12-22T11:42:37.611529Z  INFO ToolCall: shell_command {"command":"python D:\\github\\face-metric\\.codex\\skills\\.system\\skill-installer\\scripts\\install-skill-from-github.py --url https://github.com/anthropics/skills/tree/main/skills/frontend-design","sandbox_permissions":"require_escalated","justification":"Install the requested skill from GitHub, which requires network access and writing to the Codex skills directory."}
+2025-12-22T11:54:30.110487Z  INFO spawning ghost snapshot task
+2025-12-22T11:54:30.139894Z  INFO skipping ghost snapshot because current directory is not a Git repository sub_id="7"
+2025-12-22T11:54:30.139910Z  INFO ghost snapshot gate marked ready
+2025-12-22T11:54:35.307457Z  INFO ToolCall: shell_command {"command":"python D:\\github\\face-metric\\.codex\\skills\\.system\\skill-installer\\scripts\\install-skill-from-github.py --url https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder","sandbox_permissions":"require_escalated","justification":"Install the requested skill from GitHub, which requires network access and writing to the Codex skills directory."}
+2026-01-11T05:47:08.166698Z  INFO spawning ghost snapshot task
+2026-01-11T05:47:08.386483Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:47:08.386513Z  INFO ghost commit captured: 142e8bb26cbe93518304091a9e9f3a35b0abe7c3
+2026-01-11T05:47:08.386520Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:47:09.572994Z ERROR Failed to update version: HTTP status client error (403 rate limit exceeded) for url (https://api.github.com/repos/openai/codex/releases/latest)
+2026-01-11T05:47:39.835681Z  INFO Selected model: gpt-5.2-codex, Selected effort: high
+2026-01-11T05:47:58.529591Z  INFO spawning ghost snapshot task
+2026-01-11T05:47:58.739787Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:47:58.739812Z  INFO ghost commit captured: 9556c6acf6645b5ce70acb8684aa2cea76d30354
+2026-01-11T05:47:58.739818Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:48:47.095229Z  INFO spawning ghost snapshot task
+2026-01-11T05:48:47.306363Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:48:47.306389Z  INFO ghost commit captured: 241e48bbb6229fb4e5f7b65f1cd673744130155b
+2026-01-11T05:48:47.306394Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:48:51.412282Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Path .codex/skills -Force","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:48:58.429719Z  INFO ToolCall: shell_command {"command":"rg --files -g \"SKILL.md\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:49:31.789668Z  INFO spawning ghost snapshot task
+2026-01-11T05:49:32.001177Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:49:32.001202Z  INFO ghost commit captured: b0c7ff253f88d38fb4280ac3e2466e12a747ca81
+2026-01-11T05:49:32.001207Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:49:34.852745Z  INFO ToolCall: shell_command {"command":"Get-Location","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:03.370996Z  INFO spawning ghost snapshot task
+2026-01-11T05:51:03.626608Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:51:03.626640Z  INFO ghost commit captured: 2ae11e53cf1f6c5d26b082fd02000570274da6bf
+2026-01-11T05:51:03.626645Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:51:07.578495Z  INFO ToolCall: shell_command {"command":"$env:CODEX_HOME","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:08.346387Z  INFO ToolCall: shell_command {"command":"rg --files -g \"*ui-ux-pro-max*\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:08.678162Z  INFO ToolCall: shell_command {"command":"rg --files -g \"SKILL.md\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:16.874692Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Path \"D:\\github\\face-metric\\.codex\\skills\" -Force","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:22.305317Z  INFO ToolCall: shell_command {"command":"rg --files -g \"*ui-ux-pro-max*\" -g \"SKILL.md\" \"D:\\github\\face-metric\\.codex\\skills\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:51:53.697028Z  INFO spawning ghost snapshot task
+2026-01-11T05:51:53.942774Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:51:53.942801Z  INFO ghost commit captured: b0b56c4bade2ce3bc0cac20f8986c76bbc85512b
+2026-01-11T05:51:53.942806Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:51:56.339515Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Path \"D:\\github\\zenleaf\\.codex\\skills\\ui-ux-pro-max\" -Force","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:52:22.941414Z  INFO spawning ghost snapshot task
+2026-01-11T05:52:23.186444Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:52:23.186471Z  INFO ghost commit captured: c96bde36e579ca3694004b2d8f50a08e01de6a80
+2026-01-11T05:52:23.186476Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:52:26.797687Z  INFO ToolCall: shell_command {"command":"Get-Content -Path \"D:\\github\\face-metric\\.codex\\skills\\.system\\skill-installer\\SKILL.md\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T05:53:40.970966Z  INFO spawning ghost snapshot task
+2026-01-11T05:53:41.216670Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:53:41.216698Z  INFO ghost commit captured: e77d8b8a07df4c4507f47859c421cbb883ede62e
+2026-01-11T05:53:41.216704Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:54:12.968155Z  INFO spawning ghost snapshot task
+2026-01-11T05:54:13.228827Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:54:13.228857Z  INFO ghost commit captured: 431620121f1fe63ae365c58ca6c03ab5df5550f2
+2026-01-11T05:54:13.228863Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:54:26.017810Z  INFO ToolCall: shell_command {"command":"New-Item -ItemType Directory -Force -Path \"D:\\github\\zenleaf\\.codex\\skills\" | Out-Null; Copy-Item -Recurse -Force \"C:\\Users\\neo_z\\.codex\\skills\\ui-ux-pro-max\" \"D:\\github\\zenleaf\\.codex\\skills\\\"","workdir":"D:\\github\\zenleaf","sandbox_permissions":"require_escalated","justification":"Need to copy the local ui-ux-pro-max skill into D:\\github\\zenleaf\\.codex\\skills, which requires write access outside the read-only sandbox."}
+2026-01-11T05:54:47.726779Z  INFO spawning ghost snapshot task
+2026-01-11T05:54:48.044283Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:54:48.044324Z  INFO ghost commit captured: 0a5e7df0d4477900a36050ac16d9a721e56ba366
+2026-01-11T05:54:48.044332Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:54:54.517260Z  INFO spawning ghost snapshot task
+2026-01-11T05:54:54.769855Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:54:54.769900Z  INFO ghost commit captured: 4047142b8fd83cc809b969669b86b78b579c9130
+2026-01-11T05:54:54.769909Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:54:55.251451Z  INFO interrupt received: abort current task, if any
+2026-01-11T05:54:56.228699Z  INFO Shutting down Codex instance
+2026-01-11T05:54:58.698634Z  INFO spawning ghost snapshot task
+2026-01-11T05:54:58.955393Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:54:58.955439Z  INFO ghost commit captured: 59ea2beefc02cfcc8359ec8a8e560a04acfc8eba
+2026-01-11T05:54:58.955450Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:55:13.458474Z  INFO spawning ghost snapshot task
+2026-01-11T05:55:13.729151Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:55:13.729194Z  INFO ghost commit captured: f4ab637a3c158244198e722f372eeab73e4acf81
+2026-01-11T05:55:13.729203Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:55:28.937826Z  INFO spawning ghost snapshot task
+2026-01-11T05:55:29.192647Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:55:29.192682Z  INFO ghost commit captured: 7bb374871071d276a58c2732e4db6d789f85a7ae
+2026-01-11T05:55:29.192687Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:58:54.732764Z  INFO spawning ghost snapshot task
+2026-01-11T05:58:55.014512Z  INFO ghost snapshot blocking task finished
+2026-01-11T05:58:55.014552Z  INFO ghost commit captured: e5787496baf35ad438de336e522c1e11ff969afb
+2026-01-11T05:58:55.014561Z  INFO ghost snapshot gate marked ready
+2026-01-11T05:58:57.485762Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:03.795641Z  INFO spawning ghost snapshot task
+2026-01-11T06:10:04.054195Z  INFO ghost snapshot blocking task finished
+2026-01-11T06:10:04.054239Z  INFO ghost commit captured: ce6f1e05f74e0511516cc3072f8d2bf36e53d5fd
+2026-01-11T06:10:04.054248Z  INFO ghost snapshot gate marked ready
+2026-01-11T06:10:10.990919Z  INFO ToolCall: shell_command {"command":"Get-Content -Path D:\\github\\zenleaf\\.codex\\skills\\ui-ux-pro-max\\SKILL.md","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:25.604082Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"tea luxury gift office\" --domain product","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:25.604393Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"modern oriental minimal zen natural premium\" --domain style","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:26.036989Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"elegant luxury serif sans\" --domain typography","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:26.172087Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"tea luxury natural\" --domain color","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:26.734978Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"hero-centric product grid form CTA\" --domain landing","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:27.365711Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"accessibility form CTA\" --domain ux","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:27.903159Z  INFO ToolCall: shell_command {"command":"python .codex/scripts/search.py \"layout responsive\" --stack shadcn","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:44.019346Z  INFO ToolCall: shell_command {"command":"rg --files -g \"search.py\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:51.550042Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -Command \"rg --files -g 'search.py'\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:10:59.617506Z  INFO ToolCall: shell_command {"command":"rg --version","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:11:17.377662Z  INFO ToolCall: shell_command {"command":"Get-Content -Path D:\\github\\zenleaf\\package.json","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:11:26.350293Z  INFO ToolCall: shell_command {"command":"Get-Content -Path D:\\github\\zenleaf\\app\\page.tsx","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:11:31.338580Z  INFO ToolCall: shell_command {"command":"Get-Content -Path D:\\github\\zenleaf\\app\\layout.tsx","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:11:53.642776Z  INFO ToolCall: shell_command {"command":"Get-Content -Path D:\\github\\zenleaf\\app\\globals.css","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:15:38.742794Z  INFO spawning ghost snapshot task
+2026-01-11T06:15:39.002458Z  INFO ghost snapshot blocking task finished
+2026-01-11T06:15:39.002497Z  INFO ghost commit captured: 4f5b82cdc06a1fb9e329d702c4f3e74de94a31f9
+2026-01-11T06:15:39.002504Z  INFO ghost snapshot gate marked ready
+2026-01-11T06:19:55.591461Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\layout.tsx
+@@
+-import type { Metadata } from "next";
+-import { Geist, Geist_Mono } from "next/font/google";
+-import "./globals.css";
+-
+-const geistSans = Geist({
+-  variable: "--font-geist-sans",
+-  subsets: ["latin"],
+-});
+-
+-const geistMono = Geist_Mono({
+-  variable: "--font-geist-mono",
+-  subsets: ["latin"],
+-});
+-
+-export const metadata: Metadata = {
+-  title: "Create Next App",
+-  description: "Generated by create next app",
+-};
++import type { Metadata } from "next";
++import { Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
++import "./globals.css";
++
++const bodyFont = Noto_Sans_SC({
++  variable: "--font-body",
++  subsets: ["latin"],
++  weight: ["300", "400", "500", "600", "700"],
++});
++
++const displayFont = Noto_Serif_SC({
++  variable: "--font-display",
++  subsets: ["latin"],
++  weight: ["400", "500", "600", "700"],
++});
++
++export const metadata: Metadata = {
++  title: "禅叶｜现代东方高端茶礼",
++  description:
++    "禅叶以红茶、乌龙、普洱为核心谱系，呈现现代东方的静、自然与信任之礼。",
++};
+@@
+   children: React.ReactNode;
+ }>) {
+   return (
+-    <html lang="en">
+-      <body
+-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+-      >
+-        {children}
+-      </body>
++    <html lang="zh-Hans">
++      <body className={`${bodyFont.variable} ${displayFont.variable} antialiased`}>
++        {children}
++      </body>
+     </html>
+   );
+ }
+*** End Patch
+2026-01-11T06:20:34.546223Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\globals.css
+@@
+ @import "tailwindcss";
+ 
+ :root {
+-  --background: #ffffff;
+-  --foreground: #171717;
++  color-scheme: light;
++  --background: #f7f4ee;
++  --foreground: #1f1b16;
++  --card: #ffffff;
++  --muted: #6b5f53;
++  --border: #e6ded2;
++  --accent: #2f5d50;
++  --accent-soft: #eae1d2;
++  --accent-gold: #c8a46b;
+ }
+ 
+ @theme inline {
+   --color-background: var(--background);
+   --color-foreground: var(--foreground);
+-  --font-sans: var(--font-geist-sans);
+-  --font-mono: var(--font-geist-mono);
+-}
+-
+-@media (prefers-color-scheme: dark) {
+-  :root {
+-    --background: #0a0a0a;
+-    --foreground: #ededed;
+-  }
++  --color-card: var(--card);
++  --color-muted: var(--muted);
++  --color-border: var(--border);
++  --color-accent: var(--accent);
++  --color-accent-soft: var(--accent-soft);
++  --color-accent-gold: var(--accent-gold);
++  --font-sans: var(--font-body);
++  --font-serif: var(--font-display);
++  --font-mono: var(--font-body);
+ }
+ 
+ body {
+   background: var(--background);
+   color: var(--foreground);
+-  font-family: Arial, Helvetica, sans-serif;
++  font-family: var(--font-body);
++  letter-spacing: 0.01em;
++  margin: 0;
++}
++
++*,
++*::before,
++*::after {
++  box-sizing: border-box;
++}
++
++::selection {
++  background: rgba(47, 93, 80, 0.2);
++  color: var(--foreground);
++}
++
++@keyframes fade-up {
++  from {
++    opacity: 0;
++    transform: translateY(18px);
++  }
++  to {
++    opacity: 1;
++    transform: translateY(0);
++  }
++}
++
++@keyframes drift {
++  0% {
++    transform: translateY(0);
++  }
++  50% {
++    transform: translateY(-6px);
++  }
++  100% {
++    transform: translateY(0);
++  }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  * {
++    animation-duration: 0.01ms !important;
++    animation-iteration-count: 1 !important;
++    transition-duration: 0.01ms !important;
++    scroll-behavior: auto !important;
++  }
+ }
+*** End Patch
+2026-01-11T06:22:52.154783Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\page.tsx
+@@
+-import Image from "next/image";
+-
+-export default function Home() {
+-  return (
+-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+-        <Image
+-          className="dark:invert"
+-          src="/next.svg"
+-          alt="Next.js logo"
+-          width={100}
+-          height={20}
+-          priority
+-        />
+-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+-            To get started, edit the page.tsx file.
+-          </h1>
+-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+-            Looking for a starting point or more instructions? Head over to{" "}
+-            <a
+-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+-              className="font-medium text-zinc-950 dark:text-zinc-50"
+-            >
+-              Templates
+-            </a>{" "}
+-            or the{" "}
+-            <a
+-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+-              className="font-medium text-zinc-950 dark:text-zinc-50"
+-            >
+-              Learning
+-            </a>{" "}
+-            center.
+-          </p>
+-        </div>
+-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+-          <a
+-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+-            target="_blank"
+-            rel="noopener noreferrer"
+-          >
+-            <Image
+-              className="dark:invert"
+-              src="/vercel.svg"
+-              alt="Vercel logomark"
+-              width={16}
+-              height={16}
+-            />
+-            Deploy Now
+-          </a>
+-          <a
+-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+-            target="_blank"
+-            rel="noopener noreferrer"
+-          >
+-            Documentation
+-          </a>
+-        </div>
+-      </main>
+-    </div>
+-  );
+-}
++"use client";
++
++import { useEffect, useState, type FormEvent } from "react";
++
++const products = [
++  {
++    name: "松风茶语",
++    category: "乌龙",
++    main: "武夷岩韵乌龙",
++    price: "￥880–￥2,800",
++    specs: "50g / 100g / 250g",
++    origin: "福建武夷山",
++    tagline: "岩韵深邃，火候与岩骨的平衡艺术",
++  },
++  {
++    name: "云章普洱",
++    category: "普洱",
++    main: "古树普洱（熟/生）",
++    price: "￥1,200–￥5,800",
++    specs: "357g / 100g 小饼 / 500g 特制",
++    origin: "云南临沧 / 西双版纳",
++    tagline: "山野历经，时光醇酿",
++  },
++  {
++    name: "御品金芽红",
++    category: "红茶",
++    main: "滇红金芽",
++    price: "￥980–￥2,200",
++    specs: "50g / 100g / 200g",
++    origin: "云南凤庆",
++    tagline: "金毫满披，滋味醇厚似初雪",
++  },
++  {
++    name: "云宫乌龙",
++    category: "乌龙",
++    main: "高山乌龙",
++    price: "￥1,200–￥3,200",
++    specs: "75g / 150g / 礼盒",
++    origin: "台湾阿里山 / 大禹岭",
++    tagline: "云海高处，茶香如歌",
++  },
++  {
++    name: "滇贡普洱",
++    category: "普洱",
++    main: "宫廷普洱熟茶",
++    price: "￥1,500–￥6,500",
++    specs: "357g / 500g 砖茶",
++    origin: "云南勐海",
++    tagline: "贡品风范，岁月留香",
++  },
++  {
++    name: "红玉传承",
++    category: "红茶",
++    main: "正山小种",
++    price: "￥780–￥1,880",
++    specs: "50g / 100g / 250g",
++    origin: "福建桐木关",
++    tagline: "松烟轻熏，红茶本质的古典表达",
++  },
++  {
++    name: "墨翠岩乌龙",
++    category: "乌龙",
++    main: "岩茶 / 大红袍系",
++    price: "￥1,800–￥8,800",
++    specs: "50g / 100g / 礼盒",
++    origin: "武夷山核心岩区",
++    tagline: "岩骨与花香，极致层次",
++  },
++  {
++    name: "春分贡普洱",
++    category: "普洱",
++    main: "春茶普洱",
++    price: "￥1,000–￥4,300",
++    specs: "357g / 100g 小沱",
++    origin: "云南思茅",
++    tagline: "春芽初绽，原生态滋味",
++  },
++  {
++    name: "玉露乌龙",
++    category: "乌龙",
++    main: "轻焙乌龙",
++    price: "￥880–￥2,400",
++    specs: "75g / 150g",
++    origin: "广东潮州 / 福建",
++    tagline: "清雅甘露，回甘润泽",
++  },
++  {
++    name: "御贡红韵",
++    category: "红茶",
++    main: "滇红工夫红茶",
++    price: "￥1,200–￥3,000",
++    specs: "100g / 礼盒装",
++    origin: "云南凤庆 / 临沧",
++    tagline: "层次细腻，醇甜如礼",
++  },
++];
++
++const spotlight = products.slice(0, 3);
++
++const principles = [
++  {
++    title: "禅静",
++    description: "以简驭繁，留白与呼吸感并重，让茶成为安静的礼遇。",
++  },
++  {
++    title: "自然",
++    description: "核心产区直采，小批次精制，保留茶叶的山林气息。",
++  },
++  {
++    title: "信任",
++    description: "清晰溯源、标准化审评与恒温储藏，守住品质底线。",
++  },
++  {
++    title: "雅礼",
++    description: "面向送礼与办公场景，礼盒定制更显体面与分寸。",
++  },
++];
++
++const scenes = [
++  {
++    title: "礼赠尊享",
++    description:
++      "面向贵客、商务与周年礼遇，以高端茶礼呈现稳重与真诚。",
++    tags: ["贵客", "商务", "纪念"],
++  },
++  {
++    title: "办公雅集",
++    description:
++      "会议待客与团队茶歇，简净气质让空间更沉稳、沟通更舒展。",
++    tags: ["会议", "接待", "茶歇"],
++  },
++];
++
++const steps = [
++  {
++    title: "留下联系方式",
++    description: "填写姓、电话、收货地址即可完成预约。",
++  },
++  {
++    title: "专属确认",
++    description: "茶艺顾问 24 小时内联系，确认口味与预算。",
++  },
++  {
++    title: "定制与寄送",
++    description: "礼盒包装与专属贺卡可选，稳妥配送到达。",
++  },
++];
++
++const trustPoints = [
++  {
++    label: "核心产区",
++    value: "武夷 / 凤庆 / 勐海",
++  },
++  {
++    label: "礼盒定制",
++    value: "企业专属标识可选",
++  },
++  {
++    label: "品控标准",
++    value: "三道审评与恒温储藏",
++  },
++];
++
++const primaryButton =
++  "inline-flex h-12 items-center justify-center rounded-full bg-[#1f1b16] px-6 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#2b261f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2f5d50] focus-visible:ring-offset-2";
++
++const secondaryButton =
++  "inline-flex h-12 items-center justify-center rounded-full border border-[#d8cbb9] bg-white/70 px-6 text-sm font-medium text-[#3a3027] shadow-sm transition-colors hover:border-[#cbbba8] hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2f5d50] focus-visible:ring-offset-2";
++
++export default function Home() {
++  const [orderOpen, setOrderOpen] = useState(false);
++  const [submitted, setSubmitted] = useState(false);
++
++  useEffect(() => {
++    if (!orderOpen) {
++      return;
++    }
++    const handleEscape = (event: KeyboardEvent) => {
++      if (event.key === "Escape") {
++        setOrderOpen(false);
++      }
++    };
++    const previousOverflow = document.body.style.overflow;
++    document.body.style.overflow = "hidden";
++    document.addEventListener("keydown", handleEscape);
++    return () => {
++      document.body.style.overflow = previousOverflow;
++      document.removeEventListener("keydown", handleEscape);
++    };
++  }, [orderOpen]);
++
++  useEffect(() => {
++    if (orderOpen) {
++      setSubmitted(false);
++    }
++  }, [orderOpen]);
++
++  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
++    event.preventDefault();
++    setSubmitted(true);
++  };
++
++  return (
++    <div className="relative min-h-screen overflow-hidden bg-[#f7f4ee] text-[#1f1b16]">
++      <div className="pointer-events-none absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle,_rgba(200,164,107,0.22)_0%,_rgba(200,164,107,0.08)_45%,_transparent_72%)]" />
++      <div className="pointer-events-none absolute left-[-15%] top-40 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,_rgba(47,93,80,0.2)_0%,_rgba(47,93,80,0.05)_48%,_transparent_72%)]" />
++
++      <header className="relative z-10">
++        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
++          <div className="flex items-center gap-4">
++            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d8cbb9] text-sm font-serif text-[#3a3027]">
++              禅
++            </div>
++            <div>
++              <p className="text-lg font-serif tracking-[0.18em] text-[#1f1b16]">
++                禅叶
++              </p>
++              <p className="text-xs text-[#6b5f53]">
++                高端茶礼 · 红茶 / 乌龙 / 普洱
++              </p>
++            </div>
++          </div>
++          <nav className="hidden items-center gap-6 text-sm text-[#5a4f44] md:flex">
++            <a className="transition-colors hover:text-[#1f1b16]" href="#brand">
++              品牌
++            </a>
++            <a
++              className="transition-colors hover:text-[#1f1b16]"
++              href="#products"
++            >
++              臻品
++            </a>
++            <a className="transition-colors hover:text-[#1f1b16]" href="#scenes">
++              场景
++            </a>
++            <a
++              className="transition-colors hover:text-[#1f1b16]"
++              href="#order"
++            >
++              订购
++            </a>
++          </nav>
++          <button
++            className={primaryButton}
++            onClick={() => setOrderOpen(true)}
++            type="button"
++          >
++            立即订购
++          </button>
++        </div>
++      </header>
++
++      <main className="relative z-10">
++        <section id="brand" className="relative">
++          <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-6 md:grid-cols-[1.1fr_0.9fr] md:gap-16">
++            <div className="space-y-8">
++              <div className="inline-flex items-center gap-3 rounded-full border border-[#d8cbb9] bg-white/70 px-4 py-2 text-xs tracking-[0.28em] text-[#8a796b]">
++                现代东方高端茶礼
++              </div>
++              <div className="space-y-4">
++                <h1 className="text-4xl font-serif leading-[1.2] text-[#1f1b16] md:text-5xl">
++                  禅静自然之境，礼赠与办公的高级表达
++                </h1>
++                <p className="text-base leading-7 text-[#5a4f44] md:text-lg">
++                  禅叶以红茶、乌龙、普洱三大谱系为核心，循山林原味与
++                  现代工艺的平衡，呈现安定、可信、可久藏的茶礼体验。
++                </p>
++              </div>
++              <div className="flex flex-wrap gap-4">
++                <button
++                  className={primaryButton}
++                  onClick={() => setOrderOpen(true)}
++                  type="button"
++                >
++                  预约品鉴
++                </button>
++                <a className={secondaryButton} href="#products">
++                  查看臻品
++                </a>
++              </div>
++              <div className="grid gap-4 sm:grid-cols-3">
++                {trustPoints.map((item) => (
++                  <div
++                    key={item.label}
++                    className="rounded-2xl border border-[#e4dbcf] bg-white/70 px-4 py-4 shadow-sm"
++                  >
++                    <p className="text-xs text-[#8a796b]">{item.label}</p>
++                    <p className="mt-2 text-sm text-[#3a3027]">{item.value}</p>
++                  </div>
++                ))}
++              </div>
++            </div>
++            <div className="relative">
++              <div className="absolute -right-6 -top-6 h-36 w-36 rounded-full border border-[#e1d4c3] opacity-70" />
++              <div className="absolute -left-8 bottom-8 h-20 w-20 rounded-full border border-[#cbbba8] opacity-60" />
++              <div className="rounded-3xl border border-[#e4dbcf] bg-white/80 p-8 shadow-lg backdrop-blur">
++                <div className="flex items-center justify-between text-xs text-[#8a796b]">
++                  <span className="tracking-[0.3em]">今日茶单</span>
++                  <span>礼赠 / 办公</span>
++                </div>
++                <div className="mt-6 space-y-5">
++                  {spotlight.map((item) => (
++                    <div
++                      key={item.name}
++                      className="rounded-2xl border border-[#ede3d6] bg-[#fbf8f2] px-5 py-4"
++                    >
++                      <div className="flex items-center justify-between">
++                        <p className="font-serif text-lg text-[#2a241f]">
++                          {item.name}
++                        </p>
++                        <span className="rounded-full border border-[#d8cbb9] px-3 py-1 text-xs text-[#6b5f53]">
++                          {item.category}
++                        </span>
++                      </div>
++                      <p className="mt-2 text-sm text-[#6b5f53]">
++                        {item.tagline}
++                      </p>
++                    </div>
++                  ))}
++                </div>
++                <div className="mt-6 flex items-center justify-between rounded-2xl border border-[#e4dbcf] bg-white px-5 py-4 text-sm text-[#5a4f44]">
++                  <span>专属茶礼定制</span>
++                  <button
++                    className="text-sm font-medium text-[#2f5d50] transition-colors hover:text-[#24493f]"
++                    onClick={() => setOrderOpen(true)}
++                    type="button"
++                  >
++                    获取方案
++                  </button>
++                </div>
++              </div>
++            </div>
++          </div>
++        </section>
++
++        <section className="relative">
++          <div className="mx-auto max-w-6xl px-6 py-12">
++            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
++              {principles.map((item, index) => (
++                <div
++                  key={item.title}
++                  className="rounded-2xl border border-[#e4dbcf] bg-white/70 px-5 py-6 shadow-sm motion-safe:animate-[fade-up_0.8s_ease-out]"
++                  style={{ animationDelay: `${index * 80}ms` }}
++                >
++                  <p className="text-sm text-[#8a796b]">禅叶准则</p>
++                  <h3 className="mt-3 font-serif text-xl text-[#1f1b16]">
++                    {item.title}
++                  </h3>
++                  <p className="mt-3 text-sm leading-6 text-[#5a4f44]">
++                    {item.description}
++                  </p>
++                </div>
++              ))}
++            </div>
++          </div>
++        </section>
++
++        <section id="scenes" className="relative">
++          <div className="mx-auto max-w-6xl px-6 py-12">
++            <div className="mb-8 flex items-end justify-between">
++              <div>
++                <p className="text-xs tracking-[0.3em] text-[#8a796b]">
++                  场景体验
++                </p>
++                <h2 className="mt-3 font-serif text-3xl text-[#1f1b16]">
++                  送礼与办公的稳重表达
++                </h2>
++              </div>
++              <span className="hidden text-sm text-[#6b5f53] md:block">
++                高端茶礼，体现分寸与品位
++              </span>
++            </div>
++            <div className="grid gap-6 md:grid-cols-2">
++              {scenes.map((scene) => (
++                <div
++                  key={scene.title}
++                  className="rounded-3xl border border-[#e4dbcf] bg-white/80 p-8 shadow-sm"
++                >
++                  <h3 className="font-serif text-2xl text-[#1f1b16]">
++                    {scene.title}
++                  </h3>
++                  <p className="mt-4 text-sm leading-6 text-[#5a4f44]">
++                    {scene.description}
++                  </p>
++                  <div className="mt-6 flex flex-wrap gap-2">
++                    {scene.tags.map((tag) => (
++                      <span
++                        key={tag}
++                        className="rounded-full border border-[#d8cbb9] bg-[#fbf8f2] px-3 py-1 text-xs text-[#6b5f53]"
++                      >
++                        {tag}
++                      </span>
++                    ))}
++                  </div>
++                </div>
++              ))}
++            </div>
++          </div>
++        </section>
++
++        <section id="products" className="relative">
++          <div className="mx-auto max-w-6xl px-6 py-12">
++            <div className="mb-10">
++              <p className="text-xs tracking-[0.3em] text-[#8a796b]">
++                臻品系列
++              </p>
++              <h2 className="mt-3 font-serif text-3xl text-[#1f1b16]">
++                红茶 · 乌龙 · 普洱
++              </h2>
++              <p className="mt-4 text-sm text-[#5a4f44]">
++                甄选核心产区与稳定工艺，适配礼赠与办公场景的高端表达。
++              </p>
++            </div>
++            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
++              {products.map((item, index) => (
++                <div
++                  key={item.name}
++                  className="group relative overflow-hidden rounded-3xl border border-[#e4dbcf] bg-white/80 p-6 shadow-sm transition-shadow hover:shadow-md motion-safe:animate-[fade-up_0.9s_ease-out]"
++                  style={{ animationDelay: `${index * 60}ms` }}
++                >
++                  <div className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100">
++                    <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(200,164,107,0.16),transparent_55%)]" />
++                  </div>
++                  <div className="relative">
++                    <div className="flex items-center justify-between">
++                      <h3 className="font-serif text-xl text-[#1f1b16]">
++                        {item.name}
++                      </h3>
++                      <span className="rounded-full border border-[#d8cbb9] px-3 py-1 text-xs text-[#6b5f53]">
++                        {item.category}
++                      </span>
++                    </div>
++                    <p className="mt-3 text-sm text-[#6b5f53]">
++                      主茶类：{item.main}
++                    </p>
++                    <div className="mt-4 space-y-2 text-sm text-[#3a3027]">
++                      <p>价格区间：{item.price}</p>
++                      <p>规格：{item.specs}</p>
++                      <p>产地：{item.origin}</p>
++                    </div>
++                    <p className="mt-4 text-sm leading-6 text-[#6b5f53]">
++                      {item.tagline}
++                    </p>
++                  </div>
++                </div>
++              ))}
++            </div>
++            <div
++              id="order"
++              className="mt-12 flex flex-col items-start justify-between gap-6 rounded-3xl border border-[#e4dbcf] bg-white/80 px-8 py-8 shadow-sm md:flex-row md:items-center"
++            >
++              <div>
++                <h3 className="font-serif text-2xl text-[#1f1b16]">
++                  订购方式极简
++                </h3>
++                <p className="mt-3 text-sm text-[#5a4f44]">
++                  下单只需留下姓、电话、收货地址，茶艺顾问将尽快与您确认。
++                </p>
++              </div>
++              <button
++                className={primaryButton}
++                onClick={() => setOrderOpen(true)}
++                type="button"
++              >
++                立即订购
++              </button>
++            </div>
++          </div>
++        </section>
++
++        <section className="relative">
++          <div className="mx-auto max-w-6xl px-6 py-12">
++            <div className="grid gap-6 md:grid-cols-3">
++              {steps.map((step, index) => (
++                <div
++                  key={step.title}
++                  className="rounded-3xl border border-[#e4dbcf] bg-white/80 px-6 py-7 shadow-sm"
++                >
++                  <p className="text-xs text-[#8a796b]">
++                    {`0${index + 1}`} / 三步完成
++                  </p>
++                  <h3 className="mt-3 font-serif text-xl text-[#1f1b16]">
++                    {step.title}
++                  </h3>
++                  <p className="mt-3 text-sm leading-6 text-[#5a4f44]">
++                    {step.description}
++                  </p>
++                </div>
++              ))}
++            </div>
++          </div>
++        </section>
++      </main>
++
++      <footer className="relative z-10 border-t border-[#e4dbcf]">
++        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-6 py-8 text-sm text-[#6b5f53] md:flex-row md:items-center">
++          <p>禅叶 · 高端东方茶礼</p>
++          <p>红茶 · 乌龙 · 普洱｜送礼与办公场景专属</p>
++        </div>
++      </footer>
++
++      {orderOpen ? (
++        <div
++          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4 py-8"
++          onClick={() => setOrderOpen(false)}
++        >
++          <div
++            className="relative w-full max-w-lg rounded-3xl border border-[#e4dbcf] bg-white p-8 shadow-2xl"
++            onClick={(event) => event.stopPropagation()}
++            role="dialog"
++            aria-modal="true"
++            aria-labelledby="order-title"
++            aria-describedby="order-description"
++          >
++            <button
++              className="absolute right-4 top-4 rounded-full border border-[#e4dbcf] bg-white px-3 py-1 text-xs text-[#6b5f53] transition-colors hover:text-[#1f1b16]"
++              onClick={() => setOrderOpen(false)}
++              type="button"
++            >
++              关闭
++            </button>
++            <div className="space-y-3">
++              <p className="text-xs tracking-[0.3em] text-[#8a796b]">
++                预约订购
++              </p>
++              <h3
++                id="order-title"
++                className="font-serif text-2xl text-[#1f1b16]"
++              >
++                留下联系方式，禅叶与您确认茶礼
++              </h3>
++              <p
++                id="order-description"
++                className="text-sm leading-6 text-[#5a4f44]"
++              >
++                仅需姓、电话、收货地址，茶艺顾问将在 24 小时内联系您确认。
++              </p>
++            </div>
++            <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
++              <label className="block text-sm text-[#3a3027]">
++                姓
++                <input
++                  className="mt-2 w-full rounded-2xl border border-[#e4dbcf] bg-[#fbf8f2] px-4 py-3 text-sm text-[#1f1b16] outline-none transition focus:border-[#2f5d50] focus:ring-2 focus:ring-[#2f5d50]/20"
++                  name="familyName"
++                  required
++                  autoComplete="family-name"
++                  placeholder="请填写姓氏"
++                />
++              </label>
++              <label className="block text-sm text-[#3a3027]">
++                电话
++                <input
++                  className="mt-2 w-full rounded-2xl border border-[#e4dbcf] bg-[#fbf8f2] px-4 py-3 text-sm text-[#1f1b16] outline-none transition focus:border-[#2f5d50] focus:ring-2 focus:ring-[#2f5d50]/20"
++                  name="phone"
++                  required
++                  autoComplete="tel"
++                  inputMode="tel"
++                  placeholder="请输入联系电话"
++                />
++              </label>
++              <label className="block text-sm text-[#3a3027]">
++                收货地址
++                <textarea
++                  className="mt-2 min-h-[96px] w-full resize-none rounded-2xl border border-[#e4dbcf] bg-[#fbf8f2] px-4 py-3 text-sm text-[#1f1b16] outline-none transition focus:border-[#2f5d50] focus:ring-2 focus:ring-[#2f5d50]/20"
++                  name="address"
++                  required
++                  autoComplete="street-address"
++                  placeholder="请填写详细收货地址"
++                />
++              </label>
++              <button className={`${primaryButton} w-full`} type="submit">
++                提交订购
++              </button>
++              {submitted ? (
++                <p
++                  className="text-sm text-[#2f5d50]"
++                  aria-live="polite"
++                >
++                  已收到您的信息，茶艺顾问将尽快与您联系。
++                </p>
++              ) : null}
++            </form>
++          </div>
++        </div>
++      ) : null}
++    </div>
++  );
++}
+*** End Patch
+2026-01-11T06:23:23.700577Z  INFO ToolCall: shell_command {"command":"rg -n \"Noto Sans SC\" node_modules/next -g \"*.json\"","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:23:35.553880Z  INFO ToolCall: shell_command {"command":"@'\nimport json\nimport pathlib\npath = pathlib.Path('node_modules/next/dist/compiled/@next/font/dist/google/font-data.json')\nwith path.open(encoding='utf-8') as f:\n    data = json.load(f)\nitem = data.get('Noto Sans SC')\nprint(item.keys())\nprint('subsets', item.get('subsets'))\nprint('weights', item.get('weights')[:5], '...')\n'@ | python -","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:23:47.126762Z  INFO ToolCall: shell_command {"command":"@'\nimport json\nimport pathlib\npath = pathlib.Path('node_modules/next/dist/compiled/@next/font/dist/google/font-data.json')\nwith path.open(encoding='utf-8') as f:\n    data = json.load(f)\nitem = data.get('Noto Serif SC')\nprint(item.get('subsets'))\n'@ | python -","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:23:58.632437Z  INFO ToolCall: shell_command {"command":"@'\nimport json\nimport pathlib\npath = pathlib.Path('node_modules/next/dist/compiled/@next/font/dist/google/font-data.json')\nwith path.open(encoding='utf-8') as f:\n    data = json.load(f)\nfonts = [name for name, meta in data.items() if 'chinese-simplified' in meta.get('subsets', [])]\nprint(len(fonts))\nprint(fonts[:20])\n'@ | python -","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:24:09.758120Z  INFO ToolCall: shell_command {"command":"@'\nimport json\nimport pathlib\npath = pathlib.Path('node_modules/next/dist/compiled/@next/font/dist/google/font-data.json')\nwith path.open(encoding='utf-8') as f:\n    data = json.load(f)\nprint(data['Noto Sans SC'])\n'@ | python -","workdir":"D:\\github\\zenleaf"}
+2026-01-11T06:28:38.363961Z  INFO spawning ghost snapshot task
+2026-01-11T06:28:38.639418Z  INFO ghost snapshot blocking task finished
+2026-01-11T06:28:38.639463Z  INFO ghost commit captured: 211ec026492c02c8c0ff4e699b09b5160d7530e3
+2026-01-11T06:28:38.639474Z  INFO ghost snapshot gate marked ready
+2026-01-11T06:29:27.654646Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\page.tsx
+@@
+ const trustPoints = [
+   {
+     label: "核心产区",
+     value: "武夷 / 凤庆 / 勐海",
+   },
+@@
+   {
+     label: "品控标准",
+     value: "三道审评与恒温储藏",
+   },
+ ];
++
++const categoryPalette: Record<
++  string,
++  {
++    base: string;
++    accent: string;
++    mist: string;
++    highlight: string;
++  }
++> = {
++  红茶: {
++    base: "#8e3d2f",
++    accent: "#c38b5c",
++    mist: "#f2e2d4",
++    highlight: "#e2b88a",
++  },
++  乌龙: {
++    base: "#35524a",
++    accent: "#7b9a8a",
++    mist: "#e6ede8",
++    highlight: "#b7c9bf",
++  },
++  普洱: {
++    base: "#4a3427",
++    accent: "#8a6a4a",
++    mist: "#efe4d4",
++    highlight: "#c6a16a",
++  },
++};
+@@
+ const secondaryButton =
+   "inline-flex h-12 items-center justify-center rounded-full border border-[#d8cbb9] bg-white/70 px-6 text-sm font-medium text-[#3a3027] shadow-sm transition-colors hover:border-[#cbbba8] hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2f5d50] focus-visible:ring-offset-2";
+ 
++function ProductArt({
++  name,
++  category,
++  index,
++}: {
++  name: string;
++  category: string;
++  index: number;
++}) {
++  const palette = categoryPalette[category] ?? categoryPalette["乌龙"];
++  const gradientId = `grad-${index}`;
++  const glowId = `glow-${index}`;
++
++  return (
++    <div className="relative h-40 w-full overflow-hidden rounded-2xl border border-[#e9e0d4] bg-white">
++      <svg
++        viewBox="0 0 400 200"
++        role="img"
++        aria-label={`${name} 产品意象图`}
++        className="h-full w-full"
++      >
++        <defs>
++          <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
++            <stop offset="0%" stopColor={palette.mist} />
++            <stop offset="65%" stopColor="#ffffff" />
++          </linearGradient>
++          <radialGradient id={glowId} cx="0.2" cy="0.1" r="0.7">
++            <stop offset="0%" stopColor={palette.highlight} stopOpacity="0.7" />
++            <stop offset="60%" stopColor="#ffffff" stopOpacity="0.2" />
++            <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
++          </radialGradient>
++        </defs>
++        <rect width="400" height="200" fill={`url(#${gradientId})`} />
++        <rect width="400" height="200" fill={`url(#${glowId})`} />
++        <path
++          d="M0 150 C80 110 150 130 220 120 C280 110 330 90 400 60 L400 200 L0 200 Z"
++          fill={palette.base}
++          opacity="0.2"
++        />
++        <path
++          d="M0 170 C90 140 170 150 240 140 C310 130 350 115 400 95 L400 200 L0 200 Z"
++          fill={palette.accent}
++          opacity="0.25"
++        />
++        <path
++          d="M30 120 C120 80 210 90 300 70"
++          fill="none"
++          stroke={palette.base}
++          strokeWidth="1.6"
++          opacity="0.35"
++        />
++      </svg>
++      <div className="absolute inset-0 bg-[linear-gradient(130deg,rgba(255,255,255,0.15),transparent_55%)]" />
++      <div className="absolute bottom-4 left-4 text-[10px] tracking-[0.35em] text-[#6b5f53]/80">
++        禅叶意象
++      </div>
++    </div>
++  );
++}
++
+ export default function Home() {
+   const [orderOpen, setOrderOpen] = useState(false);
+   const [submitted, setSubmitted] = useState(false);
+*** End Patch
+2026-01-11T06:29:42.407443Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\page.tsx
+@@
+             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+               {products.map((item, index) => (
+                 <div
+                   key={item.name}
+                   className="group relative overflow-hidden rounded-3xl border border-[#e4dbcf] bg-white/80 p-6 shadow-sm transition-shadow hover:shadow-md motion-safe:animate-[fade-up_0.9s_ease-out]"
+                   style={{ animationDelay: `${index * 60}ms` }}
+                 >
+                   <div className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-100">
+                     <div className="absolute inset-0 bg-[linear-gradient(140deg,rgba(200,164,107,0.16),transparent_55%)]" />
+                   </div>
+                   <div className="relative">
++                    <ProductArt
++                      name={item.name}
++                      category={item.category}
++                      index={index}
++                    />
+                     <div className="flex items-center justify-between">
+                       <h3 className="font-serif text-xl text-[#1f1b16]">
+                         {item.name}
+                       </h3>
+*** End Patch
+2026-01-11T06:30:02.080074Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: D:\github\zenleaf\app\page.tsx
+@@
+                     <ProductArt
+                       name={item.name}
+                       category={item.category}
+                       index={index}
+                     />
+-                    <div className="flex items-center justify-between">
+-                      <h3 className="font-serif text-xl text-[#1f1b16]">
+-                        {item.name}
+-                      </h3>
+-                      <span className="rounded-full border border-[#d8cbb9] px-3 py-1 text-xs text-[#6b5f53]">
+-                        {item.category}
+-                      </span>
+-                    </div>
+-                    <p className="mt-3 text-sm text-[#6b5f53]">
+-                      主茶类：{item.main}
+-                    </p>
+-                    <div className="mt-4 space-y-2 text-sm text-[#3a3027]">
+-                      <p>价格区间：{item.price}</p>
+-                      <p>规格：{item.specs}</p>
+-                      <p>产地：{item.origin}</p>
+-                    </div>
+-                    <p className="mt-4 text-sm leading-6 text-[#6b5f53]">
+-                      {item.tagline}
+-                    </p>
++                    <div className="mt-5">
++                      <div className="flex items-center justify-between">
++                        <h3 className="font-serif text-xl text-[#1f1b16]">
++                          {item.name}
++                        </h3>
++                        <span className="rounded-full border border-[#d8cbb9] px-3 py-1 text-xs text-[#6b5f53]">
++                          {item.category}
++                        </span>
++                      </div>
++                      <p className="mt-3 text-sm text-[#6b5f53]">
++                        主茶类：{item.main}
++                      </p>
++                      <div className="mt-4 space-y-2 text-sm text-[#3a3027]">
++                        <p>价格区间：{item.price}</p>
++                        <p>规格：{item.specs}</p>
++                        <p>产地：{item.origin}</p>
++                      </div>
++                      <p className="mt-4 text-sm leading-6 text-[#6b5f53]">
++                        {item.tagline}
++                      </p>
++                    </div>
+                   </div>
+                 </div>
+               ))}
+             </div>
+*** End Patch
+2026-01-11T07:07:34.531965Z  INFO Shutting down Codex instance
+2026-01-11T07:09:05.146911Z  INFO spawning ghost snapshot task
+2026-01-11T07:09:05.360855Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:09:05.360889Z  INFO ghost commit captured: 1d43ac37fa45075dc39690047db665434826ece4
+2026-01-11T07:09:05.360896Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:09:09.087504Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:09:15.788658Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Recurse -Force -Filter AGENTS.md","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:09:22.816067Z  INFO ToolCall: shell_command {"command":"Test-Path -Path \"D:\\github\\yun-cha\\AGENTS.md\"","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:09:29.525820Z  INFO ToolCall: shell_command {"command":"rg --files -g \"AGENTS.md\"","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:09:51.860955Z  INFO spawning ghost snapshot task
+2026-01-11T07:09:52.071619Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:09:52.071645Z  INFO ghost commit captured: f8344436ca3fa8aede25c9daef5f7d3bd7816250
+2026-01-11T07:09:52.071649Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:10:25.736733Z  INFO Selected model: gpt-5.1-codex-max, Selected effort: high
+2026-01-11T07:10:34.913079Z  INFO spawning ghost snapshot task
+2026-01-11T07:10:35.123619Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:10:35.123646Z  INFO ghost commit captured: d78ba173b42f1986e0d02e1d10c3d21d7ee3846b
+2026-01-11T07:10:35.123651Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:10:41.742656Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -Command \"Get-Content -Path 'C:\\Users\\neo_z\\Documents\\PowerShell\\OpenSpecCompletion.ps1'\"","timeout_ms":120000}
+2026-01-11T07:12:40.113338Z  INFO spawning ghost snapshot task
+2026-01-11T07:12:40.332271Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:12:40.332302Z  INFO ghost commit captured: 2f6dacee03a5f68fd6accfa97daf7b132789aa75
+2026-01-11T07:12:40.332308Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:12:44.537427Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -Command \"openspec completion install powershell\"","sandbox_permissions":"require_escalated","justification":"Need to regenerate the openspec PowerShell completion script in your profile path to fix the parsing error; write access required outside workspace."}
+2026-01-11T07:14:07.614448Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -ExecutionPolicy Bypass -Command \"$path='C:\\Users\\neo_z\\Documents\\PowerShell\\OpenSpecCompletion.ps1'; $content = Get-Content -Path $path -Raw -Encoding UTF8; $fixed = $content -replace '},(\\s*\\))', '}$1'; Set-Content -Path $path -Value $fixed -Encoding UTF8\"","sandbox_permissions":"require_escalated","justification":"Need to rewrite the OpenSpec completion script in your PowerShell profile to remove trailing commas and fix the startup parse error; requires write access outside workspace."}
+2026-01-11T07:14:29.887150Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -ExecutionPolicy Bypass -Command '$path=\"C:\\Users\\neo_z\\Documents\\PowerShell\\OpenSpecCompletion.ps1\"; $content = Get-Content -Path $path -Raw -Encoding UTF8; $fixed = $content -replace \"},(\\s*\\))\", \"}$1\"; Set-Content -Path $path -Value $fixed -Encoding UTF8'","sandbox_permissions":"require_escalated","justification":"Need to rewrite the OpenSpec completion script in your PowerShell profile to remove trailing commas and stop startup parse errors; requires write access outside workspace."}
+2026-01-11T07:14:54.697219Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -ExecutionPolicy Bypass -Command \"Get-Content -Path 'C:\\Users\\neo_z\\Documents\\PowerShell\\OpenSpecCompletion.ps1' | Select-Object -First 120\""}
+2026-01-11T07:15:18.302640Z  INFO ToolCall: shell_command {"command":"powershell -NoProfile -ExecutionPolicy Bypass -Command \"$i=0; Get-Content -Path 'C:\\Users\\neo_z\\Documents\\PowerShell\\OpenSpecCompletion.ps1' | ForEach-Object { $i++; '{0,4}: {1}' -f $i, $_ } | Select-Object -First 80\""}
+2026-01-11T07:15:43.706756Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Delete File: C:/Users/neo_z/Documents/PowerShell/OpenSpecCompletion.ps1
+*** End Patch
+2026-01-11T07:16:44.033276Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: C:/Users/neo_z/Documents/PowerShell/OpenSpecCompletion.ps1
++# PowerShell completion script for OpenSpec CLI
++# Temporarily disabled because the auto-generated version had syntax errors.
++# Regenerate once the CLI is fixed and execution policy allows:
++#   openspec completion install powershell
+*** End Patch
+2026-01-11T07:17:01.318624Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:21:28.328095Z  INFO spawning ghost snapshot task
+2026-01-11T07:21:28.539460Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:21:28.539486Z  INFO ghost commit captured: f161cb48199c6ca7ac08696db0b4654184be27c6
+2026-01-11T07:21:28.539492Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:21:40.529687Z  INFO ToolCall: shell_command {"command":"python \"D:/github/face-metric/.codex/skills/.system/skill-installer/scripts/list-curated-skills.py\" --format json","sandbox_permissions":"require_escalated","justification":"Need network access to fetch curated skill list for installing requested skill via skill-installer"}
+2026-01-11T07:21:55.037984Z  INFO interrupt received: abort current task, if any
+2026-01-11T07:22:23.755164Z  INFO spawning ghost snapshot task
+2026-01-11T07:22:23.967297Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:22:23.967328Z  INFO ghost commit captured: e526ba71f58d278d46d6923f26b38b3cfc60bc8c
+2026-01-11T07:22:23.967334Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:22:42.115148Z  INFO Shutting down Codex instance
+2026-01-11T07:22:54.181912Z  INFO spawning ghost snapshot task
+2026-01-11T07:22:54.400222Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:22:54.400252Z  INFO ghost commit captured: 82f0a1b42adccf2861fc8620091289d78964f50a
+2026-01-11T07:22:54.400260Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:22:57.706675Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:23:02.175049Z  INFO ToolCall: shell_command {"command":"Get-ChildItem -Force -Filter AGENTS.md","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:23:06.741423Z  INFO ToolCall: shell_command {"command":"rg --files -g \"AGENTS.md\"","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:23:33.340322Z  INFO Selected model: gpt-5.1-codex-max, Selected effort: high
+2026-01-11T07:23:47.521377Z  INFO spawning ghost snapshot task
+2026-01-11T07:23:47.730129Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:23:47.730151Z  INFO ghost commit captured: 8a12d924ed2f2abeab2290840e0072d3eca7bc6f
+2026-01-11T07:23:47.730155Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:23:59.551722Z  INFO ToolCall: shell_command {"command":"python \"D:/github/face-metric/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py\" --repo openai/skills --path skills/.curated/ui-ux-pro-max-skill","justification":"Need to install the curated ui-ux-pro-max-skill from the openai/skills repo, which requires network access and writing outside the read-only sandbox.","sandbox_permissions":"require_escalated","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:24:22.412292Z  INFO ToolCall: shell_command {"command":"python \"D:/github/face-metric/.codex/skills/.system/skill-installer/scripts/list-curated-skills.py\" --format json","justification":"Need to check curated skills list to confirm if ui-ux-pro-max-skill exists before retrying install; requires network and writing outside read-only sandbox.","sandbox_permissions":"require_escalated","workdir":"D:\\github\\yun-cha"}
+2026-01-11T07:26:05.873484Z  INFO Shutting down Codex instance
+2026-01-11T07:26:07.984116Z  INFO spawning ghost snapshot task
+2026-01-11T07:26:08.247717Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:26:08.247750Z  INFO ghost commit captured: ecfca1fc93f5f0449ea68d5fdc7536ad9869ecf1
+2026-01-11T07:26:08.247758Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:28:49.637209Z  INFO spawning ghost snapshot task
+2026-01-11T07:28:49.881153Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:28:49.881182Z  INFO ghost commit captured: f3b8c06b0a5b3c6086a3edcd72d56eb777ae0320
+2026-01-11T07:28:49.881187Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:29:05.083821Z  INFO ToolCall: update_plan {"plan":[{"status":"in_progress","step":"Collect UI/UX guidance (product, style, typography, color, landing, UX, Next.js stack) using ui-ux-pro-max searches"},{"status":"pending","step":"Draft site structure and design choices for high-end tea gifting/office audience"},{"status":"pending","step":"Provide Next.js implementation (page + styles/components) and usage notes"}]}
+2026-01-11T07:29:09.066725Z  INFO ToolCall: shell_command {"command":"python .shared/ui-ux-pro-max/scripts/search.py \"luxury tea gifting office\" --domain product"}
+2026-01-11T07:29:13.343376Z  INFO ToolCall: shell_command {"command":"Get-ChildItem"}
+2026-01-11T07:29:18.928663Z  INFO ToolCall: shell_command {"command":"Get-ChildItem .codex/skills/ui-ux-pro-max"}
+2026-01-11T07:29:24.778454Z  INFO ToolCall: shell_command {"command":"Get-ChildItem .codex/skills"}
+2026-01-11T07:29:31.885546Z  INFO ToolCall: shell_command {"command":"Get-ChildItem app"}
+2026-01-11T07:29:36.598786Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx"}
+2026-01-11T07:29:45.833523Z  INFO ToolCall: shell_command {"command":"Get-Content app/globals.css"}
+2026-01-11T07:29:50.710754Z  INFO ToolCall: shell_command {"command":"Get-Content app/layout.tsx"}
+2026-01-11T07:29:59.614802Z  INFO ToolCall: update_plan {"explanation":"Search script missing (.shared/ui-ux-pro-max/scripts/search.py not present), so proceeding with manual design guidance based on skill patterns.","plan":[{"status":"completed","step":"Collect UI/UX guidance (product, style, typography, color, landing, UX, Next.js stack) using ui-ux-pro-max searches"},{"status":"in_progress","step":"Draft site structure and design choices for high-end tea gifting/office audience"},{"status":"pending","step":"Provide Next.js implementation (page + styles/components) and usage notes"}]}
+2026-01-11T07:33:06.736690Z  INFO ToolCall: update_plan {"plan":[{"status":"completed","step":"Collect UI/UX guidance (product, style, typography, color, landing, UX, Next.js stack) using ui-ux-pro-max searches"},{"status":"completed","step":"Draft site structure and design choices for high-end tea gifting/office audience"},{"status":"completed","step":"Provide Next.js implementation (page + styles/components) and usage notes"}]}
+2026-01-11T07:34:56.259805Z  INFO spawning ghost snapshot task
+2026-01-11T07:34:56.506890Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:34:56.506918Z  INFO ghost commit captured: 87bfdbe91b43fbe70167c3c7585645ccb839df11
+2026-01-11T07:34:56.506923Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:36:59.995827Z  INFO spawning ghost snapshot task
+2026-01-11T07:37:00.242632Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:37:00.242661Z  INFO ghost commit captured: 2b3af664f3b03ee3420d582795355832d815fd20
+2026-01-11T07:37:00.242666Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:37:28.837531Z  INFO spawning ghost snapshot task
+2026-01-11T07:37:29.086223Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:37:29.086259Z  INFO ghost commit captured: 8b4f7eb841d79e3690b00c192c839eb96b55996f
+2026-01-11T07:37:29.086267Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:38:05.937056Z  INFO spawning ghost snapshot task
+2026-01-11T07:38:06.183654Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:38:06.183681Z  INFO ghost commit captured: 76091db77576d4ab20c81c43f901d87bcabb5b94
+2026-01-11T07:38:06.183686Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:38:25.310047Z  INFO spawning ghost snapshot task
+2026-01-11T07:38:25.557962Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:38:25.557989Z  INFO ghost commit captured: 8f61d250986d7ed1ea6fd537d81b035635260479
+2026-01-11T07:38:25.557993Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:38:41.155189Z  INFO ToolCall: shell_command {"command":"@'\nimport type { Metadata } from \"next\";\nimport { Playfair_Display, Manrope } from \"next/font/google\";\nimport \"./globals.css\";\n\nconst display = Playfair_Display({\n  subsets: [\"latin\"],\n  variable: \"--font-display\",\n  weight: [\"400\", \"500\", \"600\", \"700\"],\n});\n\nconst body = Manrope({\n  subsets: [\"latin\"],\n  variable: \"--font-body\",\n  weight: [\"300\", \"400\", \"500\", \"600\", \"700\"],\n});\n\nexport const metadata: Metadata = {\n  title: \"云茶 Yun Chá | 高端茶礼 · 办公室茶席\",\n  description: \"红茶、乌龙、普洱的高定茶礼与办公室茶席，附冲泡曲线与礼赠服务。\",\n};\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"zh-Hans\">\n      <body className={`${display.variable} ${body.variable} antialiased`}>\n        {children}\n      </body>\n    </html>\n  );\n}\n'@ | Out-File -FilePath app/layout.tsx -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Need to overwrite app/layout.tsx to implement the new Yun Chá layout; read-only sandbox blocks writes"}
+2026-01-11T07:38:55.359883Z  INFO ToolCall: shell_command {"command":"@'\n@import \"tailwindcss\";\n\n:root {\n  --ink: #0f1512;\n  --forest: #1b2b21;\n  --amber: #d6a75d;\n  --brass: #6a4a1f;\n  --cream: #f5efe4;\n  --line: rgba(255, 255, 255, 0.12);\n  --foreground: var(--cream);\n  --background: var(--ink);\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-body);\n  --font-mono: var(--font-body);\n  --font-display: var(--font-display);\n}\n\nbody {\n  background: radial-gradient(140% 120% at 10% 10%, rgba(214, 167, 93, 0.16), transparent),\n    radial-gradient(100% 100% at 90% 80%, rgba(107, 81, 48, 0.18), transparent),\n    var(--ink);\n  color: var(--foreground);\n  font-family: var(--font-body), \"Helvetica Neue\", Arial, sans-serif;\n}\n\nh1,\n h2,\n h3,\n h4 {\n  font-family: var(--font-display), \"Times New Roman\", serif;\n  letter-spacing: 0.02em;\n}\n\na {\n  text-decoration: none;\n}\n\n::selection {\n  background: rgba(214, 167, 93, 0.35);\n  color: #0f1512;\n}\n'@ | Out-File -FilePath app/globals.css -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Need to overwrite app/globals.css with new palette/typography styles; read-only sandbox blocks writes"}
+2026-01-11T07:40:29.442609Z  INFO ToolCall: shell_command {"command":"@'\nimport Image from \"next/image\";\n\nconst signatureTeas = [\n  {\n    name: \"金骏眉 · Reserve\",\n    region: \"武夷山 · 红茶\",\n    notes: \"可可与山蜜，绵密焦糖甜感，绵长尾韵。\",\n    pairing: \"高端礼赠 / 下午茶\",\n  },\n  {\n    name: \"大红袍 · 炉火\",\n    region: \"武夷岩茶 · 乌龙\",\n    notes: \"岩韵矿香与焙火层次，辛香柑橘收尾。\",\n    pairing: \"会客 / 餐后\",\n  },\n  {\n    name: \"冰岛 · 2021\",\n    region: \"临沧 · 普洱生茶\",\n    notes: \"兰花冷香，清甜回甘，喉韵悠长。\",\n    pairing: \"冥想 / 品鉴\",\n  },\n];\n\nconst services = [\n  {\n    title: \"礼赠 · 私享礼盒\",\n    desc: \"手作榫卯木盒，烫金手写礼卡，支持刻字/家徽。\",\n    bullets: [\"甄选单株/小产区\", \"搭配汝窑/银壶茶器\", \"48小时内顺丰冷链\"],\n  },\n  {\n    title: \"办公室 · 茶席\",\n    desc: \"会议来访 / 日常下午茶，提升空间气质。\",\n    bullets: [\"单杯挂耳 / 原叶冷萃\", \"茶吧台软装与陈列\", \"员工茶课与冲泡SOP\"],\n  },\n  {\n    title: \"订阅 · 季度臻选\",\n    desc: \"每季 3 款风味，含手冲指南与杯测卡。\",\n    bullets: [\"红茶/乌龙/普洱自由搭配\", \"附水质/温度建议\", \"企业可开票/寄往多址\"],\n  },\n];\n\nconst rituals = [\n  {\n    title: \"山场遴选\",\n    detail: \"武夷桐木关、凤凰单丛、冰岛老寨等源头直采，追溯茶园批次。\",\n  },\n  {\n    title: \"火候演绎\",\n    detail: \"18 年资深焙火师，控水活与含香，分段低温回火。\",\n  },\n  {\n    title: \"静置醒茶\",\n    detail: \"恒温恒湿窖藏 14 天，风味稳定后封缄，附冲泡曲线。\",\n  },\n];\n\nconst highlights = [\n  { label: \"庄园直供\", value: \"9 个\", note: \"签约核心山场\" },\n  { label: \"礼盒客单\", value: \"¥980+\", note: \"定制刻字/配饰\" },\n  { label: \"办公室\", value: \"26 家\", note: \"精品办公室茶席\" },\n];\n\nexport default function Home() {\n  return (\n    <div className=\"relative min-h-screen overflow-hidden bg-[#0f1512] text-[#f5efe4]\">\n      <div className=\"pointer-events-none absolute inset-0 opacity-60\">\n        <div className=\"absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#d6a75d]/20 blur-3xl\" />\n        <div className=\"absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#6b5130]/20 blur-3xl\" />\n        <div className=\"absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent\" />\n      </div>\n\n      <header className=\"sticky top-0 z-30 border-b border-white/10 bg-[#0f1512]/80 backdrop-blur\">\n        <div className=\"mx-auto flex max-w-6xl items-center justify-between px-6 py-4\">\n          <div className=\"flex items-center gap-3\">\n            <div className=\"h-9 w-9 rounded-full bg-gradient-to-br from-[#c2893a] via-[#e3c07a] to-[#6a4a1f] shadow-[0_0_0_1px_rgba(255,255,255,0.14)]\" />\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.35em] text-[#d6a75d]\">Yun Chá</p>\n              <p className=\"text-sm text-white/70\">云茶 · 高端茶礼</p>\n            </div>\n          </div>\n          <div className=\"hidden items-center gap-6 text-sm text-white/70 md:flex\">\n            <span>红茶 · 乌龙 · 普洱</span>\n            <span>礼赠 / 办公室</span>\n            <span>定制刻字</span>\n          </div>\n          <a\n            className=\"rounded-full border border-[#d6a75d]/70 bg-[#d6a75d]/10 px-4 py-2 text-sm font-medium text[#f5efe4] transition hover:-translate-y-[1px] hover:border-[#d6a75d] hover:bg-[#d6a75d]/20\"\n            href=\"#contact\"\n          >\n            预约品鉴\n          </a>\n        </div>\n      </header>\n\n      <main className=\"relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14\">\n        <section className=\"grid gap-10 lg:grid-cols-[1.2fr,0.8fr]\">\n          <div className=\"space-y-6\">\n            <p className=\"text-xs uppercase tracking-[0.35em] text-[#d6a75d]\">\n              高山红茶 · 岩韵乌龙 · 年份普洱\n            </p>\n            <h1 className=\"font-[var(--font-display)] text-4xl leading-tight sm:text-5xl lg:text-6xl\">\n              云茶 · Yun Chá\n              <span className=\"block text-[32px] font-normal leading-tight text-white/70 sm:text-[40px]\">\n                致敬送礼与办公室的茶礼美学\n              </span>\n            </h1>\n            <p className=\"max-w-2xl text-lg text-white/70\">\n              甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。\n            </p>\n            <div className=\"flex flex-wrap gap-4\">\n              <a\n                href=\"#contact\"\n                className=\"rounded-full bg-[#d6a75d] px-5 py-3 text-sm font-semibold text-[#0f1512] shadow-lg shadow-[#d6a75d]/25 transition hover:-translate-y-[1px]\"\n              >\n                订购与定制\n              </a>\n              <a\n                href=\"#collections\"\n                className=\"rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text[#f5efe4] transition hover:-translate-y-[1px] hover:border-white/30 hover:bg-white/5\"\n              >\n                查看茶单\n              </a>\n            </div>\n            <div className=\"grid gap-4 text-sm text-white/70 sm:grid-cols-3\">\n              {highlights.map((item) => (\n                <div\n                  key={item.label}\n                  className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.25)]\"\n                >\n                  <p className=\"text-xs uppercase tracking-[0.2em] text-[#d6a75d]\">{item.label}</p>\n                  <p className=\"mt-1 text-2xl font-semibold text-[#f8d99c]\">{item.value}</p>\n                  <p>{item.note}</p>\n                </div>\n              ))}\n            </div>\n          </div>\n\n          <div className=\"relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#172219]/80 via-[#0f1512] to-[#1b2b21]/90 p-8 shadow-[0_20px_80px_rgba(0,0,0,0.35)]\">\n            <div className=\"absolute right-6 top-6 rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#f5efe4]\">\n              本月甄选\n            </div>\n            <div className=\"space-y-4\">\n              <p className=\"text-sm text-white/70\">山场风味线索</p>\n              <h3 className=\"font-[var(--font-display)] text-3xl\">桐木关·金骏眉 Reserve</h3>\n              <p className=\"text-white/70\">\n                260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。\n              </p>\n              <div className=\"grid grid-cols-2 gap-3 text-sm\">\n                <div className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3\">\n                  <p className=\"text-xs text-white/60\">推荐冲泡</p>\n                  <p className=\"text-base font-semibold text-[#f8d99c]\">92℃ · 6g · 100ml</p>\n                  <p className=\"text-white/60\">前 2 泡低位注水，保留绵密甜香</p>\n                </div>\n                <div className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3\">\n                  <p className=\"text-xs text-white/60\">适合场景</p>\n                  <p className=\"text-base font-semibold text-[#f8d99c]\">高端礼赠 / 会客</p>\n                  <p className=\"text-white/60\">支持手写礼卡与定制刻字</p>\n                </div>\n              </div>\n              <div className=\"flex gap-3 text-xs text-white/70\">\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">岩韵 · 焦糖</span>\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">冷萃可选</span>\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">限量 60 盒</span>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <section id=\"collections\" className=\"space-y-6\">\n          <div className=\"flex flex-wrap items-end justify-between gap-4\">\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Collections</p>\n              <h2 className=\"font-[var(--font-display)] text-3xl sm:text-4xl\">三大风味线</h2>\n              <p className=\"text-white/70\">红茶、乌龙、普洱，均附冲泡指南与杯测卡。</p>\n            </div>\n            <a\n              href=\"#contact\"\n              className=\"text-sm text-[#f8d99c] underline-offset-4 hover:text[#ffe7b2] hover:underline\"\n            >\n              索要完整茶谱\n            </a>\n          </div>\n          <div className=\"grid gap-6 md:grid-cols-3\">\n            {signatureTeas.map((tea) => (\n              <div\n                key={tea.name}\n                className=\"group relative overflow-hidden rounded-3xl border border-white/12 bg-gradient-to-b from-white/10 to-white/5 p-6 shadow-[0_18px_60px_rgba(0,0,0,0.35)] transition hover:-translate-y-1 hover:border-[#d6a75d]/40 hover:shadow-[0_25px_70px_rgba(0,0,0,0.45)]\"\n              >\n                <div className=\"absolute inset-0 opacity-0 transition group-hover:opacity-100\">\n                  <div className=\"absolute inset-0 bg-gradient-to-b from-[#d6a75d]/10 to-transparent\" />\n                </div>\n                <p className=\"text-xs uppercase tracking-[0.25em] text-[#d6a75d]\">{tea.region}</p>\n                <h3 className=\"mt-2 font-[var(--font-display)] text-2xl\">{tea.name}</h3>\n                <p className=\"mt-3 text-sm text-white/70\">{tea.notes}</p>\n                <div className=\"mt-5 flex flex-wrap gap-2 text-xs text-white/70\">\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">手工拣剔</span>\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">单株采摘</span>\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">附水质指南</span>\n                </div>\n                <p className=\"mt-6 text-sm font-semibold text-[#f8d99c]\">{tea.pairing}</p>\n              </div>\n            ))}\n          </div>\n        </section>\n\n        <section className=\"grid gap-6 rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_18px_60px_rgba(0,0,0,0.35)] lg:grid-cols-[1.1fr,0.9fr]\">\n          <div className=\"space-y-3\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">For Gift & Office</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl\">礼赠与办公室方案</h2>\n            <p className=\"text-white/70\">\n              从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。\n            </p>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              {services.slice(0, 2).map((svc) => (\n                <div key={svc.title} className=\"rounded-2xl border border-white/10 bg-white/5 p-5\">\n                  <h3 className=\"text-xl font-semibold text-[#f8d99c]\">{svc.title}</h3>\n                  <p className=\"mt-1 text-sm text-white/70\">{svc.desc}</p>\n                  <ul className=\"mt-3 space-y-2 text-sm text-white/80\">\n                    {svc.bullets.map((b) => (\n                      <li key={b} className=\"flex items-start gap-2\">\n                        <span className=\"mt-1 h-1.5 w-1.5 rounded-full bg-[#d6a75d]\" />\n                        <span>{b}</span>\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n              ))}\n            </div>\n            <div className=\"rounded-2xl border border-[#d6a75d]/30 bg-[#d6a75d]/10 p-5 text-sm text[#0f1512] shadow-inner\">\n              <p className=\"font-semibold\">办公室提升</p>\n              <p className=\"mt-1\">\n                提供软硬水冲泡曲线、温控壶/沙漏/茶盘搭配、冷萃大壶方案，员工可快速复刻。\n              </p>\n            </div>\n          </div>\n          <div className=\"space-y-4 rounded-3xl border border-white/12 bg-gradient-to-b from-[#1b2b21]/60 to-[#0f1512] p-6\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Process</p>\n            <h3 className=\"font-[var(--font-display)] text-2xl\">风味标准作业</h3>\n            <div className=\"space-y-3\">\n              {rituals.map((step, index) => (\n                <div key={step.title} className=\"flex gap-3 rounded-2xl border border-white/10 bg-white/5 p-4\">\n                  <div className=\"flex h-10 w-10 items-center justify-center rounded-full bg-[#d6a75d]/15 text-sm font-semibold text-[#f8d99c]\">\n                    {index + 1}\n                  </div>\n                  <div>\n                    <p className=\"text-base font-semibold text-[#f5efe4]\">{step.title}</p>\n                    <p className=\"text-sm text-white/70\">{step.detail}</p>\n                  </div>\n                </div>\n              ))}\n            </div>\n            <div className=\"text-sm text-white/70\">\n              <p>· 可提供杯测表 & 茶曲线 PDF</p>\n              <p>· 礼盒均附手写礼卡，最多 60 字</p>\n            </div>\n          </div>\n        </section>\n\n        <section\n          id=\"contact\"\n          className=\"grid gap-8 rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_18px_60px_rgba(0,0,0,0.35)] lg:grid-cols-[1.1fr,0.9fr]\"\n        >\n          <div className=\"space-y-4\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Contact & Order</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl\">预约试饮 / 订购表单</h2>\n            <p className=\"text-white/70\">\n              告诉我们送礼/办公室的场景、预算与偏好，我们将 24 小时内回复方案与样品邮寄。\n            </p>\n            <ul className=\"space-y-2 text-sm text-white/80\">\n              <li>· 支持开票、多地址配送、礼卡定制</li>\n              <li>· 可安排上门茶席/线上冲泡教学</li>\n              <li>· 建议预算：¥380 - ¥2580 / 礼盒；办公方案按人次定价</li>\n            </ul>\n          </div>\n          <form\n            className=\"space-y-4 rounded-2xl border border-white/10 bg-[#0f1512]/70 p-6 shadow-inner backdrop-blur\"\n            action=\"https://formspree.io/f/your-form-id\"\n            method=\"POST\"\n          >\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>姓名 / 公司</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"name\"\n                  placeholder=\"王先生 / 云茶办公\"\n                  required\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>邮箱</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  type=\"email\"\n                  name=\"email\"\n                  placeholder=\"you@company.com\"\n                  required\n                />\n              </label>\n            </div>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>联系方式</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"phone\"\n                  placeholder=\"电话 / 微信\"\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>场景</span>\n                <select\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"occasion\"\n                  defaultValue=\"礼赠\"\n                >\n                  <option className=\"bg-[#0f1512]\">礼赠</option>\n                  <option className=\"bg[#0f1512]\">办公室</option>\n                  <option className=\"bg-[#0f1512]\">品鉴活动</option>\n                  <option className=\"bg-[#0f1512]\">其他</option>\n                </select>\n              </label>\n            </div>\n            <label className=\"space-y-2 text-sm text-white/80\">\n              <span>预算 / 人数</span>\n              <input\n                className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                name=\"budget\"\n                placeholder=\"例如：¥1500/礼盒；30 人办公室\"\n              />\n            </label>\n            <label className=\"space-y-2 text-sm text-white/80\">\n              <span>其他需求</span>\n              <textarea\n                className=\"w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm text[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                name=\"message\"\n                rows={4}\n                placeholder=\"喜欢的风味（焙火/花香/陈香）、交付时间、是否需要茶器/刻字\"\n              />\n            </label>\n            <button\n              type=\"submit\"\n              className=\"w-full rounded-full bg-[#d6a75d] px-5 py-3 text-sm font-semibold text[#0f1512] shadow-lg shadow-[#d6a75d]/30 transition hover:-translate-y-[1px]\"\n            >\n              提交订购需求\n            </button>\n            <p className=\"text-xs text-white/50\">\n              表单默认使用 Formspree，替换 action 链接为你的 CRM/表单接口即可。\n            </p>\n          </form>\n        </section>\n\n        <footer className=\"flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-white/60\">\n          <div>\n            <p className=\"font-semibold text-white\">Yun Chá 云茶</p>\n            <p>高山红茶 · 岩韵乌龙 · 年份普洱</p>\n          </div>\n          <div className=\"flex gap-6\">\n            <a className=\"hover:text-[#f8d99c]\" href=\"mailto:hello@yuncha.example.com\">\n              hello@yuncha.example.com\n            </a>\n            <a className=\"hover:text-[#f8d99c]\" href=\"#contact\">\n              预约品鉴\n            </a>\n          </div>\n        </footer>\n      </main>\n    </div>\n  );\n}\n'@ | Out-File -FilePath app/page.tsx -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Need to overwrite app/page.tsx with the new landing page content; read-only sandbox blocks writes"}
+2026-01-11T07:40:40.779482Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx"}
+2026-01-11T07:42:10.687843Z  INFO ToolCall: shell_command {"command":"@'\nimport Image from \"next/image\";\n\nconst signatureTeas = [\n  {\n    name: \"金骏眉 · Reserve\",\n    region: \"武夷山 · 红茶\",\n    notes: \"可可与山蜜，绵密焦糖甜感，绵长尾韵。\",\n    pairing: \"高端礼赠 / 下午茶\",\n  },\n  {\n    name: \"大红袍 · 炉火\",\n    region: \"武夷岩茶 · 乌龙\",\n    notes: \"岩韵矿香与焙火层次，辛香柑橘收尾。\",\n    pairing: \"会客 / 餐后\",\n  },\n  {\n    name: \"冰岛 · 2021\",\n    region: \"临沧 · 普洱生茶\",\n    notes: \"兰花冷香，清甜回甘，喉韵悠长。\",\n    pairing: \"冥想 / 品鉴\",\n  },\n];\n\nconst services = [\n  {\n    title: \"礼赠 · 私享礼盒\",\n    desc: \"手作榫卯木盒，烫金手写礼卡，支持刻字/家徽。\",\n    bullets: [\"甄选单株/小产区\", \"搭配汝窑/银壶茶器\", \"48小时内顺丰冷链\"],\n  },\n  {\n    title: \"办公室 · 茶席\",\n    desc: \"会议来访 / 日常下午茶，提升空间气质。\",\n    bullets: [\"单杯挂耳 / 原叶冷萃\", \"茶吧台软装与陈列\", \"员工茶课与冲泡SOP\"],\n  },\n  {\n    title: \"订阅 · 季度臻选\",\n    desc: \"每季 3 款风味，含手冲指南与杯测卡。\",\n    bullets: [\"红茶/乌龙/普洱自由搭配\", \"附水质/温度建议\", \"企业可开票/寄往多址\"],\n  },\n];\n\nconst rituals = [\n  {\n    title: \"山场遴选\",\n    detail: \"武夷桐木关、凤凰单丛、冰岛老寨等源头直采，追溯茶园批次。\",\n  },\n  {\n    title: \"火候演绎\",\n    detail: \"18 年资深焙火师，控水活与含香，分段低温回火。\",\n  },\n  {\n    title: \"静置醒茶\",\n    detail: \"恒温恒湿窖藏 14 天，风味稳定后封缄，附冲泡曲线。\",\n  },\n];\n\nconst highlights = [\n  { label: \"庄园直供\", value: \"9 个\", note: \"签约核心山场\" },\n  { label: \"礼盒客单\", value: \"¥980+\", note: \"定制刻字/配饰\" },\n  { label: \"办公室\", value: \"26 家\", note: \"精品办公室茶席\" },\n];\n\nexport default function Home() {\n  return (\n    <div className=\"relative min-h-screen overflow-hidden bg-[#0f1512] text-[#f5efe4]\">\n      <div className=\"pointer-events-none absolute inset-0 opacity-60\">\n        <div className=\"absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#d6a75d]/20 blur-3xl\" />\n        <div className=\"absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#6b5130]/20 blur-3xl\" />\n        <div className=\"absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent\" />\n      </div>\n\n      <header className=\"sticky top-0 z-30 border-b border-white/10 bg-[#0f1512]/80 backdrop-blur\">\n        <div className=\"mx-auto flex max-w-6xl items-center justify-between px-6 py-4\">\n          <div className=\"flex items-center gap-3\">\n            <div className=\"h-9 w-9 rounded-full bg-gradient-to-br from-[#c2893a] via-[#e3c07a] to-[#6a4a1f] shadow-[0_0_0_1px_rgba(255,255,255,0.14)]\" />\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.35em] text-[#d6a75d]\">Yun Chá</p>\n              <p className=\"text-sm text-white/70\">云茶 · 高端茶礼</p>\n            </div>\n          </div>\n          <div className=\"hidden items-center gap-6 text-sm text-white/70 md:flex\">\n            <span>红茶 · 乌龙 · 普洱</span>\n            <span>礼赠 / 办公室</span>\n            <span>定制刻字</span>\n          </div>\n          <a\n            className=\"rounded-full border border-[#d6a75d]/70 bg-[#d6a75d]/10 px-4 py-2 text-sm font-medium text-[#f5efe4] transition hover:-translate-y-[1px] hover:border-[#d6a75d] hover:bg-[#d6a75d]/20\"\n            href=\"#contact\"\n          >\n            预约品鉴\n          </a>\n        </div>\n      </header>\n\n      <main className=\"relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14\">\n        <section className=\"grid gap-10 lg:grid-cols-[1.2fr,0.8fr]\">\n          <div className=\"space-y-6\">\n            <p className=\"text-xs uppercase tracking-[0.35em] text-[#d6a75d]\">\n              高山红茶 · 岩韵乌龙 · 年份普洱\n            </p>\n            <h1 className=\"font-[var(--font-display)] text-4xl leading-tight sm:text-5xl lg:text-6xl\">\n              云茶 · Yun Chá\n              <span className=\"block text-[32px] font-normal leading-tight text-white/70 sm:text-[40px]\">\n                致敬送礼与办公室的茶礼美学\n              </span>\n            </h1>\n            <p className=\"max-w-2xl text-lg text-white/70\">\n              甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。\n            </p>\n            <div className=\"flex flex-wrap gap-4\">\n              <a\n                href=\"#contact\"\n                className=\"rounded-full bg-[#d6a75d] px-5 py-3 text-sm font-semibold text-[#0f1512] shadow-lg shadow-[#d6a75d]/25 transition hover:-translate-y-[1px]\"\n              >\n                订购与定制\n              </a>\n              <a\n                href=\"#collections\"\n                className=\"rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-[#f5efe4] transition hover:-translate-y-[1px] hover:border-white/30 hover:bg-white/5\"\n              >\n                查看茶单\n              </a>\n            </div>\n            <div className=\"grid gap-4 text-sm text-white/70 sm:grid-cols-3\">\n              {highlights.map((item) => (\n                <div\n                  key={item.label}\n                  className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.25)]\"\n                >\n                  <p className=\"text-xs uppercase tracking-[0.2em] text-[#d6a75d]\">{item.label}</p>\n                  <p className=\"mt-1 text-2xl font-semibold text-[#f8d99c]\">{item.value}</p>\n                  <p>{item.note}</p>\n                </div>\n              ))}\n            </div>\n          </div>\n\n          <div className=\"relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-[#172219]/80 via-[#0f1512] to-[#1b2b21]/90 p-8 shadow-[0_20px_80px_rgba(0,0,0,0.35)]\">\n            <div className=\"absolute right-6 top-6 rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#f5efe4]\">\n              本月甄选\n            </div>\n            <div className=\"space-y-4\">\n              <p className=\"text-sm text-white/70\">山场风味线索</p>\n              <h3 className=\"font-[var(--font-display)] text-3xl\">桐木关·金骏眉 Reserve</h3>\n              <p className=\"text-white/70\">\n                260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。\n              </p>\n              <div className=\"grid grid-cols-2 gap-3 text-sm\">\n                <div className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3\">\n                  <p className=\"text-xs text-white/60\">推荐冲泡</p>\n                  <p className=\"text-base font-semibold text-[#f8d99c]\">92℃ · 6g · 100ml</p>\n                  <p className=\"text-white/60\">前 2 泡低位注水，保留绵密甜香</p>\n                </div>\n                <div className=\"rounded-2xl border border-white/10 bg-white/5 px-4 py-3\">\n                  <p className=\"text-xs text-white/60\">适合场景</p>\n                  <p className=\"text-base font-semibold text-[#f8d99c]\">高端礼赠 / 会客</p>\n                  <p className=\"text-white/60\">支持手写礼卡与定制刻字</p>\n                </div>\n              </div>\n              <div className=\"flex gap-3 text-xs text-white/70\">\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">岩韵 · 焦糖</span>\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">冷萃可选</span>\n                <span className=\"rounded-full border border-white/15 px-3 py-1\">限量 60 盒</span>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <section id=\"collections\" className=\"space-y-6\">\n          <div className=\"flex flex-wrap items-end justify-between gap-4\">\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Collections</p>\n              <h2 className=\"font-[var(--font-display)] text-3xl sm:text-4xl\">三大风味线</h2>\n              <p className=\"text-white/70\">红茶、乌龙、普洱，均附冲泡指南与杯测卡。</p>\n            </div>\n            <a\n              href=\"#contact\"\n              className=\"text-sm text-[#f8d99c] underline-offset-4 hover:text-[#ffe7b2] hover:underline\"\n            >\n              索要完整茶谱\n            </a>\n          </div>\n          <div className=\"grid gap-6 md:grid-cols-3\">\n            {signatureTeas.map((tea) => (\n              <div\n                key={tea.name}\n                className=\"group relative overflow-hidden rounded-3xl border border-white/12 bg-gradient-to-b from-white/10 to-white/5 p-6 shadow-[0_18px_60px_rgba(0,0,0,0.35)] transition hover:-translate-y-1 hover:border-[#d6a75d]/40 hover:shadow-[0_25px_70px_rgba(0,0,0,0.45)]\"\n              >\n                <div className=\"absolute inset-0 opacity-0 transition group-hover:opacity-100\">\n                  <div className=\"absolute inset-0 bg-gradient-to-b from-[#d6a75d]/10 to-transparent\" />\n                </div>\n                <p className=\"text-xs uppercase tracking-[0.25em] text-[#d6a75d]\">{tea.region}</p>\n                <h3 className=\"mt-2 font-[var(--font-display)] text-2xl\">{tea.name}</h3>\n                <p className=\"mt-3 text-sm text-white/70\">{tea.notes}</p>\n                <div className=\"mt-5 flex flex-wrap gap-2 text-xs text-white/70\">\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">手工拣剔</span>\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">单株采摘</span>\n                  <span className=\"rounded-full border border-white/15 px-3 py-1\">附水质指南</span>\n                </div>\n                <p className=\"mt-6 text-sm font-semibold text-[#f8d99c]\">{tea.pairing}</p>\n              </div>\n            ))}\n          </div>\n        </section>\n\n        <section className=\"grid gap-6 rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_18px_60px_rgba(0,0,0,0.35)] lg:grid-cols-[1.1fr,0.9fr]\">\n          <div className=\"space-y-3\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">For Gift & Office</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl\">礼赠与办公室方案</h2>\n            <p className=\"text-white/70\">\n              从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。\n            </p>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              {services.slice(0, 2).map((svc) => (\n                <div key={svc.title} className=\"rounded-2xl border border-white/10 bg-white/5 p-5\">\n                  <h3 className=\"text-xl font-semibold text-[#f8d99c]\">{svc.title}</h3>\n                  <p className=\"mt-1 text-sm text-white/70\">{svc.desc}</p>\n                  <ul className=\"mt-3 space-y-2 text-sm text-white/80\">\n                    {svc.bullets.map((b) => (\n                      <li key={b} className=\"flex items-start gap-2\">\n                        <span className=\"mt-1 h-1.5 w-1.5 rounded-full bg-[#d6a75d]\" />\n                        <span>{b}</span>\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n              ))}\n            </div>\n            <div className=\"rounded-2xl border border-[#d6a75d]/30 bg-[#d6a75d]/10 p-5 text-sm text-[#0f1512] shadow-inner\">\n              <p className=\"font-semibold\">办公室提升</p>\n              <p className=\"mt-1\">\n                提供软硬水冲泡曲线、温控壶/沙漏/茶盘搭配、冷萃大壶方案，员工可快速复刻。\n              </p>\n            </div>\n          </div>\n          <div className=\"space-y-4 rounded-3xl border border-white/12 bg-gradient-to-b from-[#1b2b21]/60 to-[#0f1512] p-6\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Process</p>\n            <h3 className=\"font-[var(--font-display)] text-2xl\">风味标准作业</h3>\n            <div className=\"space-y-3\">\n              {rituals.map((step, index) => (\n                <div key={step.title} className=\"flex gap-3 rounded-2xl border border-white/10 bg-white/5 p-4\">\n                  <div className=\"flex h-10 w-10 items-center justify-center rounded-full bg-[#d6a75d]/15 text-sm font-semibold text-[#f8d99c]\">\n                    {index + 1}\n                  </div>\n                  <div>\n                    <p className=\"text-base font-semibold text-[#f5efe4]\">{step.title}</p>\n                    <p className=\"text-sm text-white/70\">{step.detail}</p>\n                  </div>\n                </div>\n              ))}\n            </div>\n            <div className=\"text-sm text-white/70\">\n              <p>· 可提供杯测表 & 茶曲线 PDF</p>\n              <p>· 礼盒均附手写礼卡，最多 60 字</p>\n            </div>\n          </div>\n        </section>\n\n        <section\n          id=\"contact\"\n          className=\"grid gap-8 rounded-3xl border border-white/12 bg-white/5 p-8 shadow-[0_18px_60px_rgba(0,0,0,0.35)] lg:grid-cols-[1.1fr,0.9fr]\"\n        >\n          <div className=\"space-y-4\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#d6a75d]\">Contact & Order</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl\">预约试饮 / 订购表单</h2>\n            <p className=\"text-white/70\">\n              告诉我们送礼/办公室的场景、预算与偏好，我们将 24 小时内回复方案与样品邮寄。\n            </p>\n            <ul className=\"space-y-2 text-sm text-white/80\">\n              <li>· 支持开票、多地址配送、礼卡定制</li>\n              <li>· 可安排上门茶席/线上冲泡教学</li>\n              <li>· 建议预算：¥380 - ¥2580 / 礼盒；办公方案按人次定价</li>\n            </ul>\n          </div>\n          <form\n            className=\"space-y-4 rounded-2xl border border-white/10 bg-[#0f1512]/70 p-6 shadow-inner backdrop-blur\"\n            action=\"https://formspree.io/f/your-form-id\"\n            method=\"POST\"\n          >\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>姓名 / 公司</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"name\"\n                  placeholder=\"王先生 / 云茶办公\"\n                  required\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>邮箱</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  type=\"email\"\n                  name=\"email\"\n                  placeholder=\"you@company.com\"\n                  required\n                />\n              </label>\n            </div>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>联系方式</span>\n                <input\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"phone\"\n                  placeholder=\"电话 / 微信\"\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-white/80\">\n                <span>场景</span>\n                <select\n                  className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] focus:border-[#d6a75d] focus:outline-none\"\n                  name=\"occasion\"\n                  defaultValue=\"礼赠\"\n                >\n                  <option className=\"bg-[#0f1512]\">礼赠</option>\n                  <option className=\"bg-[#0f1512]\">办公室</option>\n                  <option className=\"bg-[#0f1512]\">品鉴活动</option>\n                  <option className=\"bg-[#0f1512]\">其他</option>\n                </select>\n              </label>\n            </div>\n            <label className=\"space-y-2 text-sm text-white/80\">\n              <span>预算 / 人数</span>\n              <input\n                className=\"w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                name=\"budget\"\n                placeholder=\"例如：¥1500/礼盒；30 人办公室\"\n              />\n            </label>\n            <label className=\"space-y-2 text-sm text-white/80\">\n              <span>其他需求</span>\n              <textarea\n                className=\"w-full rounded-2xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-[#f5efe4] placeholder:text-white/40 focus:border-[#d6a75d] focus:outline-none\"\n                name=\"message\"\n                rows={4}\n                placeholder=\"喜欢的风味（焙火/花香/陈香）、交付时间、是否需要茶器/刻字\"\n              />\n            </label>\n            <button\n              type=\"submit\"\n              className=\"w-full rounded-full bg-[#d6a75d] px-5 py-3 text-sm font-semibold text-[#0f1512] shadow-lg shadow-[#d6a75d]/30 transition hover:-translate-y-[1px]\"\n            >\n              提交订购需求\n            </button>\n            <p className=\"text-xs text-white/50\">\n              表单默认使用 Formspree，替换 action 链接为你的 CRM/表单接口即可。\n            </p>\n          </form>\n        </section>\n\n        <footer className=\"flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-white/60\">\n          <div>\n            <p className=\"font-semibold text-white\">Yun Chá 云茶</p>\n            <p>高山红茶 · 岩韵乌龙 · 年份普洱</p>\n          </div>\n          <div className=\"flex gap-6\">\n            <a className=\"hover:text-[#f8d99c]\" href=\"mailto:hello@yuncha.example.com\">\n              hello@yuncha.example.com\n            </a>\n            <a className=\"hover:text-[#f8d99c]\" href=\"#contact\">\n              预约品鉴\n            </a>\n          </div>\n        </footer>\n      </main>\n    </div>\n  );\n}\n'@ | Out-File -FilePath app/page.tsx -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Correct class names and finalize page.tsx content after initial write"}
+2026-01-11T07:42:19.447999Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"text\\[#\""}
+2026-01-11T07:42:25.381935Z  INFO ToolCall: shell_command {"command":"Get-Content app/globals.css"}
+2026-01-11T07:42:35.591371Z  INFO ToolCall: shell_command {"command":"@'\n@import \"tailwindcss\";\n\n:root {\n  --ink: #0f1512;\n  --forest: #1b2b21;\n  --amber: #d6a75d;\n  --brass: #6a4a1f;\n  --cream: #f5efe4;\n  --line: rgba(255, 255, 255, 0.12);\n  --foreground: var(--cream);\n  --background: var(--ink);\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-body);\n  --font-mono: var(--font-body);\n  --font-display: var(--font-display);\n}\n\nbody {\n  background: radial-gradient(140% 120% at 10% 10%, rgba(214, 167, 93, 0.16), transparent),\n    radial-gradient(100% 100% at 90% 80%, rgba(107, 81, 48, 0.18), transparent),\n    var(--ink);\n  color: var(--foreground);\n  font-family: var(--font-body), \"Helvetica Neue\", Arial, sans-serif;\n}\n\nh1,\nh2,\nh3,\nh4 {\n  font-family: var(--font-display), \"Times New Roman\", serif;\n  letter-spacing: 0.02em;\n}\n\na {\n  text-decoration: none;\n}\n\n::selection {\n  background: rgba(214, 167, 93, 0.35);\n  color: #0f1512;\n}\n'@ | Out-File -FilePath app/globals.css -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Fix minor formatting in globals.css after initial write"}
+2026-01-11T07:54:15.843683Z  INFO spawning ghost snapshot task
+2026-01-11T07:54:16.104592Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:54:16.104618Z  INFO ghost commit captured: 68d11a95a3718304c81a2a202b946385a07641c6
+2026-01-11T07:54:16.104624Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:54:26.492988Z  INFO interrupt received: abort current task, if any
+2026-01-11T07:54:33.334083Z  INFO spawning ghost snapshot task
+2026-01-11T07:54:33.582081Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:54:33.582107Z  INFO ghost commit captured: 3dfd4950cf813f8510a7cecc17db7488f6bd0b93
+2026-01-11T07:54:33.582112Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:56:10.593508Z  INFO ToolCall: shell_command {"command":"@'\nimport Image from \"next/image\";\n\nconst signatureTeas = [\n  {\n    name: \"金骏眉 · Reserve\",\n    region: \"武夷山 · 红茶\",\n    notes: \"可可与山蜜，绵密焦糖甜感，绵长尾韵。\",\n    pairing: \"高端礼赠 / 下午茶\",\n  },\n  {\n    name: \"大红袍 · 炉火\",\n    region: \"武夷岩茶 · 乌龙\",\n    notes: \"岩韵矿香与焙火层次，辛香柑橘收尾。\",\n    pairing: \"会客 / 餐后\",\n  },\n  {\n    name: \"冰岛 · 2021\",\n    region: \"临沧 · 普洱生茶\",\n    notes: \"兰花冷香，清甜回甘，喉韵悠长。\",\n    pairing: \"冥想 / 品鉴\",\n  },\n];\n\nconst services = [\n  {\n    title: \"礼赠 · 私享礼盒\",\n    desc: \"手作榫卯木盒，烫金手写礼卡，支持刻字/家徽。\",\n    bullets: [\"甄选单株/小产区\", \"搭配汝窑/银壶茶器\", \"48小时内顺丰冷链\"],\n  },\n  {\n    title: \"办公室 · 茶席\",\n    desc: \"会议来访 / 日常下午茶，提升空间气质。\",\n    bullets: [\"单杯挂耳 / 原叶冷萃\", \"茶吧台软装与陈列\", \"员工茶课与冲泡SOP\"],\n  },\n  {\n    title: \"订阅 · 季度臻选\",\n    desc: \"每季 3 款风味，含手冲指南与杯测卡。\",\n    bullets: [\"红茶/乌龙/普洱自由搭配\", \"附水质/温度建议\", \"企业可开票/寄往多址\"],\n  },\n];\n\nconst rituals = [\n  {\n    title: \"山场遴选\",\n    detail: \"武夷桐木关、凤凰单丛、冰岛老寨等源头直采，追溯茶园批次。\",\n  },\n  {\n    title: \"火候演绎\",\n    detail: \"18 年资深焙火师，控水活与含香，分段低温回火。\",\n  },\n  {\n    title: \"静置醒茶\",\n    detail: \"恒温恒湿窖藏 14 天，风味稳定后封缄，附冲泡曲线。\",\n  },\n];\n\nconst highlights = [\n  { label: \"庄园直供\", value: \"9 个\", note: \"签约核心山场\" },\n  { label: \"礼盒客单\", value: \"¥980+\", note: \"定制刻字/配饰\" },\n  { label: \"办公室\", value: \"26 家\", note: \"精品办公室茶席\" },\n];\n\nexport default function Home() {\n  return (\n    <div className=\"relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]\">\n      <div className=\"pointer-events-none absolute inset-0 opacity-80\">\n        <div className=\"absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#f0e3cc]/80 blur-3xl\" />\n        <div className=\"absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#d6b679]/50 blur-3xl\" />\n        <div className=\"absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#c9b284] to-transparent\" />\n      </div>\n\n      <header className=\"sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur\">\n        <div className=\"mx-auto flex max-w-6xl items-center justify-between px-6 py-4\">\n          <div className=\"flex items-center gap-3\">\n            <div className=\"h-9 w-9 rounded-full bg-gradient-to-br from-[#d8a64b] via-[#f0d59a] to-[#b3771d] shadow-[0_0_0_1px_rgba(0,0,0,0.05)]\" />\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.35em] text-[#b3771d]\">Yun Chá</p>\n              <p className=\"text-sm text-[#54412f]\">云茶 · 高端茶礼</p>\n            </div>\n          </div>\n          <div className=\"hidden items-center gap-6 text-sm text-[#5a4837] md:flex\">\n            <span>红茶 · 乌龙 · 普洱</span>\n            <span>礼赠 / 办公室</span>\n            <span>定制刻字</span>\n          </div>\n          <a\n            className=\"rounded-full border border-[#d8a64b]/70 bg-[#f7e5c4] px-4 py-2 text-sm font-medium text-[#4a3317] transition hover:-translate-y-[1px] hover:border-[#c2872a] hover:shadow-lg hover:shadow-[#e8c98a]/50\"\n            href=\"#contact\"\n          >\n            预约品鉴\n          </a>\n        </div>\n      </header>\n\n      <main className=\"relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14\">\n        <section className=\"grid gap-10 lg:grid-cols-[1.2fr,0.8fr]\">\n          <div className=\"space-y-6\">\n            <p className=\"text-xs uppercase tracking-[0.35em] text-[#b3771d]\">\n              高山红茶 · 岩韵乌龙 · 年份普洱\n            </p>\n            <h1 className=\"font-[var(--font-display)] text-4xl leading-tight text-[#1c130d] sm:text-5xl lg:text-6xl\">\n              云茶 · Yun Chá\n              <span className=\"block text-[32px] font-normal leading-tight text-[#6a5340] sm:text-[40px]\">\n                致敬送礼与办公室的茶礼美学\n              </span>\n            </h1>\n            <p className=\"max-w-2xl text-lg text-[#5a4837]\">\n              甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。\n            </p>\n            <div className=\"flex flex-wrap gap-4\">\n              <a\n                href=\"#contact\"\n                className=\"rounded-full bg-[#d8a64b] px-5 py-3 text-sm font-semibold text-[#3b240b] shadow-lg shadow-[#e6c07a]/40 transition hover:-translate-y-[1px]\"\n              >\n                订购与定制\n              </a>\n              <a\n                href=\"#collections\"\n                className=\"rounded-full border border-[#e0cda7] px-5 py-3 text-sm font-semibold text-[#3c2b1e] transition hover:-translate-y-[1px] hover:border-[#d8a64b] hover:bg-[#f7e7c9]\"\n              >\n                查看茶单\n              </a>\n            </div>\n            <div className=\"grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3\">\n              {highlights.map((item) => (\n                <div\n                  key={item.label}\n                  className=\"rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]\"\n                >\n                  <p className=\"text-xs uppercase tracking-[0.2em] text-[#b3771d]\">{item.label}</p>\n                  <p className=\"mt-1 text-2xl font-semibold text-[#c2872a]\">{item.value}</p>\n                  <p>{item.note}</p>\n                </div>\n              ))}\n            </div>\n          </div>\n\n          <div className=\"relative overflow-hidden rounded-3xl border border-[#e3d4b9] bg-gradient-to-br from-white via-[#f8efdf] to-[#f0e2c8] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.08)]\">\n            <div className=\"absolute right-6 top-6 rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]\">\n              本月甄选\n            </div>\n            <div className=\"space-y-4 text-[#4c3928]\">\n              <p className=\"text-sm text-[#715c48]\">山场风味线索</p>\n              <h3 className=\"font-[var(--font-display)] text-3xl text-[#2b1c13]\">桐木关·金骏眉 Reserve</h3>\n              <p className=\"text-[#5a4837]\">\n                260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。\n              </p>\n              <div className=\"grid grid-cols-2 gap-3 text-sm\">\n                <div className=\"rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3\">\n                  <p className=\"text-xs text-[#7a6756]\">推荐冲泡</p>\n                  <p className=\"text-base font-semibold text-[#c2872a]\">92℃ · 6g · 100ml</p>\n                  <p className=\"text-[#7a6756]\">前 2 泡低位注水，保留绵密甜香</p>\n                </div>\n                <div className=\"rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3\">\n                  <p className=\"text-xs text-[#7a6756]\">适合场景</p>\n                  <p className=\"text-base font-semibold text-[#c2872a]\">高端礼赠 / 会客</p>\n                  <p className=\"text-[#7a6756]\">支持手写礼卡与定制刻字</p>\n                </div>\n              </div>\n              <div className=\"flex gap-3 text-xs text-[#6a5340]\">\n                <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">岩韵 · 焦糖</span>\n                <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">冷萃可选</span>\n                <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">限量 60 盒</span>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <section id=\"collections\" className=\"space-y-6\">\n          <div className=\"flex flex-wrap items-end justify-between gap-4\">\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Collections</p>\n              <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d] sm:text-4xl\">三大风味线</h2>\n              <p className=\"text-[#5a4837]\">红茶、乌龙、普洱，均附冲泡指南与杯测卡。</p>\n            </div>\n            <a\n              href=\"#contact\"\n              className=\"text-sm text-[#b3771d] underline-offset-4 hover:text-[#8a5a1a] hover:underline\"\n            >\n              索要完整茶谱\n            </a>\n          </div>\n          <div className=\"grid gap-6 md:grid-cols-3\">\n            {signatureTeas.map((tea) => (\n              <div\n                key={tea.name}\n                className=\"group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]\"\n              >\n                <div className=\"absolute inset-0 opacity-0 transition group-hover:opacity-100\">\n                  <div className=\"absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent\" />\n                </div>\n                <p className=\"text-xs uppercase tracking-[0.25em] text-[#b3771d]\">{tea.region}</p>\n                <h3 className=\"mt-2 font-[var(--font-display)] text-2xl text-[#23160f]\">{tea.name}</h3>\n                <p className=\"mt-3 text-sm text-[#5a4837]\">{tea.notes}</p>\n                <div className=\"mt-5 flex flex-wrap gap-2 text-xs text-[#6a5340]\">\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">手工拣剔</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">单株采摘</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">附水质指南</span>\n                </div>\n                <p className=\"mt-6 text-sm font-semibold text-[#c2872a]\">{tea.pairing}</p>\n              </div>\n            ))}\n          </div>\n        </section>\n\n        <section className=\"grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]\">\n          <div className=\"space-y-3\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">For Gift & Office</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d]\">礼赠与办公室方案</h2>\n            <p className=\"text-[#5a4837]\">\n              从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。\n            </p>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              {services.slice(0, 2).map((svc) => (\n                <div key={svc.title} className=\"rounded-2xl border border-[#eee3ce] bg-[#fdf7ed] p-5\">\n                  <h3 className=\"text-xl font-semibold text-[#c2872a]\">{svc.title}</h3>\n                  <p className=\"mt-1 text-sm text-[#6a5340]\">{svc.desc}</p>\n                  <ul className=\"mt-3 space-y-2 text-sm text-[#5a4837]\">\n                    {svc.bullets.map((b) => (\n                      <li key={b} className=\"flex items-start gap-2\">\n                        <span className=\"mt-1 h-1.5 w-1.5 rounded-full bg-[#c2872a]\" />\n                        <span>{b}</span>\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n              ))}\n            </div>\n            <div className=\"rounded-2xl border border-[#d8a64b]/40 bg-[#f7e5c4] p-5 text-sm text-[#3b240b] shadow-inner\">\n              <p className=\"font-semibold\">办公室提升</p>\n              <p className=\"mt-1\">\n                提供软硬水冲泡曲线、温控壶/沙漏/茶盘搭配、冷萃大壶方案，员工可快速复刻。\n              </p>\n            </div>\n          </div>\n          <div className=\"space-y-4 rounded-3xl border border-[#e8ddc6] bg-gradient-to-b from-[#fbf2e2] to-[#f3e3c4] p-6\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Process</p>\n            <h3 className=\"font-[var(--font-display)] text-2xl text-[#1f140e]\">风味标准作业</h3>\n            <div className=\"space-y-3\">\n              {rituals.map((step, index) => (\n                <div key={step.title} className=\"flex gap-3 rounded-2xl border border-[#efe4cf] bg-white p-4\">\n                  <div className=\"flex h-10 w-10 items-center justify-center rounded-full bg-[#f7e5c4] text-sm font-semibold text-[#8a5a1a]\">\n                    {index + 1}\n                  </div>\n                  <div>\n                    <p className=\"text-base font-semibold text-[#2b1c13]\">{step.title}</p>\n                    <p className=\"text-sm text-[#6a5340]\">{step.detail}</p>\n                  </div>\n                </div>\n              ))}\n            </div>\n            <div className=\"text-sm text-[#5a4837]\">\n              <p>· 可提供杯测表 & 茶曲线 PDF</p>\n              <p>· 礼盒均附手写礼卡，最多 60 字</p>\n            </div>\n          </div>\n        </section>\n\n        <section\n          id=\"contact\"\n          className=\"grid gap-8 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]\"\n        >\n          <div className=\"space-y-4\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Contact & Order</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d]\">预约试饮 / 订购表单</h2>\n            <p className=\"text-[#5a4837]\">\n              告诉我们送礼/办公室的场景、预算与偏好，我们将 24 小时内回复方案与样品邮寄。\n            </p>\n            <ul className=\"space-y-2 text-sm text-[#6a5340]\">\n              <li>· 支持开票、多地址配送、礼卡定制</li>\n              <li>· 可安排上门茶席/线上冲泡教学</li>\n              <li>· 建议预算：¥380 - ¥2580 / 礼盒；办公方案按人次定价</li>\n            </ul>\n          </div>\n          <form\n            className=\"space-y-4 rounded-2xl border border-[#e8ddc6] bg-[#fbf6eb] p-6 shadow-inner\"\n            action=\"https://formspree.io/f/your-form-id\"\n            method=\"POST\"\n          >\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>姓名 / 公司</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"name\"\n                  placeholder=\"王先生 / 云茶办公\"\n                  required\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>邮箱</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  type=\"email\"\n                  name=\"email\"\n                  placeholder=\"you@company.com\"\n                  required\n                />\n              </label>\n            </div>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>联系方式</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"phone\"\n                  placeholder=\"电话 / 微信\"\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>场景</span>\n                <select\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"occasion\"\n                  defaultValue=\"礼赠\"\n                >\n                  <option className=\"bg-white\">礼赠</option>\n                  <option className=\"bg-white\">办公室</option>\n                  <option className=\"bg-white\">品鉴活动</option>\n                  <option className=\"bg-white\">其他</option>\n                </select>\n              </label>\n            </div>\n            <label className=\"space-y-2 text-sm text-[#5a4837]\">\n              <span>预算 / 人数</span>\n              <input\n                className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                name=\"budget\"\n                placeholder=\"例如：¥1500/礼盒；30 人办公室\"\n              />\n            </label>\n            <label className=\"space-y-2 text-sm text-[#5a4837]\">\n              <span>其他需求</span>\n              <textarea\n                className=\"w-full rounded-2xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                name=\"message\"\n                rows={4}\n                placeholder=\"喜欢的风味（焙火/花香/陈香）、交付时间、是否需要茶器/刻字\"\n              />\n            </label>\n            <button\n              type=\"submit\"\n              className=\"w-full rounded-full bg-[#d8a64b] px-5 py-3 text-sm font-semibold text-[#3b240b] shadow-lg shadow-[#e6c07a]/40 transition hover:-translate-y-[1px]\"\n            >\n              提交订购需求\n            </button>\n            <p className=\"text-xs text-[#7a6756]\">\n              表单默认使用 Formspree，替换 action 链接为你的 CRM/表单接口即可。\n            </p>\n          </form>\n        </section>\n\n        <footer className=\"flex flex-wrap items-center justify-between gap-4 border-t border-[#e5d7bf] pt-6 text-sm text-[#6a5340]\">\n          <div>\n            <p className=\"font-semibold text-[#2b1c13]\">Yun Chá 云茶</p>\n            <p>高山红茶 · 岩韵乌龙 · 年份普洱</p>\n          </div>\n          <div className=\"flex gap-6\">\n            <a className=\"hover:text-[#8a5a1a]\" href=\"mailto:hello@yuncha.example.com\">\n              hello@yuncha.example.com\n            </a>\n            <a className=\"hover:text-[#8a5a1a]\" href=\"#contact\">\n              预约品鉴\n            </a>\n          </div>\n        </footer>\n      </main>\n    </div>\n  );\n}\n'@ | Out-File -FilePath app/page.tsx -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Lighten the palette and update page styling to a brighter luxury theme"}
+2026-01-11T07:56:26.218809Z  INFO ToolCall: shell_command {"command":"@'\n@import \"tailwindcss\";\n\n:root {\n  --ink: #fdf7ed;\n  --forest: #f3e6d2;\n  --amber: #d8a64b;\n  --brass: #8a5a1a;\n  --cream: #24170f;\n  --line: rgba(0, 0, 0, 0.08);\n  --foreground: #24170f;\n  --background: var(--ink);\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --font-sans: var(--font-body);\n  --font-mono: var(--font-body);\n  --font-display: var(--font-display);\n}\n\nbody {\n  background: radial-gradient(140% 120% at 10% 10%, rgba(216, 166, 75, 0.16), transparent),\n    radial-gradient(100% 100% at 90% 80%, rgba(227, 195, 138, 0.22), transparent),\n    var(--ink);\n  color: var(--foreground);\n  font-family: var(--font-body), \"Helvetica Neue\", Arial, sans-serif;\n}\n\nh1,\nh2,\nh3,\nh4 {\n  font-family: var(--font-display), \"Times New Roman\", serif;\n  letter-spacing: 0.02em;\n}\n\na {\n  text-decoration: none;\n}\n\n::selection {\n  background: rgba(216, 166, 75, 0.35);\n  color: #1f140e;\n}\n'@ | Out-File -FilePath app/globals.css -Encoding utf8","sandbox_permissions":"require_escalated","justification":"Align global palette with lighter luxury colors"}
+2026-01-11T07:58:05.681889Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"text\\[#\""}
+2026-01-11T07:58:44.541264Z  INFO spawning ghost snapshot task
+2026-01-11T07:58:44.799061Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:58:44.799088Z  INFO ghost commit captured: 513bd2766e38a979d9e7bac5a1456d5cbe7fa2cb
+2026-01-11T07:58:44.799094Z  INFO ghost snapshot gate marked ready
+2026-01-11T07:58:49.017555Z  INFO ToolCall: shell_command {"command":"Get-Content README.md"}
+2026-01-11T07:58:56.091247Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Delete File: README.md
+*** End Patch
+2026-01-11T07:59:10.849503Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: README.md
++## 项目简介
++
++云茶 Yun Chá 高端茶礼/办公室茶席单页，使用 Next.js App Router + Tailwind，风格为明亮琥珀/奶油系，突出红茶、乌龙、普洱的礼赠与办公场景。页面包含：英雄区、茶款合集、礼赠/办公室方案、风味流程以及订购联系表单（Formspree 占位）。
++
++## 快速开始
++
++```bash
++pnpm install
++pnpm dev
++# 浏览器访问 http://localhost:3000
++```
++
++开发时主要编辑：
++- `app/page.tsx`：页面内容与区块。
++- `app/globals.css`：配色、字体（Playfair Display/Manrope）和全局渐变背景。
++- `app/layout.tsx`：站点元信息与字体加载。
++
++## 自定义与素材
++
++- 图片：在 `public/tea/` 放置真实茶园/茶器照片，替换 `page.tsx` 中的占位路径。
++- 配色：在 `app/globals.css` 中调整 `--ink / --amber / --brass` 等变量即可更新主题。
++- 文案：直接修改 `signatureTeas`、`services`、`rituals` 数据，以符合实际茶款与服务。
++
++## 表单与提交
++
++订购表单当前指向 Formspree 占位 `https://formspree.io/f/your-form-id`。请替换为：
++- 你的 Formspree ID，或
++- 自建 API 路由（例如 `app/api/contact/route.ts`）对接邮件/CRM，再将 `action` 指向该接口。
++
++## 脚本
++
++```bash
++pnpm dev      # 本地开发
++pnpm lint     # 代码检查
++```
++
++## 部署
++
++可直接部署到 Vercel 或任意支持 Next.js 的平台。生产环境建议设置自定义域名，并为表单/邮件服务配置所需的密钥。*** End Patch
+*** End Patch
+2026-01-11T07:59:38.475034Z  INFO spawning ghost snapshot task
+2026-01-11T07:59:38.724229Z  INFO ghost snapshot blocking task finished
+2026-01-11T07:59:38.724258Z  INFO ghost commit captured: 88306f5a0da1feff50705aacdad506f39aa30555
+2026-01-11T07:59:38.724263Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:00:26.030528Z  INFO spawning ghost snapshot task
+2026-01-11T08:00:26.276957Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:00:26.276985Z  INFO ghost commit captured: c694e44b36fa3f58f53a559b23c67b3acdaf795b
+2026-01-11T08:00:26.276990Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:00:42.164575Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: public/tea/hero-tea.svg
++<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <defs>
++    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
++      <stop offset="0%" stop-color="#FBF2E2"/>
++      <stop offset="50%" stop-color="#F3E3C4"/>
++      <stop offset="100%" stop-color="#E7CFA0"/>
++    </linearGradient>
++    <radialGradient id="glow" cx="0.2" cy="0.2" r="0.7">
++      <stop offset="0%" stop-color="#EBCF98" stop-opacity="0.7"/>
++      <stop offset="100%" stop-color="#EBCF98" stop-opacity="0"/>
++    </radialGradient>
++    <radialGradient id="glow2" cx="0.8" cy="0.8" r="0.7">
++      <stop offset="0%" stop-color="#D8A64B" stop-opacity="0.35"/>
++      <stop offset="100%" stop-color="#D8A64B" stop-opacity="0"/>
++    </radialGradient>
++  </defs>
++  <rect width="1600" height="900" fill="url(#bg)"/>
++  <rect width="1600" height="900" fill="url(#glow)"/>
++  <rect width="1600" height="900" fill="url(#glow2)"/>
++  <g opacity="0.25">
++    <circle cx="260" cy="180" r="160" fill="#D8A64B"/>
++    <circle cx="1340" cy="760" r="190" fill="#B3771D"/>
++  </g>
++  <g opacity="0.8">
++    <rect x="380" y="250" width="840" height="460" rx="52" fill="white" fill-opacity="0.7" stroke="#E0CDA7" stroke-width="2"/>
++    <rect x="420" y="310" width="760" height="340" rx="40" fill="#FBF6EB" stroke="#E8DDC6" stroke-width="2"/>
++    <rect x="450" y="360" width="700" height="120" rx="28" fill="#E7CFA0" fill-opacity="0.45"/>
++    <rect x="450" y="500" width="420" height="70" rx="20" fill="#D8A64B" fill-opacity="0.35"/>
++    <rect x="900" y="500" width="250" height="70" rx="20" fill="#C2872A" fill-opacity="0.35"/>
++    <rect x="450" y="600" width="700" height="20" rx="10" fill="#C2872A" fill-opacity="0.25"/>
++    <rect x="450" y="640" width="520" height="16" rx="8" fill="#B3771D" fill-opacity="0.3"/>
++  </g>
++  <text x="800" y="210" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="48" letter-spacing="6">YUN CHÁ — HERO</text>
++  <text x="800" y="270" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="20" letter-spacing="3">Light Luxe Placeholder</text>
++</svg>
+*** End Patch
+2026-01-11T08:00:55.263035Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: public/tea/hongcha.svg
++<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <defs>
++    <linearGradient id="bg-hongcha" x1="0" y1="0" x2="1" y2="1">
++      <stop offset="0%" stop-color="#FFF7EA"/>
++      <stop offset="50%" stop-color="#F5E4C6"/>
++      <stop offset="100%" stop-color="#E9CFA3"/>
++    </linearGradient>
++  </defs>
++  <rect width="1600" height="900" fill="url(#bg-hongcha)"/>
++  <g opacity="0.18">
++    <circle cx="350" cy="200" r="180" fill="#D8A64B"/>
++    <circle cx="1320" cy="740" r="200" fill="#C2872A"/>
++  </g>
++  <g opacity="0.9">
++    <circle cx="800" cy="460" r="210" fill="#E6B764" />
++    <circle cx="800" cy="460" r="170" fill="#D28D3A" />
++    <circle cx="800" cy="460" r="135" fill="#B4631E" />
++    <circle cx="800" cy="460" r="105" fill="#8A3D11" />
++    <circle cx="800" cy="460" r="78" fill="#5A240A" />
++    <circle cx="800" cy="460" r="54" fill="#311308" />
++    <circle cx="800" cy="460" r="36" fill="#1E0B05" />
++  </g>
++  <text x="800" y="180" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">HONGCHA · 红茶</text>
++  <text x="800" y="230" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Amber Tea Liquor Placeholder</text>
++</svg>
+*** End Patch
+2026-01-11T08:01:15.264031Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: public/tea/wulong.svg
++<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <defs>
++    <linearGradient id="bg-wulong" x1="0" y1="0" x2="1" y2="1">
++      <stop offset="0%" stop-color="#F9F0E1"/>
++      <stop offset="50%" stop-color="#EDE0C7"/>
++      <stop offset="100%" stop-color="#DDC79E"/>
++    </linearGradient>
++    <linearGradient id="steam" x1="0" y1="0" x2="0" y2="1">
++      <stop offset="0%" stop-color="#C2872A" stop-opacity="0.5"/>
++      <stop offset="100%" stop-color="#C2872A" stop-opacity="0"/>
++    </linearGradient>
++  </defs>
++  <rect width="1600" height="900" fill="url(#bg-wulong)"/>
++  <g opacity="0.14">
++    <circle cx="330" cy="180" r="150" fill="#B3771D"/>
++    <circle cx="1340" cy="760" r="210" fill="#C2872A"/>
++  </g>
++  <g transform="translate(520 260)">
++    <ellipse cx="280" cy="320" rx="280" ry="120" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="3"/>
++    <ellipse cx="280" cy="300" rx="240" ry="90" fill="#EBD7AF"/>
++    <ellipse cx="280" cy="280" rx="180" ry="70" fill="#D8A64B"/>
++    <rect x="80" y="140" width="400" height="140" rx="70" fill="#B3771D" opacity="0.7"/>
++    <rect x="130" y="110" width="300" height="110" rx="55" fill="#8A5A1A" opacity="0.8"/>
++    <rect x="170" y="80" width="220" height="100" rx="50" fill="#5E3A0F" opacity="0.8"/>
++    <rect x="220" y="40" width="120" height="90" rx="60" fill="url(#steam)"/>
++    <rect x="270" y="20" width="80" height="100" rx="60" fill="url(#steam)"/>
++    <rect x="250" y="10" width="80" height="90" rx="60" fill="url(#steam)" opacity="0.6"/>
++  </g>
++  <text x="800" y="170" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">WULONG · 乌龙</text>
++  <text x="800" y="220" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Rock Oolong Placeholder</text>
++</svg>
+*** End Patch
+2026-01-11T08:01:28.027238Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: public/tea/puer.svg
++<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <defs>
++    <linearGradient id="bg-puer" x1="0" y1="0" x2="1" y2="1">
++      <stop offset="0%" stop-color="#F8F1E3"/>
++      <stop offset="50%" stop-color="#EDE1CA"/>
++      <stop offset="100%" stop-color="#DCC7A0"/>
++    </linearGradient>
++  </defs>
++  <rect width="1600" height="900" fill="url(#bg-puer)"/>
++  <g opacity="0.16">
++    <circle cx="340" cy="180" r="160" fill="#A87022"/>
++    <circle cx="1320" cy="740" r="210" fill="#C2872A"/>
++  </g>
++  <g transform="translate(400 200)">
++    <circle cx="400" cy="250" r="240" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="4"/>
++    <circle cx="400" cy="250" r="190" fill="#EAD7AF"/>
++    <circle cx="400" cy="250" r="150" fill="#CFA05C"/>
++    <circle cx="400" cy="250" r="110" fill="#9B6A2E"/>
++    <circle cx="400" cy="250" r="70" fill="#6B4320"/>
++    <circle cx="400" cy="250" r="36" fill="#3A2412"/>
++    <path d="M400 40 C440 120 520 200 600 220" stroke="#7C5325" stroke-width="18" stroke-linecap="round" opacity="0.7"/>
++    <path d="M400 40 C360 120 280 200 200 220" stroke="#7C5325" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
++  </g>
++  <text x="800" y="170" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">PUER · 普洱</text>
++  <text x="800" y="220" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Aged Tea Cake Placeholder</text>
++</svg>
+*** End Patch
+2026-01-11T08:01:43.846591Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: public/tea/office.svg
++<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
++  <defs>
++    <linearGradient id="bg-office" x1="0" y1="0" x2="1" y2="1">
++      <stop offset="0%" stop-color="#FFF9EE"/>
++      <stop offset="50%" stop-color="#F4E5CB"/>
++      <stop offset="100%" stop-color="#E3CCA5"/>
++    </linearGradient>
++    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
++      <stop offset="0%" stop-color="#E7CFA0"/>
++      <stop offset="100%" stop-color="#CFA05C"/>
++    </linearGradient>
++  </defs>
++  <rect width="1600" height="900" fill="url(#bg-office)"/>
++  <g opacity="0.1">
++    <circle cx="310" cy="160" r="150" fill="#D8A64B"/>
++    <circle cx="1340" cy="760" r="210" fill="#B3771D"/>
++  </g>
++  <rect x="180" y="520" width="1240" height="190" rx="24" fill="url(#desk)" stroke="#B3771D" stroke-width="4" opacity="0.9"/>
++  <rect x="260" y="400" width="140" height="140" rx="28" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
++  <rect x="440" y="420" width="120" height="120" rx="26" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="2"/>
++  <rect x="640" y="380" width="170" height="160" rx="32" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
++  <rect x="860" y="410" width="140" height="130" rx="28" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="2"/>
++  <rect x="1080" y="390" width="190" height="150" rx="34" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
++  <g opacity="0.85">
++    <rect x="320" y="320" width="70" height="80" rx="18" fill="#C2872A"/>
++    <rect x="500" y="320" width="70" height="80" rx="18" fill="#B3771D"/>
++    <rect x="700" y="300" width="70" height="100" rx="18" fill="#8A5A1A"/>
++    <rect x="920" y="320" width="70" height="80" rx="18" fill="#C2872A"/>
++    <rect x="1140" y="300" width="70" height="100" rx="18" fill="#B3771D"/>
++  </g>
++  <text x="800" y="190" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">OFFICE · 茶席</text>
++  <text x="800" y="240" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Tea Corner Placeholder</text>
++</svg>
+*** End Patch
+2026-01-11T08:02:21.631731Z  INFO spawning ghost snapshot task
+2026-01-11T08:02:21.897601Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:02:21.897635Z  INFO ghost commit captured: 0179e9e1b158495bafea134c58646708bb75ee6a
+2026-01-11T08:02:21.897640Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:02:26.362379Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx"}
+2026-01-11T08:03:24.562497Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: app/page.tsx
+@@
+ const signatureTeas = [
+   {
+     name: "金骏眉 · Reserve",
+     region: "武夷山 · 红茶",
+     notes: "可可与山蜜，绵密焦糖甜感，绵长尾韵。",
+     pairing: "高端礼赠 / 下午茶",
++    image: "/tea/hongcha.svg",
+   },
+   {
+     name: "大红袍 · 炉火",
+     region: "武夷岩茶 · 乌龙",
+     notes: "岩韵矿香与焙火层次，辛香柑橘收尾。",
+     pairing: "会客 / 餐后",
++    image: "/tea/wulong.svg",
+   },
+   {
+     name: "冰岛 · 2021",
+     region: "临沧 · 普洱生茶",
+     notes: "兰花冷香，清甜回甘，喉韵悠长。",
+     pairing: "冥想 / 品鉴",
++    image: "/tea/puer.svg",
+   },
+ ];
+@@
+-          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] bg-gradient-to-br from-white via-[#f8efdf] to-[#f0e2c8] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+-            <div className="absolute right-6 top-6 rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
+-              本月甄选
+-            </div>
+-            <div className="space-y-4 text-[#4c3928]">
+-              <p className="text-sm text-[#715c48]">山场风味线索</p>
+-              <h3 className="font-[var(--font-display)] text-3xl text-[#2b1c13]">桐木关·金骏眉 Reserve</h3>
+-              <p className="text-[#5a4837]">
+-                260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。
+-              </p>
+-              <div className="grid grid-cols-2 gap-3 text-sm">
+-                <div className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3">
+-                  <p className="text-xs text-[#7a6756]">推荐冲泡</p>
+-                  <p className="text-base font-semibold text-[#c2872a]">92℃ · 6g · 100ml</p>
+-                  <p className="text-[#7a6756]">前 2 泡低位注水，保留绵密甜香</p>
+-                </div>
+-                <div className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3">
+-                  <p className="text-xs text-[#7a6756]">适合场景</p>
+-                  <p className="text-base font-semibold text-[#c2872a]">高端礼赠 / 会客</p>
+-                  <p className="text-[#7a6756]">支持手写礼卡与定制刻字</p>
+-                </div>
+-              </div>
+-              <div className="flex gap-3 text-xs text-[#6a5340]">
+-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">岩韵 · 焦糖</span>
+-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">冷萃可选</span>
+-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">限量 60 盒</span>
+-              </div>
+-            </div>
+-          </div>
++          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
++            <Image
++              src="/tea/hero-tea.svg"
++              alt="茶席与茶器氛围"
++              fill
++              className="object-cover"
++              sizes="(min-width: 1024px) 520px, 100vw"
++              priority
++            />
++            <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-[#fbf2e2]/85 to-[#fdf7ed]" />
++            <div className="absolute inset-0 flex flex-col justify-between p-8 text-[#4c3928]">
++              <div className="flex justify-end">
++                <div className="rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
++                  本月甄选
++                </div>
++              </div>
++              <div className="space-y-4">
++                <p className="text-sm text-[#715c48]">山场风味线索</p>
++                <h3 className="font-[var(--font-display)] text-3xl text-[#2b1c13]">桐木关·金骏眉 Reserve</h3>
++                <p className="text-[#5a4837]">
++                  260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。
++                </p>
++                <div className="grid grid-cols-2 gap-3 text-sm">
++                  <div className="rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3">
++                    <p className="text-xs text-[#7a6756]">推荐冲泡</p>
++                    <p className="text-base font-semibold text-[#c2872a]">92℃ · 6g · 100ml</p>
++                    <p className="text-[#7a6756]">前 2 泡低位注水，保留绵密甜香</p>
++                  </div>
++                  <div className="rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3">
++                    <p className="text-xs text-[#7a6756]">适合场景</p>
++                    <p className="text-base font-semibold text-[#c2872a]">高端礼赠 / 会客</p>
++                    <p className="text-[#7a6756]">支持手写礼卡与定制刻字</p>
++                  </div>
++                </div>
++                <div className="flex gap-3 text-xs text-[#6a5340]">
++                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">岩韵 · 焦糖</span>
++                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">冷萃可选</span>
++                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">限量 60 盒</span>
++                </div>
++              </div>
++            </div>
++          </div>
+         </section>
+ 
+         <section id="collections" className="space-y-6">
+@@
+           <div className="grid gap-6 md:grid-cols-3">
+             {signatureTeas.map((tea) => (
+               <div
+                 key={tea.name}
+                 className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
+               >
+-                <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
+-                  <div className="absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent" />
+-                </div>
++                <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
++                  <Image
++                    src={tea.image}
++                    alt={tea.name}
++                    width={800}
++                    height={500}
++                    className="h-44 w-full object-cover"
++                    sizes="(min-width: 768px) 33vw, 100vw"
++                  />
++                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
++                </div>
++                <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
++                  <div className="absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent" />
++                </div>
+                 <p className="text-xs uppercase tracking-[0.25em] text-[#b3771d]">{tea.region}</p>
+                 <h3 className="mt-2 font-[var(--font-display)] text-2xl text-[#23160f]">{tea.name}</h3>
+                 <p className="mt-3 text-sm text-[#5a4837]">{tea.notes}</p>
+                 <div className="mt-5 flex flex-wrap gap-2 text-xs text-[#6a5340]">
+                   <span className="rounded-full border border-[#e5d7bf] px-3 py-1">手工拣剔</span>
+@@
+         <section className="grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]">
+           <div className="space-y-3">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#b3771d]">For Gift & Office</p>
+             <h2 className="font-[var(--font-display)] text-3xl text-[#1c130d]">礼赠与办公室方案</h2>
+             <p className="text-[#5a4837]">
+               从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。
+             </p>
++            <div className="relative overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed] shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
++              <Image
++                src="/tea/office.svg"
++                alt="办公室茶席氛围"
++                width={1600}
++                height={900}
++                className="h-44 w-full object-cover"
++                sizes="(min-width: 1024px) 520px, 100vw"
++              />
++            </div>
+             <div className="grid gap-4 md:grid-cols-2">
+               {services.slice(0, 2).map((svc) => (
+                 <div key={svc.title} className="rounded-2xl border border-[#eee3ce] bg-[#fdf7ed] p-5">
+                   <h3 className="text-xl font-semibold text-[#c2872a]">{svc.title}</h3>
+                   <p className="mt-1 text-sm text-[#6a5340]">{svc.desc}</p>
+*** End Patch
+2026-01-11T08:03:39.483556Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"Image\" -Context 0,0"}
+2026-01-11T08:05:13.291597Z  INFO ToolCall: shell_command {"command":"@'\nimport Image from \"next/image\";\n\nconst signatureTeas = [\n  {\n    name: \"金骏眉 · Reserve\",\n    region: \"武夷山 · 红茶\",\n    notes: \"可可与山蜜，绵密焦糖甜感，绵长尾韵。\",\n    pairing: \"高端礼赠 / 下午茶\",\n    image: \"/tea/hongcha.svg\",\n  },\n  {\n    name: \"大红袍 · 炉火\",\n    region: \"武夷岩茶 · 乌龙\",\n    notes: \"岩韵矿香与焙火层次，辛香柑橘收尾。\",\n    pairing: \"会客 / 餐后\",\n    image: \"/tea/wulong.svg\",\n  },\n  {\n    name: \"冰岛 · 2021\",\n    region: \"临沧 · 普洱生茶\",\n    notes: \"兰花冷香，清甜回甘，喉韵悠长。\",\n    pairing: \"冥想 / 品鉴\",\n    image: \"/tea/puer.svg\",\n  },\n];\n\nconst services = [\n  {\n    title: \"礼赠 · 私享礼盒\",\n    desc: \"手作榫卯木盒，烫金手写礼卡，支持刻字/家徽。\",\n    bullets: [\"甄选单株/小产区\", \"搭配汝窑/银壶茶器\", \"48小时内顺丰冷链\"],\n  },\n  {\n    title: \"办公室 · 茶席\",\n    desc: \"会议来访 / 日常下午茶，提升空间气质。\",\n    bullets: [\"单杯挂耳 / 原叶冷萃\", \"茶吧台软装与陈列\", \"员工茶课与冲泡SOP\"],\n  },\n  {\n    title: \"订阅 · 季度臻选\",\n    desc: \"每季 3 款风味，含手冲指南与杯测卡。\",\n    bullets: [\"红茶/乌龙/普洱自由搭配\", \"附水质/温度建议\", \"企业可开票/寄往多址\"],\n  },\n];\n\nconst rituals = [\n  {\n    title: \"山场遴选\",\n    detail: \"武夷桐木关、凤凰单丛、冰岛老寨等源头直采，追溯茶园批次。\",\n  },\n  {\n    title: \"火候演绎\",\n    detail: \"18 年资深焙火师，控水活与含香，分段低温回火。\",\n  },\n  {\n    title: \"静置醒茶\",\n    detail: \"恒温恒湿窖藏 14 天，风味稳定后封缄，附冲泡曲线。\",\n  },\n];\n\nconst highlights = [\n  { label: \"庄园直供\", value: \"9 个\", note: \"签约核心山场\" },\n  { label: \"礼盒客单\", value: \"¥980+\", note: \"定制刻字/配饰\" },\n  { label: \"办公室\", value: \"26 家\", note: \"精品办公室茶席\" },\n];\n\nexport default function Home() {\n  return (\n    <div className=\"relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]\">\n      <div className=\"pointer-events-none absolute inset-0 opacity-80\">\n        <div className=\"absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#f0e3cc]/80 blur-3xl\" />\n        <div className=\"absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#d6b679]/50 blur-3xl\" />\n        <div className=\"absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#c9b284] to-transparent\" />\n      </div>\n\n      <header className=\"sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur\">\n        <div className=\"mx-auto flex max-w-6xl items-center justify-between px-6 py-4\">\n          <div className=\"flex items-center gap-3\">\n            <div className=\"h-9 w-9 rounded-full bg-gradient-to-br from-[#d8a64b] via-[#f0d59a] to-[#b3771d] shadow-[0_0_0_1px_rgba(0,0,0,0.05)]\" />\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.35em] text-[#b3771d]\">Yun Chá</p>\n              <p className=\"text-sm text-[#54412f]\">云茶 · 高端茶礼</p>\n            </div>\n          </div>\n          <div className=\"hidden items-center gap-6 text-sm text-[#5a4837] md:flex\">\n            <span>红茶 · 乌龙 · 普洱</span>\n            <span>礼赠 / 办公室</span>\n            <span>定制刻字</span>\n          </div>\n          <a\n            className=\"rounded-full border border-[#d8a64b]/70 bg-[#f7e5c4] px-4 py-2 text-sm font-medium text-[#4a3317] transition hover:-translate-y-[1px] hover:border-[#c2872a] hover:shadow-lg hover:shadow-[#e8c98a]/50\"\n            href=\"#contact\"\n          >\n            预约品鉴\n          </a>\n        </div>\n      </header>\n\n      <main className=\"relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14\">\n        <section className=\"grid gap-10 lg:grid-cols-[1.2fr,0.8fr]\">\n          <div className=\"space-y-6\">\n            <p className=\"text-xs uppercase tracking-[0.35em] text-[#b3771d]\">\n              高山红茶 · 岩韵乌龙 · 年份普洱\n            </p>\n            <h1 className=\"font-[var(--font-display)] text-4xl leading-tight text-[#1c130d] sm:text-5xl lg:text-6xl\">\n              云茶 · Yun Chá\n              <span className=\"block text-[32px] font-normal leading-tight text-[#6a5340] sm:text-[40px]\">\n                致敬送礼与办公室的茶礼美学\n              </span>\n            </h1>\n            <p className=\"max-w-2xl text-lg text-[#5a4837]\">\n              甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。\n            </p>\n            <div className=\"flex flex-wrap gap-4\">\n              <a\n                href=\"#contact\"\n                className=\"rounded-full bg-[#d8a64b] px-5 py-3 text-sm font-semibold text-[#3b240b] shadow-lg shadow-[#e6c07a]/40 transition hover:-translate-y-[1px]\"\n              >\n                订购与定制\n              </a>\n              <a\n                href=\"#collections\"\n                className=\"rounded-full border border-[#e0cda7] px-5 py-3 text-sm font-semibold text-[#3c2b1e] transition hover:-translate-y-[1px] hover:border-[#d8a64b] hover:bg-[#f7e7c9]\"\n              >\n                查看茶单\n              </a>\n            </div>\n            <div className=\"grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3\">\n              {highlights.map((item) => (\n                <div\n                  key={item.label}\n                  className=\"rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]\"\n                >\n                  <p className=\"text-xs uppercase tracking-[0.2em] text-[#b3771d]\">{item.label}</p>\n                  <p className=\"mt-1 text-2xl font-semibold text-[#c2872a]\">{item.value}</p>\n                  <p>{item.note}</p>\n                </div>\n              ))}\n            </div>\n          </div>\n\n          <div className=\"relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]\">\n            <Image\n              src=\"/tea/hero-tea.svg\"\n              alt=\"茶席与茶器氛围\"\n              fill\n              className=\"object-cover\"\n              sizes=\"(min-width: 1024px) 520px, 100vw\"\n              priority\n            />\n            <div className=\"absolute inset-0 bg-gradient-to-b from-white/70 via-[#fbf2e2]/85 to-[#fdf7ed]\" />\n            <div className=\"absolute inset-0 flex flex-col justify-between p-8 text-[#4c3928]\">\n              <div className=\"flex justify-end\">\n                <div className=\"rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]\">\n                  本月甄选\n                </div>\n              </div>\n              <div className=\"space-y-4\">\n                <p className=\"text-sm text-[#715c48]\">山场风味线索</p>\n                <h3 className=\"font-[var(--font-display)] text-3xl text-[#2b1c13]\">桐木关·金骏眉 Reserve</h3>\n                <p className=\"text-[#5a4837]\">\n                  260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。\n                </p>\n                <div className=\"grid grid-cols-2 gap-3 text-sm\">\n                  <div className=\"rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3\">\n                    <p className=\"text-xs text-[#7a6756]\">推荐冲泡</p>\n                    <p className=\"text-base font-semibold text-[#c2872a]\">92℃ · 6g · 100ml</p>\n                    <p className=\"text-[#7a6756]\">前 2 泡低位注水，保留绵密甜香</p>\n                  </div>\n                  <div className=\"rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3\">\n                    <p className=\"text-xs text-[#7a6756]\">适合场景</p>\n                    <p className=\"text-base font-semibold text-[#c2872a]\">高端礼赠 / 会客</p>\n                    <p className=\"text-[#7a6756]\">支持手写礼卡与定制刻字</p>\n                  </div>\n                </div>\n                <div className=\"flex gap-3 text-xs text-[#6a5340]\">\n                  <span className=\"rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1\">岩韵 · 焦糖</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1\">冷萃可选</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1\">限量 60 盒</span>\n                </div>\n              </div>\n            </div>\n          </div>\n        </section>\n\n        <section id=\"collections\" className=\"space-y-6\">\n          <div className=\"flex flex-wrap items-end justify-between gap-4\">\n            <div>\n              <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Collections</p>\n              <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d] sm:text-4xl\">三大风味线</h2>\n              <p className=\"text-[#5a4837]\">红茶、乌龙、普洱，均附冲泡指南与杯测卡。</p>\n            </div>\n            <a\n              href=\"#contact\"\n              className=\"text-sm text-[#b3771d] underline-offset-4 hover:text-[#8a5a1a] hover:underline\"\n            >\n              索要完整茶谱\n            </a>\n          </div>\n          <div className=\"grid gap-6 md:grid-cols-3\">\n            {signatureTeas.map((tea) => (\n              <div\n                key={tea.name}\n                className=\"group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]\"\n              >\n                <div className=\"relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]\">\n                  <Image\n                    src={tea.image}\n                    alt={tea.name}\n                    width={800}\n                    height={500}\n                    className=\"h-44 w-full object-cover\"\n                    sizes=\"(min-width: 768px) 33vw, 100vw\"\n                  />\n                  <div className=\"absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80\" />\n                </div>\n                <div className=\"absolute inset-0 opacity-0 transition group-hover:opacity-100\">\n                  <div className=\"absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent\" />\n                </div>\n                <p className=\"text-xs uppercase tracking-[0.25em] text-[#b3771d]\">{tea.region}</p>\n                <h3 className=\"mt-2 font-[var(--font-display)] text-2xl text-[#23160f]\">{tea.name}</h3>\n                <p className=\"mt-3 text-sm text-[#5a4837]\">{tea.notes}</p>\n                <div className=\"mt-5 flex flex-wrap gap-2 text-xs text-[#6a5340]\">\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">手工拣剔</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">单株采摘</span>\n                  <span className=\"rounded-full border border-[#e5d7bf] px-3 py-1\">附水质指南</span>\n                </div>\n                <p className=\"mt-6 text-sm font-semibold text-[#c2872a]\">{tea.pairing}</p>\n              </div>\n            ))}\n          </div>\n        </section>\n\n        <section className=\"grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]\">\n          <div className=\"space-y-3\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">For Gift & Office</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d]\">礼赠与办公室方案</h2>\n            <p className=\"text-[#5a4837]\">\n              从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。\n            </p>\n            <div className=\"relative overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed] shadow-[0_12px_40px_rgba(0,0,0,0.05)]\">\n              <Image\n                src=\"/tea/office.svg\"\n                alt=\"办公室茶席氛围\"\n                width={1600}\n                height={900}\n                className=\"h-44 w-full object-cover\"\n                sizes=\"(min-width: 1024px) 520px, 100vw\"\n              />\n            </div>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              {services.slice(0, 2).map((svc) => (\n                <div key={svc.title} className=\"rounded-2xl border border-[#eee3ce] bg-[#fdf7ed] p-5\">\n                  <h3 className=\"text-xl font-semibold text-[#c2872a]\">{svc.title}</h3>\n                  <p className=\"mt-1 text-sm text-[#6a5340]\">{svc.desc}</p>\n                  <ul className=\"mt-3 space-y-2 text-sm text-[#5a4837]\">\n                    {svc.bullets.map((b) => (\n                      <li key={b} className=\"flex items-start gap-2\">\n                        <span className=\"mt-1 h-1.5 w-1.5 rounded-full bg-[#c2872a]\" />\n                        <span>{b}</span>\n                      </li>\n                    ))}\n                  </ul>\n                </div>\n              ))}\n            </div>\n            <div className=\"rounded-2xl border border-[#d8a64b]/40 bg-[#f7e5c4] p-5 text-sm text-[#3b240b] shadow-inner\">\n              <p className=\"font-semibold\">办公室提升</p>\n              <p className=\"mt-1\">\n                提供软硬水冲泡曲线、温控壶/沙漏/茶盘搭配、冷萃大壶方案，员工可快速复刻。\n              </p>\n            </div>\n          </div>\n          <div className=\"space-y-4 rounded-3xl border border-[#e8ddc6] bg-gradient-to-b from-[#fbf2e2] to-[#f3e3c4] p-6\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Process</p>\n            <h3 className=\"font-[var(--font-display)] text-2xl text-[#1f140e]\">风味标准作业</h3>\n            <div className=\"space-y-3\">\n              {rituals.map((step, index) => (\n                <div key={step.title} className=\"flex gap-3 rounded-2xl border border-[#efe4cf] bg-white p-4\">\n                  <div className=\"flex h-10 w-10 items-center justify-center rounded-full bg-[#f7e5c4] text-sm font-semibold text-[#8a5a1a]\">\n                    {index + 1}\n                  </div>\n                  <div>\n                    <p className=\"text-base font-semibold text-[#2b1c13]\">{step.title}</p>\n                    <p className=\"text-sm text-[#6a5340]\">{step.detail}</p>\n                  </div>\n                </div>\n              ))}\n            </div>\n            <div className=\"text-sm text-[#5a4837]\">\n              <p>· 可提供杯测表 & 茶曲线 PDF</p>\n              <p>· 礼盒均附手写礼卡，最多 60 字</p>\n            </div>\n          </div>\n        </section>\n\n        <section\n          id=\"contact\"\n          className=\"grid gap-8 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]\"\n        >\n          <div className=\"space-y-4\">\n            <p className=\"text-xs uppercase tracking-[0.3em] text-[#b3771d]\">Contact & Order</p>\n            <h2 className=\"font-[var(--font-display)] text-3xl text-[#1c130d]\">预约试饮 / 订购表单</h2>\n            <p className=\"text-[#5a4837]\">\n              告诉我们送礼/办公室的场景、预算与偏好，我们将 24 小时内回复方案与样品邮寄。\n            </p>\n            <ul className=\"space-y-2 text-sm text-[#6a5340]\">\n              <li>· 支持开票、多地址配送、礼卡定制</li>\n              <li>· 可安排上门茶席/线上冲泡教学</li>\n              <li>· 建议预算：¥380 - ¥2580 / 礼盒；办公方案按人次定价</li>\n            </ul>\n          </div>\n          <form\n            className=\"space-y-4 rounded-2xl border border-[#e8ddc6] bg-[#fbf6eb] p-6 shadow-inner\"\n            action=\"https://formspree.io/f/your-form-id\"\n            method=\"POST\"\n          >\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>姓名 / 公司</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"name\"\n                  placeholder=\"王先生 / 云茶办公\"\n                  required\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>邮箱</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  type=\"email\"\n                  name=\"email\"\n                  placeholder=\"you@company.com\"\n                  required\n                />\n              </label>\n            </div>\n            <div className=\"grid gap-4 md:grid-cols-2\">\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>联系方式</span>\n                <input\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"phone\"\n                  placeholder=\"电话 / 微信\"\n                />\n              </label>\n              <label className=\"space-y-2 text-sm text-[#5a4837]\">\n                <span>场景</span>\n                <select\n                  className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] focus:border-[#c2872a] focus:outline-none\"\n                  name=\"occasion\"\n                  defaultValue=\"礼赠\"\n                >\n                  <option className=\"bg-white\">礼赠</option>\n                  <option className=\"bg-white\">办公室</option>\n                  <option className=\"bg-white\">品鉴活动</option>\n                  <option className=\"bg-white\">其他</option>\n                </select>\n              </label>\n            </div>\n            <label className=\"space-y-2 text-sm text-[#5a4837]\">\n              <span>预算 / 人数</span>\n              <input\n                className=\"w-full rounded-xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                name=\"budget\"\n                placeholder=\"例如：¥1500/礼盒；30 人办公室\"\n              />\n            </label>\n            <label className=\"space-y-2 text-sm text-[#5a4837]\">\n              <span>其他需求</span>\n              <textarea\n                className=\"w-full rounded-2xl border border-[#e2d5be] bg-white px-4 py-3 text-sm text-[#2b1c13] placeholder:text-[#9b8a78] focus:border-[#c2872a] focus:outline-none\"\n                name=\"message\"\n                rows={4}\n                placeholder=\"喜欢的风味（焙火/花香/陈香）、交付时间、是否需要茶器/刻字\"\n              />\n            </label>\n            <button\n              type=\"submit\"\n              className=\"w-full rounded-full bg-[#d8a64b] px-5 py-3 text-sm font-semibold text-[#3b240b] shadow-lg shadow-[#e6c07a]/40 transition hover:-translate-y-[1px]\"\n            >\n              提交订购需求\n            </button>\n            <p className=\"text-xs text-[#7a6756]\">\n              表单默认使用 Formspree，替换 action 链接为你的 CRM/表单接口即可。\n            </p>\n          </form>\n        </section>\n\n        <footer className=\"flex flex-wrap items-center justify-between gap-4 border-t border-[#e5d7bf] pt-6 text-sm text-[#6a5340]\">\n          <div>\n            <p className=\"font-semibold text-[#2b1c13]\">Yun Chá 云茶</p>\n            <p>高山红茶 · 岩韵乌龙 · 年份普洱</p>\n          </div>\n          <div className=\"flex gap-6\">\n            <a className=\"hover:text-[#8a5a1a]\" href=\"mailto:hello@yuncha.example.com\">\n              hello@yuncha.example.com\n            </a>\n            <a className=\"hover:text-[#8a5a1a]\" href=\"#contact\">\n              预约品鉴\n            </a>\n          </div>\n        </footer>\n      </main>\n    </div>\n  );\n}\n'@ | Out-File -FilePath app/page.tsx -Encoding utf8"}
+2026-01-11T08:05:18.431143Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"hero-tea\""}
+2026-01-11T08:05:58.502725Z  INFO spawning ghost snapshot task
+2026-01-11T08:05:58.759150Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:05:58.759179Z  INFO ghost commit captured: c532c7c04e770fceaaf639c2c2f7f4a716657191
+2026-01-11T08:05:58.759185Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:29:06.631338Z  INFO spawning ghost snapshot task
+2026-01-11T08:29:06.848519Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:29:06.848548Z  INFO ghost commit captured: 537a44692f67f95127b1515476b384a20e3ab5d0
+2026-01-11T08:29:06.848555Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:29:47.220173Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: app/page.tsx
+@@
+-export default function Home() {
+-  return (
+-    <div className="relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]">
++export default function Home() {
++  return (
++    <div className="relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]">
+       <div className="pointer-events-none absolute inset-0 opacity-80">
+         <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#f0e3cc]/80 blur-3xl" />
+         <div className="absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#d6b679]/50 blur-3xl" />
+         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#c9b284] to-transparent" />
+       </div>
+@@
+       <header className="sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur">
+         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+           <div className="flex items-center gap-3">
+             <div className="h-9 w-9 rounded-full bg-gradient-to-br from-[#d8a64b] via-[#f0d59a] to-[#b3771d] shadow-[0_0_0_1px_rgba(0,0,0,0.05)]" />
+             <div>
+@@
+           <a
+             className="rounded-full border border-[#d8a64b]/70 bg-[#f7e5c4] px-4 py-2 text-sm font-medium text-[#4a3317] transition hover:-translate-y-[1px] hover:border-[#c2872a] hover:shadow-lg hover:shadow-[#e8c98a]/50"
+             href="#contact"
+           >
+             预约品鉴
+           </a>
+         </div>
+       </header>
+ 
+-      <main className="relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14">
+-        <section className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr]">
++      <main className="relative z-10 mx-auto max-w-6xl space-y-12 px-4 pb-16 pt-10 sm:px-6 md:space-y-16 md:pb-20 md:pt-14">
++        <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr] lg:gap-10">
+           <div className="space-y-6">
+             <p className="text-xs uppercase tracking-[0.35em] text-[#b3771d]">
+               高山红茶 · 岩韵乌龙 · 年份普洱
+             </p>
+-            <h1 className="font-[var(--font-display)] text-4xl leading-tight text-[#1c130d] sm:text-5xl lg:text-6xl">
++            <h1 className="font-[var(--font-display)] text-3xl leading-tight text-[#1c130d] sm:text-4xl lg:text-6xl">
+               云茶 · Yun Chá
+-              <span className="block text-[32px] font-normal leading-tight text-[#6a5340] sm:text-[40px]">
++              <span className="block text-2xl font-normal leading-tight text-[#6a5340] sm:text-[32px] lg:text-[40px]">
+                 致敬送礼与办公室的茶礼美学
+               </span>
+             </h1>
+-            <p className="max-w-2xl text-lg text-[#5a4837]">
++            <p className="max-w-2xl text-base text-[#5a4837] sm:text-lg">
+               甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。
+             </p>
+             <div className="flex flex-wrap gap-4">
+               <a
+                 href="#contact"
+@@
+               >
+                 查看茶单
+               </a>
+             </div>
+-            <div className="grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3">
++            <div className="grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3">
+               {highlights.map((item) => (
+                 <div
+                   key={item.label}
+-                  className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
++                  className="rounded-2xl border border-[#e8ddc6] bg-white px-3 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:px-4"
+                 >
+                   <p className="text-xs uppercase tracking-[0.2em] text-[#b3771d]">{item.label}</p>
+                   <p className="mt-1 text-2xl font-semibold text-[#c2872a]">{item.value}</p>
+                   <p>{item.note}</p>
+                 </div>
+@@
+-          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
++          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+             <Image
+               src="/tea/hero-tea.svg"
+               alt="茶席与茶器氛围"
+               fill
+               className="object-cover"
+@@
+             </a>
+           </div>
+-          <div className="grid gap-6 md:grid-cols-3">
++          <div className="grid gap-6 md:grid-cols-3">
+             {signatureTeas.map((tea) => (
+               <div
+                 key={tea.name}
+-                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
++                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] md:p-6"
+               >
+                 <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
+                   <Image
+                     src={tea.image}
+                     alt={tea.name}
+                     width={800}
+                     height={500}
+-                    className="h-44 w-full object-cover"
++                    className="h-36 w-full object-cover md:h-44"
+                     sizes="(min-width: 768px) 33vw, 100vw"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
+                 </div>
+                 <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
+@@
+           <div className="space-y-3">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#b3771d]">For Gift & Office</p>
+             <h2 className="font-[var(--font-display)] text-3xl text-[#1c130d]">礼赠与办公室方案</h2>
+             <p className="text-[#5a4837]">
+               从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。
+             </p>
+             <div className="relative overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed] shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+               <Image
+                 src="/tea/office.svg"
+                 alt="办公室茶席氛围"
+                 width={1600}
+                 height={900}
+-                className="h-44 w-full object-cover"
++                className="h-36 w-full object-cover md:h-44"
+                 sizes="(min-width: 1024px) 520px, 100vw"
+               />
+             </div>
+             <div className="grid gap-4 md:grid-cols-2">
+               {services.slice(0, 2).map((svc) => (
+*** End Patch
+2026-01-11T08:29:50.855209Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx"}
+2026-01-11T08:30:03.786129Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: app/page.tsx
+@@
+-const signatureTeas = [
+-  {
+-    name: "金骏眉 · Reserve",
+-    region: "武夷山 · 红茶",
+-    notes: "可可与山蜜，绵密焦糖甜感，绵长尾韵。",
+-    pairing: "高端礼赠 / 下午茶",
+-    image: "/tea/hongcha.png",
+-  },
+-  {
+-    name: "大红袍 · 炉火",
+-    region: "武夷岩茶 · 乌龙",
+-    notes: "岩韵矿香与焙火层次，辛香柑橘收尾。",
+-    pairing: "会客 / 餐后",
+-    image: "/tea/wulong.png",
+-  },
+-  {
+-    name: "冰岛 · 2021",
+-    region: "临沧 · 普洱生茶",
+-    notes: "兰花冷香，清甜回甘，喉韵悠长。",
+-    pairing: "冥想 / 品鉴",
+-    image: "/tea/puer.png",
+-  },
+-];
++const signatureTeas = [
++  {
++    name: "金骏眉 · Reserve",
++    region: "武夷山 · 红茶",
++    notes: "可可与山蜜，绵密焦糖甜感，绵长尾韵。",
++    pairing: "高端礼赠 / 下午茶",
++    image: "/tea/hongcha.svg",
++  },
++  {
++    name: "大红袍 · 炉火",
++    region: "武夷岩茶 · 乌龙",
++    notes: "岩韵矿香与焙火层次，辛香柑橘收尾。",
++    pairing: "会客 / 餐后",
++    image: "/tea/wulong.svg",
++  },
++  {
++    name: "冰岛 · 2021",
++    region: "临沧 · 普洱生茶",
++    notes: "兰花冷香，清甜回甘，喉韵悠长。",
++    pairing: "冥想 / 品鉴",
++    image: "/tea/puer.svg",
++  },
++];
+*** End Patch
+2026-01-11T08:31:17.150405Z  INFO interrupt received: abort current task, if any
+2026-01-11T08:32:34.022177Z  INFO spawning ghost snapshot task
+2026-01-11T08:32:34.262880Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:32:34.262911Z  INFO ghost commit captured: 68d955ef44e18dd9b9bf938fbcf52b04be47a75f
+2026-01-11T08:32:34.262917Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:33:14.773091Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: app/page.tsx
+@@
+-export default function Home() {
+-  return (
+-    <div className="relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]">
++export default function Home() {
++  return (
++    <div className="relative min-h-screen overflow-hidden bg-[#fdf7ed] text-[#24170f]">
+       <div className="pointer-events-none absolute inset-0 opacity-80">
+         <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#f0e3cc]/80 blur-3xl" />
+         <div className="absolute bottom-10 right-[-10%] h-80 w-80 rounded-full bg-[#d6b679]/50 blur-3xl" />
+         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#c9b284] to-transparent" />
+       </div>
+@@
+-      <header className="sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur">
+-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
++      <header className="sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur">
++        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
+           <div className="flex items-center gap-3">
+             <div className="h-9 w-9 rounded-full bg-gradient-to-br from-[#d8a64b] via-[#f0d59a] to-[#b3771d] shadow-[0_0_0_1px_rgba(0,0,0,0.05)]" />
+             <div>
+               <p className="text-xs uppercase tracking-[0.35em] text-[#b3771d]">Yun Chá</p>
+               <p className="text-sm text-[#54412f]">云茶 · 高端茶礼</p>
+@@
+       </header>
+ 
+-      <main className="relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14">
+-        <section className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr]">
+-          <div className="space-y-6">
++      <main className="relative z-10 mx-auto max-w-6xl space-y-12 px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:space-y-16">
++        <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr] lg:gap-10">
++          <div className="space-y-5 sm:space-y-6">
+             <p className="text-xs uppercase tracking-[0.35em] text-[#b3771d]">
+               高山红茶 · 岩韵乌龙 · 年份普洱
+             </p>
+-            <h1 className="font-[var(--font-display)] text-4xl leading-tight text-[#1c130d] sm:text-5xl lg:text-6xl">
++            <h1 className="font-[var(--font-display)] text-3xl leading-tight text-[#1c130d] sm:text-4xl lg:text-6xl">
+               云茶 · Yun Chá
+-              <span className="block text-[32px] font-normal leading-tight text-[#6a5340] sm:text-[40px]">
++              <span className="block text-2xl font-normal leading-tight text-[#6a5340] sm:text-[32px] lg:text-[40px]">
+                 致敬送礼与办公室的茶礼美学
+               </span>
+             </h1>
+-            <p className="max-w-2xl text-lg text-[#5a4837]">
++            <p className="max-w-2xl text-base text-[#5a4837] sm:text-lg">
+               甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。
+             </p>
+             <div className="flex flex-wrap gap-4">
+               <a
+                 href="#contact"
+@@
+-            <div className="grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3">
++            <div className="grid gap-4 text-sm text-[#5a4837] sm:grid-cols-3">
+               {highlights.map((item) => (
+                 <div
+                   key={item.label}
+-                  className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
++                  className="rounded-2xl border border-[#e8ddc6] bg-white px-3 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:px-4"
+                 >
+                   <p className="text-xs uppercase tracking-[0.2em] text-[#b3771d]">{item.label}</p>
+                   <p className="mt-1 text-2xl font-semibold text-[#c2872a]">{item.value}</p>
+                   <p>{item.note}</p>
+                 </div>
+@@
+-          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
++          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+             <Image
+               src="/tea/hero.png"
+               alt="茶席与茶器氛围"
+               fill
+               className="object-cover"
+@@
+         </section>
+ 
+-        <section id="collections" className="space-y-6">
++        <section id="collections" className="space-y-6">
+           <div className="flex flex-wrap items-end justify-between gap-4">
+             <div>
+               <p className="text-xs uppercase tracking-[0.3em] text-[#b3771d]">Collections</p>
+               <h2 className="font-[var(--font-display)] text-3xl text-[#1c130d] sm:text-4xl">三大风味线</h2>
+               <p className="text-[#5a4837]">红茶、乌龙、普洱，均附冲泡指南与杯测卡。</p>
+             </div>
+             <a
+               href="#contact"
+               className="text-sm text-[#b3771d] underline-offset-4 hover:text-[#8a5a1a] hover:underline"
+             >
+               索要完整茶谱
+             </a>
+           </div>
+-          <div className="grid gap-6 md:grid-cols-3">
++          <div className="grid gap-5 md:grid-cols-3 md:gap-6">
+             {signatureTeas.map((tea) => (
+               <div
+                 key={tea.name}
+-                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
++                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] md:p-6"
+               >
+                 <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
+                   <Image
+                     src={tea.image}
+                     alt={tea.name}
+                     width={800}
+                     height={500}
+-                    className="h-44 w-full object-cover"
++                    className="h-36 w-full object-cover md:h-44"
+                     sizes="(min-width: 768px) 33vw, 100vw"
+                   />
+                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
+                 </div>
+                 <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
+@@
+-        <section className="grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]">
+-          <div className="space-y-3">
++        <section className="grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] sm:p-8 lg:grid-cols-[1.1fr,0.9fr]">
++          <div className="space-y-3">
+             <p className="text-xs uppercase tracking-[0.3em] text-[#b3771d]">For Gift & Office</p>
+             <h2 className="font-[var(--font-display)] text-3xl text-[#1c130d]">礼赠与办公室方案</h2>
+             <p className="text-[#5a4837]">
+               从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。
+             </p>
+             <div className="relative overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed] shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+               <Image
+                 src="/tea/office.png"
+                 alt="办公室茶席氛围"
+                 width={1600}
+                 height={900}
+-                className="h-44 w-full object-cover"
++                className="h-36 w-full object-cover md:h-44"
+                 sizes="(min-width: 1024px) 520px, 100vw"
+               />
+             </div>
+*** End Patch
+2026-01-11T08:41:47.849769Z  INFO spawning ghost snapshot task
+2026-01-11T08:41:48.076376Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:41:48.076405Z  INFO ghost commit captured: b641834899f7d26ba449816e6f7f9b12c5eb6579
+2026-01-11T08:41:48.076411Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:42:19.208504Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: Dockerfile
++FROM node:20-alpine AS base
++WORKDIR /app
++ENV NEXT_TELEMETRY_DISABLED=1
++
++# Install dependencies
++FROM base AS deps
++RUN corepack enable
++COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
++RUN pnpm install --frozen-lockfile
++
++# Build
++FROM deps AS builder
++COPY . .
++RUN pnpm run build
++
++# Production runtime
++FROM base AS runner
++ENV NODE_ENV=production
++RUN corepack enable
++COPY --from=builder /app/package.json /app/pnpm-lock.yaml /app/pnpm-workspace.yaml /app/next.config.ts /app/tsconfig.json /app/postcss.config.mjs /app/
++COPY --from=builder /app/public ./public
++COPY --from=builder /app/.next ./.next
++# Install only production deps to satisfy next start
++RUN pnpm install --frozen-lockfile --prod --ignore-scripts
++
++EXPOSE 3000
++CMD ["pnpm", "start"]
+*** End Patch
+2026-01-11T08:42:28.050855Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Add File: docker-compose.yml
++version: "3.9"
++
++services:
++  yun-cha-web:
++    build:
++      context: .
++      dockerfile: Dockerfile
++    ports:
++      - "3000:3000"
++    environment:
++      NODE_ENV: production
++      NEXT_TELEMETRY_DISABLED: "1"
++    command: ["pnpm", "start"]
++    # 如果需要环境变量，取消注释：
++    # env_file:
++    #   - .env.local
+*** End Patch
+2026-01-11T08:47:34.710795Z  INFO spawning ghost snapshot task
+2026-01-11T08:47:34.930491Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:47:34.930517Z  INFO ghost commit captured: 94c70de4b844c6b18b98a5ef016c8bd23776bd9f
+2026-01-11T08:47:34.930523Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:47:44.115248Z  INFO ToolCall: shell_command {"command":"Get-Content next.config.ts"}
+2026-01-11T08:47:55.704111Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: Dockerfile
+@@
+ FROM deps AS builder
+ COPY . .
+ RUN pnpm run build
+ 
+ # Production runtime
+ FROM base AS runner
+ ENV NODE_ENV=production
+ RUN corepack enable
+ COPY --from=builder /app/package.json /app/pnpm-lock.yaml /app/pnpm-workspace.yaml /app/next.config.ts /app/tsconfig.json /app/postcss.config.mjs /app/
++COPY --from=deps /app/node_modules ./node_modules
+ COPY --from=builder /app/public ./public
+ COPY --from=builder /app/.next ./.next
+-# Install only production deps to satisfy next start
+-RUN pnpm install --frozen-lockfile --prod --ignore-scripts
+ 
+ EXPOSE 3000
+ CMD ["pnpm", "start"]
+*** End Patch
+2026-01-11T08:54:35.788595Z  INFO spawning ghost snapshot task
+2026-01-11T08:54:36.005021Z  INFO ghost snapshot blocking task finished
+2026-01-11T08:54:36.005049Z  INFO ghost commit captured: 57a66ae957b74f9cbdc12668165e48462972d9f1
+2026-01-11T08:54:36.005054Z  INFO ghost snapshot gate marked ready
+2026-01-11T08:55:00.987543Z  INFO ToolCall: apply_patch *** Begin Patch
+*** Update File: app/page.tsx
+@@
+-          <div className="grid gap-5 md:grid-cols-3 md:gap-6">
++          <div className="grid gap-5 md:grid-cols-3 md:gap-6">
+             {signatureTeas.map((tea) => (
+               <div
+                 key={tea.name}
+-                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] md:p-6"
++                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
+               >
+-                <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
+-                  <Image
+-                    src={tea.image}
+-                    alt={tea.name}
+-                    width={800}
+-                    height={500}
+-                    className="h-36 w-full object-cover md:h-44"
+-                    sizes="(min-width: 768px) 33vw, 100vw"
+-                  />
+-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
++                <div className="relative h-36 w-full overflow-hidden md:h-44">
++                  <Image src={tea.image} alt={tea.name} fill className="object-cover" sizes="(min-width: 768px) 33vw, 100vw" />
++                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
+                 </div>
+-                <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
++                <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
+                   <div className="absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent" />
+                 </div>
+-                <p className="text-xs uppercase tracking-[0.25em] text-[#b3771d]">{tea.region}</p>
+-                <h3 className="mt-2 font-[var(--font-display)] text-2xl text-[#23160f]">{tea.name}</h3>
+-                <p className="mt-3 text-sm text-[#5a4837]">{tea.notes}</p>
+-                <div className="mt-5 flex flex-wrap gap-2 text-xs text-[#6a5340]">
+-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">手工拣剔</span>
+-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">单株采摘</span>
+-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">附水质指南</span>
+-                </div>
+-                <p className="mt-6 text-sm font-semibold text-[#c2872a]">{tea.pairing}</p>
++                <div className="space-y-3 px-5 pb-5 pt-4 md:px-6">
++                  <p className="text-xs uppercase tracking-[0.25em] text-[#b3771d]">{tea.region}</p>
++                  <h3 className="font-[var(--font-display)] text-2xl text-[#23160f]">{tea.name}</h3>
++                  <p className="text-sm text-[#5a4837]">{tea.notes}</p>
++                  <div className="flex flex-wrap gap-2 text-xs text-[#6a5340]">
++                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">手工拣剔</span>
++                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">单株采摘</span>
++                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">附水质指南</span>
++                  </div>
++                  <p className="text-sm font-semibold text-[#c2872a]">{tea.pairing}</p>
++                </div>
+               </div>
+             ))}
+           </div>
+         </section>
+*** End Patch
+2026-01-11T08:55:08.444400Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"fill className=\\\"object-cover\\\"\""}
+2026-01-11T08:55:13.608098Z  INFO ToolCall: shell_command {"command":"Get-Content app/page.tsx | Select-String \"fill\" | Select-String \"object-cover\""}
+2026-01-17T07:45:50.741838Z  INFO spawning ghost snapshot task
+2026-01-17T07:45:50.970809Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:45:50.970846Z  INFO ghost commit captured: 3291d44f8dbe4243fba0c4e368fd1d5ac7e0da41
+2026-01-17T07:45:50.970856Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:46:13.988360Z  INFO spawning ghost snapshot task
+2026-01-17T07:46:14.194373Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:46:14.194401Z  INFO ghost commit captured: ad9f891697650ad99e76fb562970e2081732f174
+2026-01-17T07:46:14.194406Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:49:36.227545Z  INFO spawning ghost snapshot task
+2026-01-17T07:49:36.434107Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:49:36.434133Z  INFO ghost commit captured: 77285aa739c433f2f034c2eb80b83516bed2da1d
+2026-01-17T07:49:36.434138Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:49:42.717714Z  INFO ToolCall: shell_command {"command":"Get-Content D:/github/face-metric/.codex/skills/.system/skill-installer/SKILL.md"}
+2026-01-17T07:49:55.918700Z  INFO ToolCall: shell_command {"command":"python D:/github/face-metric/.codex/skills/.system/skill-installer/scripts/list-curated-skills.py","sandbox_permissions":"require_escalated","justification":"Need network access to fetch curated skills list from GitHub."}
+2026-01-17T07:50:14.619113Z  INFO interrupt received: abort current task, if any
+2026-01-17T07:51:27.064326Z  INFO spawning ghost snapshot task
+2026-01-17T07:51:27.269395Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:51:27.269423Z  INFO ghost commit captured: 6908e03dafc25761c2b893b2b44e04588caa5720
+2026-01-17T07:51:27.269428Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:54:13.226863Z  INFO spawning ghost snapshot task
+2026-01-17T07:54:13.433375Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:54:13.433400Z  INFO ghost commit captured: 670b1a3e0b21b052bbee8040bcecd5e75445f4fd
+2026-01-17T07:54:13.433405Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:54:20.751593Z  INFO Shutting down Codex instance
+2026-01-17T07:54:23.187388Z  INFO spawning ghost snapshot task
+2026-01-17T07:54:23.397536Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:54:23.397569Z  INFO ghost commit captured: bc23018b83973b4d87a5041fbe374a7162f65d3a
+2026-01-17T07:54:23.397576Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:54:27.840833Z  INFO ToolCall: shell_command {"command":"Get-ChildItem"}
+2026-01-17T07:54:45.672289Z  INFO spawning ghost snapshot task
+2026-01-17T07:54:45.876341Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:54:45.876369Z  INFO ghost commit captured: fbdd110913a4854c7515b706cab16c7c4866d31d
+2026-01-17T07:54:45.876375Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:54:52.247501Z  INFO ToolCall: shell_command {"command":"Get-Content D:/github/face-metric/.codex/skills/.system/skill-installer/SKILL.md"}
+2026-01-17T07:54:59.568861Z  INFO ToolCall: shell_command {"command":"python D:/github/face-metric/.codex/skills/.system/skill-installer/scripts/list-curated-skills.py","sandbox_permissions":"require_escalated","justification":"Need network access to fetch curated skills list from GitHub"}
+2026-01-17T07:55:42.318816Z  INFO spawning ghost snapshot task
+2026-01-17T07:55:42.526010Z  INFO ghost snapshot blocking task finished
+2026-01-17T07:55:42.526035Z  INFO ghost commit captured: e4b3f16bf8e25a78a1671f842b59f2f4ebb07c3f
+2026-01-17T07:55:42.526040Z  INFO ghost snapshot gate marked ready
+2026-01-17T07:55:49.857629Z  INFO ToolCall: shell_command {"command":"Get-ChildItem .codex"}
+2026-01-17T07:55:54.684275Z  INFO ToolCall: shell_command {"command":"Get-ChildItem .codex/skills"}
