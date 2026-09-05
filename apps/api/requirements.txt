@@ -1,6 +1,6 @@
 fastapi>=0.115
 uvicorn[standard]>=0.30
-deepface>=0.0.93
+deepface>=0.0.100
 opencv-python-headless>=4.10
 # DeepFace + pandas/pyarrow/tensorflow are not yet stable on NumPy 2.x.
 numpy>=1.26,<2.0

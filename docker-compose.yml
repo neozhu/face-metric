@@ -1,7 +1,15 @@
 services:
   face-metric:
-    build: .
+    container_name: face-metric
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "3200:3000"
+      - "${PORT:-3000}:3000"
+    volumes:
+      - deepface-cache:/root/.deepface
     restart: unless-stopped
 
+volumes:
+  deepface-cache:
+    name: face-metric-weights

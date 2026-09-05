@@ -5,6 +5,9 @@ export type CompareResponse = {
   distance: number;
   faceDetected: { a: boolean; b: boolean };
   hint: string;
+  level?: string;
+  tags?: string[];
+  verdict?: string;
 };
 
 export type CompareError = {
@@ -17,6 +20,7 @@ export async function compareFaces(imageA: File, imageB: File): Promise<CompareR
   const form = new FormData();
   form.append("image_a", imageA);
   form.append("image_b", imageB);
+  form.append("options", JSON.stringify({ cropped: true }));
 
   // Use same-origin proxy by default (single-port deploy).
   // If NEXT_PUBLIC_API_BASE is set, call the backend directly.

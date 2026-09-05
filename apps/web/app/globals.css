@@ -74,8 +74,7 @@ body {
 
 .fine-grid {
   background-image:
-    linear-gradient(rgba(30, 41, 59, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(30, 41, 59, 0.25) 1px, transparent 1px);
+    linear-gradient(rgba(30, 41, 59, 0.20) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 41, 59, 0.20) 1px, transparent 1px);
   background-size: 28px 28px;
-  mask-image: radial-gradient(circle at center, black 50%, transparent 75%);
 }

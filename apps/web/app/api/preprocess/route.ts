@@ -8,7 +8,8 @@ export async function POST(req: Request) {
     upstream.append(key, value);
   }
 
-  const res = await fetch("http://127.0.0.1:8000/v1/preprocess", {
+  const apiBase = process.env.API_INTERNAL_URL || "http://127.0.0.1:8000";
+  const res = await fetch(`${apiBase}/v1/preprocess`, {
     method: "POST",
     body: upstream,
     cache: "no-store"

@@ -107,12 +107,25 @@ def preprocess_face_crop_jpeg(
 ) -> bytes:
     img_det, det_scale = _resize_max_side(image, det_max_side)
 
-    faces = DeepFace.extract_faces(
-        img_path=img_det,
-        detector_backend=settings.detector_backend,
-        enforce_detection=True,
-        align=True,
-    )
+    faces = None
+    try:
+        faces = DeepFace.extract_faces(
+            img_path=img_det,
+            detector_backend=settings.detector_backend,
+            enforce_detection=True,
+            align=True,
+        )
+    except Exception:
+        try:
+            faces = DeepFace.extract_faces(
+                img_path=img_det,
+                detector_backend="opencv",
+                enforce_detection=True,
+                align=True,
+            )
+        except Exception:
+            faces = None
+
     if not faces:
         raise CompareError("no_face_detected", "No face detected")
 

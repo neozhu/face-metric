@@ -48,12 +48,14 @@ async def compare(
 
         return {
             "similarity": round(result.similarity, 4),
-            # Keep extra fields for UI, but no thresholding is applied.
             "confidence": round(result.confidence, 4),
             "model": result.model,
             "distance": round(result.distance, 4),
             "faceDetected": result.face_detected,
             "hint": result.hint,
+            "level": result.level,
+            "tags": result.tags,
+            "verdict": result.verdict,
         }
     except CompareError as e:
         status = {

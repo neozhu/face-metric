@@ -1,18 +1,39 @@
+# Version Control
 .git
 .gitignore
-.codex
-.specify
 
-**/node_modules
-**/.next
-**/out
-
+# Python virtual environment & cache
 .venv
+venv
 __pycache__
-**/__pycache__
-**/*.pyc
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
 
-test
-data
-datasets
+# Node dependencies & build artifacts
+node_modules
+apps/web/node_modules
+.next
+apps/web/.next
+out
+apps/web/out
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
+# DeepFace host cache
+.deepface
+
+# IDE & Editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Local test screenshots & scratch files
+desktop_screenshot*.png
+mobile_screenshot*.png
+browser_*.png
+test_browser_e2e.py
+test_e2e.py

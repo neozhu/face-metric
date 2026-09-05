@@ -8,7 +8,8 @@ export async function POST(req: Request) {
     upstream.append(key, value);
   }
 
-  const res = await fetch("http://127.0.0.1:8000/v1/compare", {
+  const apiBase = process.env.API_INTERNAL_URL || "http://127.0.0.1:8000";
+  const res = await fetch(`${apiBase}/v1/compare`, {
     method: "POST",
     body: upstream,
     cache: "no-store"

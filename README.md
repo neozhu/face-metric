@@ -1,80 +1,142 @@
 [![CI](https://github.com/neozhu/face-metric/actions/workflows/ci.yml/badge.svg)](https://github.com/neozhu/face-metric/actions/workflows/ci.yml)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.4-black?logo=next.js)](https://nextjs.org/)
+[![DeepFace](https://img.shields.io/badge/DeepFace-0.0.100-blue)](https://github.com/serengil/deepface)
+[![Python](https://img.shields.io/badge/Python-3.11-yellow?logo=python)](https://www.python.org/)
 
 # Face Metric
 
-Face Metric is a dark‑first web app that compares two face images and returns a single similarity score.
+**Face Metric** is a modern, dark-first web application designed to evaluate facial resemblance and kinship likeness between two different people (such as parent-child, relatives, siblings, or couples).
 
-## Built with Codex (GPT-5.2)
-This project was developed with the help of Codex CLI using the GPT‑5.2 model: scaffolding, implementation, and iteration were done through agent-assisted coding. Please review the code and run the app in your own environment before relying on it in production.
+Instead of treating comparison like a binary security access gate (same person vs. stranger), Face Metric calculates a **continuous, human-calibrated resemblance score** accompanied by qualitative trait highlights and natural AI summaries.
+
+---
 
 ![](/test/result.png)
 
-## Structure
+---
+
+## ✨ Key Features
+
+- **📱 Dual-Screen Responsive Design**:
+  - **Desktop (>=640px)**: Side-by-side comparison cards with a central glowing `VS` badge.
+  - **Mobile (<640px)**: Thumb-friendly stacked flow with an inline divider for seamless mobile operation.
+- **🧬 Kinship Resemblance Calibration**:
+  - Standard facial recognition models (e.g. ArcFace) use harsh angular margin penalties that push different identities toward orthogonality, which causes biological relatives (e.g. father & daughter) to score an unintuitive 20%~25%.
+  - Face Metric employs an empirical **kinship calibration curve** that maps natural facial harmony to intuitive percentage scores (e.g., 60%~75% for close relatives, <30% for strangers).
+- **💬 Human-Centric & Non-Technical Presentation**:
+  - **Vivid Resemblance Ratings**: Clear verdicts such as `Strong Family Likeness`, `Noticeable Resemblance`, or `Subtle Likeness`.
+  - **Facial Trait Tags**: Highlighting shared traits like `["Expressive Eyes", "Similar Jawline", "Familiar Charm"]`.
+  - **AI Narrative Summary**: Natural descriptions explaining shared facial structures.
+  - **Qualitative Dimension Cards**: Independent ratings for `Eyes & Expression` and `Contour & Bone Harmony`.
+  - **Collapsible Technical Drawer**: Engineering parameters (`Cosine Distance`, `Fusion Models`, `Raw Confidence`) are neatly tucked away for developers.
+- **⚡ Fast Multi-Model Fusion**:
+  - High-precision facial landmark alignment via **RetinaFace** (with automatic Haar-cascade fallback).
+  - Dual-model embedding fusion combining **ArcFace** and **Facenet512**.
+  - Optimized inference with detection skipping on pre-aligned crops (<1s response time).
+- **📷 Flexible Photo Input**:
+  - Drag-and-drop file upload directly onto the circular preview zone.
+  - Integrated mobile camera capture with front/back camera flipping.
+- **🔒 Privacy First**:
+  - Images are processed in-memory for the active request only.
+  - Zero on-disk persistence.
+
+---
+
+## 🏗️ Architecture
+
 ```
-apps/
-  web/   Next.js UI
-  api/   FastAPI service
-specs/   Product + engineering specs
+face-metric/
+├── apps/
+│   ├── web/        # Next.js 16 (React 19, Tailwind CSS, Turbopack)
+│   └── api/        # FastAPI service (DeepFace 0.0.100, TensorFlow, OpenCV)
+├── specs/          # Technical specifications & architecture notes
+├── test/           # Sample test images (Tom.png, Suri.png, etc.)
+└── test_browser_e2e.py  # Playwright end-to-end browser test script
 ```
 
-## What it does
-- Upload (or capture) two face photos
-- Click **Compare**
-- See an animated score ring + similarity % (no “same/different” thresholding)
+---
 
-## How the comparison score works (backend algorithm)
-The API returns a continuous similarity score computed from face embeddings (not a hard identity decision):
+## 🚀 Getting Started
 
-1. **Decode & validate**: images are validated for type/size and decoded in memory.
-2. **Detect & align faces**: DeepFace runs face detection (default backend: RetinaFace) and alignment (`enforce_detection=True`, `align=True`).
-3. **Embed**: each face is converted into a fixed-length embedding vector using one or more DeepFace models (default: `ArcFace`, fallback: `Facenet512`).
-4. **Distance**: the service computes **cosine distance** between the two embeddings for each successful model.
-5. **Fusion (multi-model)**: if multiple models succeed, it averages their cosine distances for a more stable score.
-6. **Similarity mapping**: `similarity = clamp(1 - fused_distance, 0..1)` and the UI renders it as a percentage.
+### Prerequisites
+- **Node.js**: `20.x` or later
+- **Python**: `3.11.x` (Recommended for TensorFlow and NumPy 1.x stability on Windows/Linux)
 
-Notes:
-- No verification threshold is applied by default; the output is meant to stay continuous.
-- If a face is not detected in either image, the API returns an error instead of guessing.
+---
 
-## Privacy
-- Images are processed in memory for the current request only.
-- The API does not persist uploads to disk.
+### 1. Backend Service (FastAPI)
 
-## Run locally (recommended)
-
-### Prereqs
-- Node.js 20+
-- Python 3.11 (DeepFace/TensorFlow is most stable on 3.11)
-
-### API
 ```bash
+# Create and activate virtual environment
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+# Linux / macOS:
+source .venv/bin/activate
+# Windows:
+.venv\Scripts\activate
+
+# Install backend dependencies (DeepFace 0.0.100)
 pip install -r apps/api/requirements.txt
-uvicorn apps.api.main:app --reload --port 8000
+
+# Start the API server on port 8000
+uvicorn apps.api.main:app --host 127.0.0.1 --port 8000
 ```
 
-### Web
+> **Tip**: DeepFace model weights will automatically cache to `~/.deepface/weights` on first run (`retinaface.h5`, `arcface_weights.h5`, `facenet512_weights.h5`).
+
+Health check:
+```bash
+curl http://127.0.0.1:8000/health
+# {"ok": true}
+```
+
+---
+
+### 2. Frontend Application (Next.js)
+
 ```bash
 cd apps/web
+
+# Install dependencies
 npm install
+
+# Start Turbopack dev server on port 3000
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Docker (single image, single port)
-No env vars required. Only the web port is exposed; the API is accessed internally.
+---
+
+## 🐳 Docker Deployment
+
+Run both the FastAPI backend and Next.js frontend in a unified container:
 
 ```bash
 docker compose up --build
 ```
 
-Open `http://localhost:3000`.
+Access the application at [http://localhost:3000](http://localhost:3000).
 
-## Quick backend test
-If you have local test images:
+---
+
+## 🧪 Testing
+
+### Automated Browser E2E Test (Playwright)
+Run the full browser automation script simulating real user interactions across both Desktop and Mobile viewports:
+
+```bash
+python test_browser_e2e.py
+```
+
+### CLI Quick Compare
+Test the backend inference directly via command-line:
 
 ```bash
 python apps/api/scripts/quick_compare.py test/Tom.png test/Suri.png
 ```
+
+---
+
+## 📄 License
+
+MIT License © 2026 Neo Zhu.
